@@ -1,18 +1,18 @@
 //
-//  Buildings.swift
+//  BuildingDetails.swift
 //  OregonCampus
 //
-//  Created by Oscar Epp on 3/15/24.
+//  Created by Oscar Epp on 3/23/24.
 //
 
 import SwiftUI
 
-struct Buildings: View {
+struct BuildingDetails: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    Buildings()
+    BuildingDetails()
 }
