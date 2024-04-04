@@ -1,6 +1,6 @@
 //
 //  McKenzieHall.swift
-//  CollegeStadiums
+//  OregonCampus
 //
 //  Created by Oscar Epp on 3/13/24.
 //
@@ -9,48 +9,15 @@
 import SwiftUI
 import MapKit
 
-
-struct McKenzieHall: UIViewRepresentable {
-    class Coordinator {
-        var timerManager: MapViewTimerManager?
-    }
-
-    func makeCoordinator() -> Coordinator {
-        Coordinator()
-    }
-    
-    func makeUIView(context: Context) -> MKMapView {
-        let mapView = MKMapView()
-        mapView.mapType = .satelliteFlyover
-        mapView.isUserInteractionEnabled = false
-
-        let coordinate = CLLocationCoordinate2D(latitude: 44.047133, longitude: -123.078209)
-        let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 800, longitudinalMeters: 500)
-        mapView.setRegion(region, animated: true)
-        
-        let camera = MKMapCamera(lookingAtCenter: coordinate, fromDistance: 800, pitch: 80, heading: 0)
-        mapView.setCamera(camera, animated: true)
-
-        context.coordinator.timerManager = MapViewTimerManager(mapView: mapView)
-        
-        return mapView
-    }
-    
-    func updateUIView(_ uiView: MKMapView, context: Context) {
-        context.coordinator.timerManager?.startRotatingCamera(distance: 200)
-    }
-    
-    static func dismantleUIView(_ uiView: MKMapView, coordinator: Coordinator) {
-        coordinator.timerManager?.stopRotatingCamera()
-    }
-}
-
 struct McKenzieHallDetailView: View {
     var body: some View {
         ScrollView {
-            // Embedding the map
-            McKenzieHall()
-                .frame(height: 400) // Set a fixed height for the map view
+            
+            /// MapView
+            MapViewComponent(coordinate: CLLocationCoordinate2D(latitude: 44.047133, longitude: -123.078209), distance: 200, pitch: 80, heading: 0)
+                .frame(width: 350, height: 500)
+                .clipShape(RoundedRectangle(cornerRadius: 25))
+                .padding()
 
             VStack(alignment: .leading) {
                 Text("McKenzie Hall")

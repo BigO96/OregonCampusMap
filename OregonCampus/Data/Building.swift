@@ -2,17 +2,34 @@
 //  Building.swift
 //  OregonCampus
 //
-//  Created by Oscar Epp on 3/23/24.
+//  Created by Oscar Epp on 3/17/24.
 //
 
+import Foundation
 import SwiftUI
+import CoreLocation
 
-struct Building: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct Building: Hashable, Codable, Identifiable{
+    var id: Int
+    var name: String
+    var description: String
+    var imageNames: [String]
+    var hoursComponentKeys: [String]
+    var distance: Double
+    var pitch: Double
+    var heading: Double
+    var type: [String]
+
+    private var coordinates: Coordinates
+    var locationCoordinate: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(
+            latitude: coordinates.latitude,
+            longitude: coordinates.longitude
+        )
     }
-}
-
-#Preview {
-    Building()
+    
+    struct Coordinates: Hashable, Codable{
+        var latitude: Double
+        var longitude: Double
+    }
 }

@@ -7,18 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6147CD62BBE849100661484 /* IdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6147CD52BBE849100661484 /* IdView.swift */; };
+		E653E0422BA36E2D0067FDEF /* DirectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653E0412BA36E2D0067FDEF /* DirectionButton.swift */; };
+		E653E0452BA371310067FDEF /* MapViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653E0442BA371310067FDEF /* MapViewComponent.swift */; };
+		E653E0512BA5053F0067FDEF /* Hours.json in Resources */ = {isa = PBXBuildFile; fileRef = E653E0502BA5053F0067FDEF /* Hours.json */; };
+		E653E0552BA6E01C0067FDEF /* buildingData.json in Resources */ = {isa = PBXBuildFile; fileRef = E653E0542BA6E01C0067FDEF /* buildingData.json */; };
+		E6828BA92BAFB96B00D402C5 /* BuildingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6828BA82BAFB96B00D402C5 /* BuildingList.swift */; };
+		E6828BAB2BAFB98A00D402C5 /* BuildingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6828BAA2BAFB98A00D402C5 /* BuildingRow.swift */; };
+		E6828BAD2BAFB99500D402C5 /* BuildingDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6828BAC2BAFB99500D402C5 /* BuildingDetails.swift */; };
+		E6828BAF2BAFB9B800D402C5 /* BuildingMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6828BAE2BAFB9B800D402C5 /* BuildingMapView.swift */; };
+		E6828BB12BAFB9F900D402C5 /* BuildingMapAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6828BB02BAFB9F900D402C5 /* BuildingMapAlbumView.swift */; };
+		E6828BB52BAFE95900D402C5 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6828BB42BAFE95900D402C5 /* Building.swift */; };
+		E6828BB72BAFE97B00D402C5 /* FindHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6828BB62BAFE97B00D402C5 /* FindHours.swift */; };
+		E6828BB92BAFE9DC00D402C5 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6828BB82BAFE9DC00D402C5 /* ModelData.swift */; };
+		E6828BBC2BB1FEC700D402C5 /* BuildingDetailsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6828BBB2BB1FEC700D402C5 /* BuildingDetailsTest.swift */; };
 		E6A7DCF22BA26437009AD73A /* OregonCampusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A7DCF12BA26437009AD73A /* OregonCampusApp.swift */; };
 		E6A7DCF42BA26437009AD73A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A7DCF32BA26437009AD73A /* ContentView.swift */; };
 		E6A7DCF62BA26438009AD73A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A7DCF52BA26438009AD73A /* Assets.xcassets */; };
 		E6A7DCF92BA26438009AD73A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A7DCF82BA26438009AD73A /* Preview Assets.xcassets */; };
+		E6A7DD032BA26588009AD73A /* MapViewTimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A7DD022BA26588009AD73A /* MapViewTimerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E6147CD52BBE849100661484 /* IdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdView.swift; sourceTree = "<group>"; };
+		E653E0412BA36E2D0067FDEF /* DirectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionButton.swift; sourceTree = "<group>"; };
+		E653E0442BA371310067FDEF /* MapViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewComponent.swift; sourceTree = "<group>"; };
+		E653E0502BA5053F0067FDEF /* Hours.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Hours.json; sourceTree = "<group>"; };
+		E653E0542BA6E01C0067FDEF /* buildingData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = buildingData.json; sourceTree = "<group>"; };
+		E6828BA82BAFB96B00D402C5 /* BuildingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingList.swift; sourceTree = "<group>"; };
+		E6828BAA2BAFB98A00D402C5 /* BuildingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingRow.swift; sourceTree = "<group>"; };
+		E6828BAC2BAFB99500D402C5 /* BuildingDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingDetails.swift; sourceTree = "<group>"; };
+		E6828BAE2BAFB9B800D402C5 /* BuildingMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingMapView.swift; sourceTree = "<group>"; };
+		E6828BB02BAFB9F900D402C5 /* BuildingMapAlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingMapAlbumView.swift; sourceTree = "<group>"; };
+		E6828BB42BAFE95900D402C5 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		E6828BB62BAFE97B00D402C5 /* FindHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindHours.swift; sourceTree = "<group>"; };
+		E6828BB82BAFE9DC00D402C5 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		E6828BBB2BB1FEC700D402C5 /* BuildingDetailsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingDetailsTest.swift; sourceTree = "<group>"; };
 		E6A7DCEE2BA26437009AD73A /* OregonCampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OregonCampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A7DCF12BA26437009AD73A /* OregonCampusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OregonCampusApp.swift; sourceTree = "<group>"; };
 		E6A7DCF32BA26437009AD73A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E6A7DCF52BA26438009AD73A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6A7DCF82BA26438009AD73A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E6A7DD022BA26588009AD73A /* MapViewTimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewTimerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +62,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E653E0432BA36E320067FDEF /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				E6828BB62BAFE97B00D402C5 /* FindHours.swift */,
+				E653E0412BA36E2D0067FDEF /* DirectionButton.swift */,
+				E6A7DD022BA26588009AD73A /* MapViewTimerManager.swift */,
+				E653E0442BA371310067FDEF /* MapViewComponent.swift */,
+				E6828BB82BAFE9DC00D402C5 /* ModelData.swift */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		E6828BA52BAFB93200D402C5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E653E0542BA6E01C0067FDEF /* buildingData.json */,
+				E653E0502BA5053F0067FDEF /* Hours.json */,
+				E6828BB42BAFE95900D402C5 /* Building.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		E6A7DCE52BA26437009AD73A = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +105,9 @@
 			children = (
 				E6A7DCF12BA26437009AD73A /* OregonCampusApp.swift */,
 				E6A7DCF32BA26437009AD73A /* ContentView.swift */,
+				E6A7DCFF2BA264BC009AD73A /* Views */,
+				E6828BA52BAFB93200D402C5 /* Data */,
+				E653E0432BA36E320067FDEF /* DataManagers */,
 				E6A7DCF52BA26438009AD73A /* Assets.xcassets */,
 				E6A7DCF72BA26438009AD73A /* Preview Content */,
 			);
@@ -65,6 +120,20 @@
 				E6A7DCF82BA26438009AD73A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E6A7DCFF2BA264BC009AD73A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6828BA82BAFB96B00D402C5 /* BuildingList.swift */,
+				E6147CD52BBE849100661484 /* IdView.swift */,
+				E6828BAA2BAFB98A00D402C5 /* BuildingRow.swift */,
+				E6828BAC2BAFB99500D402C5 /* BuildingDetails.swift */,
+				E6828BAE2BAFB9B800D402C5 /* BuildingMapView.swift */,
+				E6828BB02BAFB9F900D402C5 /* BuildingMapAlbumView.swift */,
+				E6828BBB2BB1FEC700D402C5 /* BuildingDetailsTest.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +195,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6A7DCF92BA26438009AD73A /* Preview Assets.xcassets in Resources */,
+				E653E0512BA5053F0067FDEF /* Hours.json in Resources */,
 				E6A7DCF62BA26438009AD73A /* Assets.xcassets in Resources */,
+				E653E0552BA6E01C0067FDEF /* buildingData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +208,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6828BAB2BAFB98A00D402C5 /* BuildingRow.swift in Sources */,
+				E6828BAF2BAFB9B800D402C5 /* BuildingMapView.swift in Sources */,
+				E653E0452BA371310067FDEF /* MapViewComponent.swift in Sources */,
+				E6828BB92BAFE9DC00D402C5 /* ModelData.swift in Sources */,
+				E6147CD62BBE849100661484 /* IdView.swift in Sources */,
+				E6828BB52BAFE95900D402C5 /* Building.swift in Sources */,
+				E6828BB72BAFE97B00D402C5 /* FindHours.swift in Sources */,
+				E6828BBC2BB1FEC700D402C5 /* BuildingDetailsTest.swift in Sources */,
+				E6A7DD032BA26588009AD73A /* MapViewTimerManager.swift in Sources */,
 				E6A7DCF42BA26437009AD73A /* ContentView.swift in Sources */,
+				E6828BA92BAFB96B00D402C5 /* BuildingList.swift in Sources */,
+				E653E0422BA36E2D0067FDEF /* DirectionButton.swift in Sources */,
 				E6A7DCF22BA26437009AD73A /* OregonCampusApp.swift in Sources */,
+				E6828BB12BAFB9F900D402C5 /* BuildingMapAlbumView.swift in Sources */,
+				E6828BAD2BAFB99500D402C5 /* BuildingDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OregonCampus/Preview Content\"";
@@ -287,6 +372,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = BigOEnterprise.OregonCampus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OregonCampus/Preview Content\"";
@@ -316,6 +403,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = BigOEnterprise.OregonCampus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

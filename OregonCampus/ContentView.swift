@@ -9,57 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
-            List {
-                NavigationLink(destination: KnightLibraryDetailView()) {
-                    Text("Knight Library")
+        TabView {
+            
+            BuildingList()
+                .tabItem {
+                    Label("Buildings", systemImage: "building.columns.fill")
                 }
-                NavigationLink(destination: LawrenceHallDetailView()) {
-                    Text("Lawrence Hall")
+                
+            Text("Second View")
+                .tabItem {
+                    Label("Second", systemImage: "square.fill.text.grid.1x2")
                 }
-                NavigationLink(destination: LilisHallDetailView()) {
-                    Text("Lilis Hall")
+            
+            IdView()
+                .tabItem {
+                    Label("Id", systemImage: "person.text.rectangle")
                 }
-                NavigationLink(destination: McKenzieHallDetailView()) {
-                    Text("McKenzie Hall")
-                }
-                NavigationLink(destination: CondonHallDetailView()) {
-                    Text("Condon Hall")
-                }
-                NavigationLink(destination: FentonHallDetailView()) {
-                    Text("Fenton Hall")
-                }
-                NavigationLink(destination: GerlingerHallDetailView()) {
-                    Text("Gerlinger Hall")
-                }
-                NavigationLink(destination: EMUDetailView()) {
-                    Text("Erb Memorial Union (EMU)")
-                }
-                NavigationLink(destination: UniversityHallDetailView()) {
-                    Text("University Hall")
-                }
-                NavigationLink(destination: StudentRecreationCenterDetailView()) {
-                    Text("Student Recreation Center")
-                }
-                NavigationLink(destination: JohnEJaquaDetailView()) {
-                    Text("John E. Jaqua Center")
-                }
-                NavigationLink(destination: UnthankHallDetailView()) {
-                    Text("Unthank Hall")
-                }
-                NavigationLink(destination: TykesonHallDetailView()) {
-                    Text("Tykeson Hall")
-                }
-                Text("Other:")
-                NavigationLink(destination: NewView()) {
-                    Text("New View")
-                }
-            }
-            .navigationTitle("Oregon Campus")
         }
     }
 }
 
 #Preview {
     ContentView()
+        .environment(ModelData())
 }
+ 
