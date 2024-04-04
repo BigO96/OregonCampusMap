@@ -5,7 +5,7 @@
             "latitude": 44.046593,
             "longitude": -123.076512
         },
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "University Hall, formerly Deady Hall, is a historic building built from 1873 to 1876 by W. H. Abrams to a design by architect William W. Piper. It was the University of Oregon's first building, and remained the university's only building for almost ten years after its construction. On June 24, 2020, the University of Oregon's Board of Trustees announced that the name 'Deady' would be removed as the name of the hall, due to Deadys racist views, until a date when a new name can be chosen. In the interim, the hall will be named 'University Hall.'",
         "imageNames": [
             "UNIVLVL1",
             "UNIVLVL2",
@@ -16,15 +16,13 @@
             "UNIVLVL7"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary",
-            "LawrenceCoffee",
-            "LawrencePrinting"
+            "UniversityHall"
         ],
         "distance": 200,
         "pitch": 60,
         "heading": 100,
         "id": 1000,
-        "type": ["studentdesk", "cup.and.saucer", "books.vertical"]
+        "type": ["studentdesk"]
     },
     {
         "name": "Lawrence Hall",
@@ -32,7 +30,7 @@
             "latitude": 44.046913,
             "longitude": -123.074614
         },
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Many buildings on the main campus were designed by Ellis F. Lawrence, who joined the university in 1914 as campus planner, but by 1915 he had founded the School of Architecture and had become chief architect of the university. At its inception in 1914, Ellis F. Lawrence envisioned that the School of Architecture and Allied Arts (now the College of Design) would incorporate architectural education with the arts as opposed to engineering, and became the first school to do so.",
         "imageNames": [
             "IMAGE",
             "IMAGE2",
@@ -40,18 +38,20 @@
             "LawrenceLVL3",
             "LawrenceLVL4",
             "LawrenceLVL5",
-            "LawrenceLVL6"
+            "LawrenceLVL6",
+            "LawrenceLVL7"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary",
             "LawrenceCoffee",
-            "LawrencePrinting"
+            "LawrencePrinting",
+            "DesignServiceDesk"
         ],
         "distance": 300,
         "pitch": 80,
         "heading": 330,
         "id": 1001,
-        "type": ["studentdesk", "cup.and.saucer", "books.vertical"]
+        "type": ["studentdesk", "cup.and.saucer", "books.vertical", "printer"]
     },
     {
         "name": "Knight Library",
@@ -59,28 +59,36 @@
             "latitude": 44.043230,
             "longitude": -123.077705
         },
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Knight Library is the main facility of the University of Oregon's library system. The library design is emblematic of the architecture of the university's older buildings. As of 2008 it has a collection of more than 3 million volumes. The building was opened in 1937 to replace the original library building (the 'Old Libe,' Fenton Hall, completed in 1907), which the University's collections had outgrown. Above the main entry doors (also on the north facade), is a passage from the Bible (John 8:32), which proclaims over the northeast doors 'Ye shall know the truth', and over the northwest doors 'and the truth shall make you free.'",
         "imageNames": [
-            "LawrenceLVL1"
+            "KnightLVL1",
+            "KnightLVL2",
+            "KnightLVL3",
+            "KnightLVL4",
+            "KnightLVL5",
+            "KnightLVL6"
         ],
         "hoursComponentKeys": [
             "KnightLibrary",
             "KnightCoffee",
-            "KnightDREAM"
+            "KnightDREAM",
+            "StatisticsHelpDesk",
+            "KnightTutoring"
+
         ],
         "distance": 300,
         "pitch": 80,
         "heading": 160,
         "id": 1002,
-        "type": ["books.vertical"]
+        "type": ["studentdesk", "cup.and.saucer", "books.vertical", "printer"]
     },
     {
-        "name": "Lilis Hall",
+        "name": "Lillis Hall",
         "coordinates": {
             "latitude": 44.046030,
             "longitude": -123.077640
         },
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Home to the Charles H. Lundquist College of Business, the complex consists of four buildings; the new main building (called Lillis Hall), completed in 2003, and three older buildings, Anstett Hall, Peterson Hall, and the Chiles Business Center. The 2003 construction of the Lillis Business Complex resulted in the linking of all three existing buildings with the new Lillis 'backbone.' In addition, Lillis Hall contains numerous faculty offices, classrooms, a lecture hall, and an auditorium. ESPN chose UO Memorial Quad for the site of the October 15, 2011 GameDay Broadcast, with the Lillis as a backdrop. A a giant 'O' graphic was installed over the building's main entrance and has remained ever since.",
         "imageNames": [
             "LilisLVL1",
             "LilisLVL2",
@@ -89,8 +97,10 @@
             "LilisLVL5"
         ],
         "hoursComponentKeys": [
-            "Lilis",
-            "LilisCoffee"
+            "Lillis",
+            "LillisCoffee",
+            "MOHRCareerServices",
+            "LillisTutoring"
         ],
         "distance": 300,
         "pitch": 80,
@@ -104,12 +114,12 @@
             "latitude": 44.047133,
             "longitude": -123.078209
         },
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "description": "Originally constructed to house the new Law Center, the building was renovated in 1999 and renamed Grayson Hall, then in 2002 it was renamed McKenzie Hall and houses information services, computing labs, the Department of History, and the Department of Cinema Studies.",
         "imageNames": [
             "LawrenceLVL1"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "McKenzieHall"
         ],
         "distance": 200,
         "pitch": 80,

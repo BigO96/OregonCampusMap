@@ -11,12 +11,12 @@
   },
   "LawrenceCoffee": {
     "Sunday": {"open": 0, "close": 0},
-    "Monday": {"open": 7, "close": 18},
-    "Tuesday": {"open": 7, "close": 18},
-    "Wednesday": {"open": 7, "close": 18},
-    "Thursday": {"open": 7, "close": 18},
-    "Friday": {"open": 7, "close": 18},
-    "Saturday": {"open": 8, "close": 16}
+    "Monday": {"open": 7, "close": 17},
+    "Tuesday": {"open": 7, "close": 17},
+    "Wednesday": {"open": 7, "close": 17},
+    "Thursday": {"open": 7, "close": 17},
+    "Friday": {"open": 8, "close": 15},
+    "Saturday": {"open": 0, "close": 0}
   },
   "LawrencePrinting": {
     "Sunday": {"open": 0, "close": 0},
@@ -27,7 +27,7 @@
     "Friday": {"open": 9, "close": 17},
     "Saturday": {"open": 0, "close": 0}
   },
-  "LilisCoffee": {
+  "LillisCoffee": {
     "Sunday": {"open": 0, "close": 0},
     "Monday": {"open": 7, "close": 17},
     "Tuesday": {"open": 7, "close": 17},
@@ -36,10 +36,10 @@
     "Friday": {"open": 7, "close": 17},
     "Saturday": {"open": 0, "close": 0}
   },
-  "Lilis": {
+  "Lillis": {
     "Sunday": {"open": 10, "close": 16},
     "Monday": {"open": 7, "close": 22},
-    "Tuesday": {"open": 7, "close": 2},
+    "Tuesday": {"open": 7, "close": 22},
     "Wednesday": {"open": 7, "close": 22},
     "Thursday": {"open": 7, "close": 22},
     "Friday": {"open": 7, "close": 19},
@@ -71,5 +71,71 @@
     "Thursday": {"open": 10, "close": 17},
     "Friday": {"open": 10, "close": 17},
     "Saturday": {"open": 0, "close": 0}
+  },
+  "UniversityHall": {
+    "Sunday": {"open": 0, "close": 0},
+    "Monday": {"open": 0, "close": 0},
+    "Tuesday": {"open": 0, "close": 0},
+    "Wednesday": {"open": 0, "close": 0},
+    "Thursday": {"open": 0, "close": 0},
+    "Friday": {"open": 0, "close": 0},
+    "Saturday": {"open": 0, "close": 0},
+  },
+  "DesignServiceDesk": {
+    "Sunday": {"open": 0, "close": 0},
+    "Monday": {"open": 8, "close": 20},
+    "Tuesday": {"open": 8, "close": 20},
+    "Wednesday": {"open": 8, "close": 20},
+    "Thursday": {"open": 8, "close": 20},
+    "Friday": {"open": 8, "close": 17},
+    "Saturday": {"open": 0, "close": 0},
+  },
+  "StatisticsHelpDesk": {
+    "Sunday": {"open": 0, "close": 0},
+    "Monday": {"open": 11, "close": 16},
+    "Tuesday": {"open": 11, "close": 16},
+    "Wednesday": {"open": 11, "close": 16},
+    "Thursday": {"open": 11, "close": 16},
+    "Friday": {"open": 11, "close": 16},
+    "Saturday": {"open": 0, "close": 0},
+  },
+  "KnightTutoring": {
+    "Sunday": {"open": 0, "close": 0},
+    "Monday": {"open": 10, "close": 20},
+    "Tuesday": {"open": 10, "close": 20},
+    "Wednesday": {"open": 10, "close": 20},
+    "Thursday": {"open": 10, "close": 20},
+    "Friday": {"open": 10, "close": 16},
+    "Saturday": {"open": 0, "close": 0},
+  },
+  "MOHRCareerServices": {
+    "Sunday": {"open": 0, "close": 0},
+    "Monday": {"open": 9, "close": 17},
+    "Tuesday": {"open": 9, "close": 17},
+    "Wednesday": {"open": 9, "close": 17},
+    "Thursday": {"open": 9, "close": 17},
+    "Friday": {"open": 9, "close": 17},
+    "Saturday": {"open": 0, "close": 0},
+  },
+  "LillisTutoring": {
+    "Sunday": {"open": 0, "close": 0},
+    "Monday": {"open": 9, "close": 17},
+    "Tuesday": {"open": 9, "close": 17},
+    "Wednesday": {"open": 9, "close": 17},
+    "Thursday": {"open": 9, "close": 17},
+    "Friday": {"open": 9, "close": 17},
+    "Saturday": {"open": 0, "close": 0},
+  },
+  "McKenzieHall": {
+    "Sunday": {"open": 0, "close": 0},
+    "Monday": {"open": 9, "close": 17},
+    "Tuesday": {"open": 9, "close": 17},
+    "Wednesday": {"open": 9, "close": 17},
+    "Thursday": {"open": 9, "close": 17},
+    "Friday": {"open": 9, "close": 17},
+    "Saturday": {"open": 0, "close": 0},
   }
 }
+
+
+

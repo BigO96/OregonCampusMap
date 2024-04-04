@@ -12,8 +12,9 @@ import MapKit
 struct BuildingDetail: View {
     @Environment(ModelData.self) var modelData
     @Environment(\.colorScheme) var colorScheme
+    @State private var showingAlbum = false
     @State private var showingMap = false
-    
+
     var building: Building
     
     var landmarkIndex: Int {
@@ -24,32 +25,36 @@ struct BuildingDetail: View {
     var body: some View {
         @Bindable var modelData = modelData
         
+        /// Title & Button
+        HStack {
+            Text(building.name)
+                .font(.title)
+                .padding(.leading)
+//            Spacer()
+            
+//            DirectionsButton(destinationCoordinate: building.locationCoordinate, destinationName: building.name)
+        }
+//        .padding([.top, .trailing])
+        
+        
         GeometryReader { geometry in
             ScrollView {
-                /// Title & Button
-                HStack {
-                    Text(building.name)
-                        .font(.title)
-                        .padding(.leading)
-                    Spacer()
-                    
-                    DirectionsButton(destinationCoordinate: building.locationCoordinate, destinationName: building.name)
-                }
-                .padding([.top, .trailing])
-                Divider()
-                    .padding()
-                
+
 
                 /// Map View
-                MapViewComponent(
-                    coordinate: building.locationCoordinate,
-                    distance: building.distance,
-                    pitch: CGFloat(building.pitch),
-                    heading: building.heading
-                )
-                .frame(width: geometry.size.width - 40, height: 500)
-                .clipShape(RoundedRectangle(cornerRadius: 25))
-                .padding()
+                Button(action: {
+                    self.showingMap = true
+                }) {
+                    MapViewComponent(
+                        coordinate: building.locationCoordinate,
+                        distance: building.distance,
+                        pitch: CGFloat(building.pitch),
+                        heading: building.heading
+                    )
+                    .frame(width: geometry.size.width - 40, height: 500)
+                    .clipShape(RoundedRectangle(cornerRadius: 25))
+                    .padding()
+                }
                 
                 /// About
                 VStack{
@@ -64,7 +69,7 @@ struct BuildingDetail: View {
                 
                 /// Inside Map
                 Button(action: {
-                    self.showingMap = true
+                    self.showingAlbum = true
                 }) {
                     VStack {
                         ScrollView(.horizontal, showsIndicators: false) {
@@ -90,13 +95,13 @@ struct BuildingDetail: View {
                     .cornerRadius(25)
             }
             .background(colorScheme == .dark ? Color.black: Color(.systemGray6))
-            .sheet(isPresented: $showingMap) {
+            .sheet(isPresented: $showingAlbum) {
                 NavigationView {
                     BuildingMapAlbumView(imageNames: building.imageNames)
                     .toolbar {
                         ToolbarItem(placement: .cancellationAction) {
                             Button("Close") {
-                                showingMap = false
+                                showingAlbum = false
                             }
                         }
                     }

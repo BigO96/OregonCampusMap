@@ -32,7 +32,7 @@ struct OpenClose: Codable {
 }
 
 struct Place: Codable {
-    let LawrenceLibrary, LawrenceCoffee, LawrencePrinting, LilisCoffee, Lilis, KnightLibrary, KnightCoffee, KnightDREAM: PlaceHours
+    let LawrenceLibrary, LawrenceCoffee, LawrencePrinting, LillisCoffee, Lillis, KnightLibrary, KnightCoffee, KnightDREAM, UniversityHall, DesignServiceDesk, StatisticsHelpDesk, KnightTutoring, MOHRCareerServices, LillisTutoring, McKenzieHall: PlaceHours
 }
 
 struct FindHours: View {
@@ -50,10 +50,10 @@ struct FindHours: View {
                     itemRow(systemIcon: "cup.and.saucer", title: "Coffee", hours: places.LawrenceCoffee)
                 case "LawrencePrinting":
                     itemRow(systemIcon: "printer", title: "Design Printing", hours: places.LawrencePrinting)
-                case "Lilis":
-                    itemRow(systemIcon: "building", title: "Lilis", hours: places.Lilis)
-                case "LilisCoffee":
-                    itemRow(systemIcon: "cup.and.saucer", title: "Coffee", hours: places.LilisCoffee)
+                case "Lillis":
+                    itemRow(systemIcon: "building", title: "Lilis", hours: places.Lillis)
+                case "LillisCoffee":
+                    itemRow(systemIcon: "cup.and.saucer", title: "Coffee", hours: places.LillisCoffee)
                 case "KnightLibrary":
                     itemRow(systemIcon: "building.columns", title: "Knight Library", hours: places.KnightLibrary)
                 case "KnightCoffee":
@@ -61,6 +61,20 @@ struct FindHours: View {
                 case "KnightDREAM":
                     itemRow(systemIcon: "pencil.and.ruler", title: "DREAM Lab", hours: places.KnightDREAM
                     )
+                case "UniversityHall":
+                    itemRow(systemIcon: "building.columns", title: "University Hall", hours: places.UniversityHall)
+                case "DesignServiceDesk":
+                    itemRow(systemIcon: "questionmark.circle", title: "Design Service Desk", hours: places.DesignServiceDesk)
+                case "StatisticsHelpDesk":
+                    itemRow(systemIcon: "questionmark.circle", title: "Statistics Help Desk", hours: places.StatisticsHelpDesk)
+                case "KnightTutoring":
+                    itemRow(systemIcon: "questionmark.circle", title: "Tutoring", hours: places.KnightTutoring)
+                case "MOHRCareerServices":
+                    itemRow(systemIcon: "questionmark.circle", title: "MOHR Career Services", hours: places.MOHRCareerServices)
+                case "LillisTutoring":
+                    itemRow(systemIcon: "questionmark.circle", title: "Tutoring?", hours: places.LillisTutoring)
+                case "McKenzieHall":
+                    itemRow(systemIcon: "building.columns", title: "McKenzie Hall?", hours: places.McKenzieHall)
                 default:
                     Text("Unknown place: \(placeName)")
                 }

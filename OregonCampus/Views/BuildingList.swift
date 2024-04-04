@@ -23,7 +23,9 @@ struct BuildingList: View {
         "bed.double": "🛏️",
         "sports": "🏈",
         "duckstore": "🦆",
-        "shop": "🛒"
+        "shop": "🛒",
+        "printer": "🖨️",
+        "tutoring": "👨‍🏫"
     ]
 
     var filteredBuildings: [Building] {
