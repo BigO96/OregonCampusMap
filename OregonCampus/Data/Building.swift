@@ -20,7 +20,7 @@ struct Building: Hashable, Codable, Identifiable{
     var heading: Double
     var type: [String]
 
-    private var coordinates: Coordinates
+    var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
             latitude: coordinates.latitude,

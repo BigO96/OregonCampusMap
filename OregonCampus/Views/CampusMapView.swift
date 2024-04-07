@@ -8,42 +8,56 @@
 import SwiftUI
 import MapKit
 
-extension CLLocationCoordinate2D{
-    static let University = CLLocationCoordinate2D(latitude: 44.046593, longitude: -123.076512)
-    static let Lillis = CLLocationCoordinate2D(latitude: 44.046030, longitude: -123.077640)
-}
-
 struct CampusMapView: View{
     @Environment(ModelData.self) var modelData
-
-    
+    @State private var position: MapCameraPosition = .automatic
     
     var body: some View {
-        Map{
-            Annotation("University Hall", coordinate: .University){
-                ZStack{
-                    RoundedRectangle(cornerRadius: 5)
-                        .fill(.background)
+        
+        
+        Map(position: $position) {
+            ForEach(modelData.buildings.indices, id: \.self) { index in
+                let building = modelData.buildings[index]
+                
+                Annotation(building.name, coordinate: building.locationCoordinate) {
+                    Image(systemName: building.type[0])
+                        .padding(4)
+                        .foregroundStyle(.white)
+                        .background(index == 10 ? Color.red : Color.brown) // Example conditional styling for the 11th building
+                        .cornerRadius(10)
                 }
             }
-//            .annotationTitles(.hidden)
-            
-            Annotation("Lillis Hall", coordinate: .Lillis){
-                ZStack{
-                    RoundedRectangle(cornerRadius: 5)
-                        .fill(.background)
-                }
-            }
-//            .annotationTitles(.hidden)
-            
         }
         .mapStyle(.standard(elevation: .realistic))
     }
 }
 
 
+
 struct CampusMapView_Previews: PreviewProvider {
     static var previews: some View {
-        CampusMapView().environment(ModelData())
+        CampusMapView()
+            .environment(ModelData())
     }
 }
+
+
+
+
+//            Annotation(modelData.buildings[10].name, coordinate: modelData.buildings[10].locationCoordinate) {
+//                Image(systemName: "graduationcap")
+//                    .padding(4)
+//                    .foregroundStyle(.white)
+//                    .background(Color.red)
+//                    .cornerRadius(10)
+//            }
+//
+//            ForEach(campusLocations, id: \.name) { location in
+//                Annotation(location.name, coordinate: location.coordinate) {
+//                    Image(systemName: "graduationcap")
+//                        .padding(4)
+//                        .foregroundStyle(.white)
+//                        .background(Color.brown)
+//                        .cornerRadius(10)
+//                }
+//            }

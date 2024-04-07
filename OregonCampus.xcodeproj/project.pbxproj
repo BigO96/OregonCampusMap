@@ -64,14 +64,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E61BADDB2BC3541B007B85FC /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				E653E0412BA36E2D0067FDEF /* DirectionButton.swift */,
+				E6A7DD022BA26588009AD73A /* MapViewTimerManager.swift */,
+				E653E0442BA371310067FDEF /* MapViewComponent.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
 		E653E0432BA36E320067FDEF /* DataManagers */ = {
 			isa = PBXGroup;
 			children = (
 				E6828BB62BAFE97B00D402C5 /* FindHours.swift */,
-				E653E0412BA36E2D0067FDEF /* DirectionButton.swift */,
 				E61BADD72BBF87FC007B85FC /* ImageManager.swift */,
-				E6A7DD022BA26588009AD73A /* MapViewTimerManager.swift */,
-				E653E0442BA371310067FDEF /* MapViewComponent.swift */,
 				E6828BB82BAFE9DC00D402C5 /* ModelData.swift */,
 			);
 			path = DataManagers;
@@ -111,6 +118,7 @@
 				E6A7DCFF2BA264BC009AD73A /* Views */,
 				E6828BA52BAFB93200D402C5 /* Data */,
 				E653E0432BA36E320067FDEF /* DataManagers */,
+				E61BADDB2BC3541B007B85FC /* Functions */,
 				E6A7DCF52BA26438009AD73A /* Assets.xcassets */,
 				E6A7DCF72BA26438009AD73A /* Preview Content */,
 			);
