@@ -13,7 +13,8 @@ struct MapViewComponent: UIViewRepresentable {
     var distance: CLLocationDistance
     var pitch: CGFloat
     var heading: CLLocationDirection
-
+    var isSpinningEnabled: Bool
+    
     class Coordinator {
         var timerManager: MapViewTimerManager?
     }
@@ -39,17 +40,24 @@ struct MapViewComponent: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: MKMapView, context: Context) {
-        // Assuming you might want to update camera dynamically
         let camera = MKMapCamera(lookingAtCenter: coordinate, fromDistance: distance, pitch: pitch, heading: heading)
         uiView.setCamera(camera, animated: true)
-        context.coordinator.timerManager?.startRotatingCamera(distance: distance)
+        
+        if isSpinningEnabled {
+            context.coordinator.timerManager?.startRotatingCamera(distance: distance)
+        } else {
+            context.coordinator.timerManager?.stopRotatingCamera()
+        }
     }
+
     
     static func dismantleUIView(_ uiView: MKMapView, coordinator: Coordinator) {
         coordinator.timerManager?.stopRotatingCamera()
     }
+    
+    
 }
 
 #Preview{
-    MapViewComponent(coordinate: CLLocationCoordinate2D(latitude: 44.046597, longitude: -123.076498), distance: 100, pitch: 60, heading: 120)
+    MapViewComponent(coordinate: CLLocationCoordinate2D(latitude: 44.046597, longitude: -123.076498), distance: 100, pitch: 60, heading: 120, isSpinningEnabled: false)
 }

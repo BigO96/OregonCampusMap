@@ -15,7 +15,7 @@ struct BuildingRow: View {
         HStack {
             Text(building.name)
             Spacer()
-
+            
 //            ForEach(building.type, id: \.self) { type in
 //                Image(systemName: type)
 //                    .resizable()

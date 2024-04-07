@@ -9,8 +9,11 @@ import SwiftUI
 
 struct IdView: View {
     @State private var showingImagePicker = false
+    @State private var imageSource: UIImagePickerController.SourceType = .photoLibrary
     @State private var image: UIImage?
-    
+    @State private var showingActionSheet = false
+    @State private var showingResetConfirmation = false
+
     var body: some View {
         VStack {
             if let image = image {
@@ -21,30 +24,58 @@ struct IdView: View {
                 Text("Select an Image")
             }
             Button("Select Image") {
-                showingImagePicker = true
+                showingActionSheet = true
+            }
+            .actionSheet(isPresented: $showingActionSheet) {
+                ActionSheet(title: Text("Select Image"), message: Text("Choose a source"), buttons: [
+                    .default(Text("Camera")) {
+                        imageSource = .camera
+                        showingImagePicker = true
+                    },
+                    .default(Text("Photo Library")) {
+                        imageSource = .photoLibrary
+                        showingImagePicker = true
+                    },
+                    .cancel()
+                ])
+            }
+            Button("Reset Image") {
+                showingResetConfirmation = true // Show reset confirmation
             }
         }
         .sheet(isPresented: $showingImagePicker) {
-            ImagePicker(selectedImage: $image)
+            ImagePicker(imageSource: imageSource, selectedImage: $image)
         }
         .onAppear {
-            image = loadImage() // Load the image when the view appears
+            image = ImageManager.shared.loadImage()
         }
         .onChange(of: image) { oldImage, newImage in
             if let newImage = newImage {
-                _ = saveImage(image: newImage)
+                _ = ImageManager.shared.saveImage(image: newImage)
             }
+        }
+        .alert(isPresented: $showingResetConfirmation) { // Confirmation alert
+            Alert(
+                title: Text("Are you sure?"),
+                message: Text("Do you want to reset the image? This action cannot be undone."),
+                primaryButton: .destructive(Text("Reset")) {
+                    image = nil // Proceed with resetting the image
+                },
+                secondaryButton: .cancel()
+            )
         }
     }
 }
 
-
+// Update ImagePicker to accept an image source
 struct ImagePicker: UIViewControllerRepresentable {
+    var imageSource: UIImagePickerController.SourceType
     @Binding var selectedImage: UIImage?
     @Environment(\.presentationMode) private var presentationMode
-    
+
     func makeUIViewController(context: Context) -> UIImagePickerController {
         let picker = UIImagePickerController()
+        picker.sourceType = imageSource // Use the provided source type
         picker.delegate = context.coordinator
         return picker
     }
@@ -62,35 +93,12 @@ struct ImagePicker: UIViewControllerRepresentable {
             self.parent = parent
         }
 
-        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             if let image = info[.originalImage] as? UIImage {
                 parent.selectedImage = image
             }
             parent.presentationMode.wrappedValue.dismiss()
         }
-    }
-}
-
-func saveImage(image: UIImage) -> Bool {
-    guard let data = image.jpegData(compressionQuality: 1) else { return false }
-    guard let directory = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) as NSURL else { return false }
-    do {
-        try data.write(to: directory.appendingPathComponent("userImage.jpg")!)
-        return true
-    } catch {
-        print(error.localizedDescription)
-        return false
-    }
-}
-
-func loadImage() -> UIImage? {
-    let fileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("userImage.jpg")
-    do {
-        let imageData = try Data(contentsOf: fileURL)
-        return UIImage(data: imageData)
-    } catch {
-        print(error.localizedDescription)
-        return nil
     }
 }
 

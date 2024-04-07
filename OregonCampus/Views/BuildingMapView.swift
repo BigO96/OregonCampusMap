@@ -18,7 +18,7 @@ struct BuildingMapView: View {
         GeometryReader { geometry in
             Image(imageName)
                 .resizable()
-                .scaledToFit() // Adjust to .scaledToFit to respect the original aspect ratio
+                .scaledToFit()
                 .scaleEffect(scale * gestureScale)
                 .offset(x: offset.width + gestureOffset.width, y: offset.height + gestureOffset.height)
                 .gesture(

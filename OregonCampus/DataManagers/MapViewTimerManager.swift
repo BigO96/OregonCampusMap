@@ -12,6 +12,7 @@ class MapViewTimerManager {
     var timer: Timer?
     weak var mapView: MKMapView?
 
+    
     init(mapView: MKMapView) {
         self.mapView = mapView
     }

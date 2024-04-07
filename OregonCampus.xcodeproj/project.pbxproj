@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E6147CD62BBE849100661484 /* IdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6147CD52BBE849100661484 /* IdView.swift */; };
+		E61BADD82BBF87FC007B85FC /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BADD72BBF87FC007B85FC /* ImageManager.swift */; };
+		E61BADDA2BC1CBE3007B85FC /* CampusMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BADD92BC1CBE3007B85FC /* CampusMapView.swift */; };
 		E653E0422BA36E2D0067FDEF /* DirectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653E0412BA36E2D0067FDEF /* DirectionButton.swift */; };
 		E653E0452BA371310067FDEF /* MapViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653E0442BA371310067FDEF /* MapViewComponent.swift */; };
 		E653E0512BA5053F0067FDEF /* Hours.json in Resources */ = {isa = PBXBuildFile; fileRef = E653E0502BA5053F0067FDEF /* Hours.json */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		E6147CD52BBE849100661484 /* IdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdView.swift; sourceTree = "<group>"; };
+		E61BADD72BBF87FC007B85FC /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		E61BADD92BC1CBE3007B85FC /* CampusMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusMapView.swift; sourceTree = "<group>"; };
 		E653E0412BA36E2D0067FDEF /* DirectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionButton.swift; sourceTree = "<group>"; };
 		E653E0442BA371310067FDEF /* MapViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewComponent.swift; sourceTree = "<group>"; };
 		E653E0502BA5053F0067FDEF /* Hours.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Hours.json; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 			children = (
 				E6828BB62BAFE97B00D402C5 /* FindHours.swift */,
 				E653E0412BA36E2D0067FDEF /* DirectionButton.swift */,
+				E61BADD72BBF87FC007B85FC /* ImageManager.swift */,
 				E6A7DD022BA26588009AD73A /* MapViewTimerManager.swift */,
 				E653E0442BA371310067FDEF /* MapViewComponent.swift */,
 				E6828BB82BAFE9DC00D402C5 /* ModelData.swift */,
@@ -129,6 +134,7 @@
 				E6828BAC2BAFB99500D402C5 /* BuildingDetails.swift */,
 				E6828BAE2BAFB9B800D402C5 /* BuildingMapView.swift */,
 				E6828BB02BAFB9F900D402C5 /* BuildingMapAlbumView.swift */,
+				E61BADD92BC1CBE3007B85FC /* CampusMapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,12 +214,14 @@
 				E6828BAB2BAFB98A00D402C5 /* BuildingRow.swift in Sources */,
 				E6828BAF2BAFB9B800D402C5 /* BuildingMapView.swift in Sources */,
 				E653E0452BA371310067FDEF /* MapViewComponent.swift in Sources */,
+				E61BADDA2BC1CBE3007B85FC /* CampusMapView.swift in Sources */,
 				E6828BB92BAFE9DC00D402C5 /* ModelData.swift in Sources */,
 				E6147CD62BBE849100661484 /* IdView.swift in Sources */,
 				E6828BB52BAFE95900D402C5 /* Building.swift in Sources */,
 				E6828BB72BAFE97B00D402C5 /* FindHours.swift in Sources */,
 				E6A7DD032BA26588009AD73A /* MapViewTimerManager.swift in Sources */,
 				E6A7DCF42BA26437009AD73A /* ContentView.swift in Sources */,
+				E61BADD82BBF87FC007B85FC /* ImageManager.swift in Sources */,
 				E6828BA92BAFB96B00D402C5 /* BuildingList.swift in Sources */,
 				E653E0422BA36E2D0067FDEF /* DirectionButton.swift in Sources */,
 				E6A7DCF22BA26437009AD73A /* OregonCampusApp.swift in Sources */,

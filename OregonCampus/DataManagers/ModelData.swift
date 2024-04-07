@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import Combine
 
-@Observable
+@Observable 
 class ModelData{
     var buildings: [Building] = load(filename: "buildingData.json")
 }

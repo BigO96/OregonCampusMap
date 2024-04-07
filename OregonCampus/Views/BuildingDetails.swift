@@ -49,7 +49,7 @@ struct BuildingDetail: View {
                         coordinate: building.locationCoordinate,
                         distance: building.distance,
                         pitch: CGFloat(building.pitch),
-                        heading: building.heading
+                        heading: building.heading, isSpinningEnabled: true
                     )
                     .frame(width: geometry.size.width - 40, height: 500)
                     .clipShape(RoundedRectangle(cornerRadius: 25))
@@ -102,6 +102,23 @@ struct BuildingDetail: View {
                         ToolbarItem(placement: .cancellationAction) {
                             Button("Close") {
                                 showingAlbum = false
+                            }
+                        }
+                    }
+                }
+            }
+            .sheet(isPresented: $showingMap) {
+                NavigationView {
+                    MapViewComponent(
+                        coordinate: building.locationCoordinate,
+                        distance: building.distance,
+                        pitch: CGFloat(building.pitch),
+                        heading: building.heading, isSpinningEnabled: true
+                    )
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Close") {
+                                showingMap = false
                             }
                         }
                     }

@@ -16,7 +16,7 @@ struct ContentView: View {
                     Label("Buildings", systemImage: "building.columns.fill")
                 }
                 
-            Text("Second View")
+            CampusMapView()
                 .tabItem {
                     Label("Second", systemImage: "square.fill.text.grid.1x2")
                 }
