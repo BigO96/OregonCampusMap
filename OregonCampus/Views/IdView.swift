@@ -15,16 +15,58 @@ struct IdView: View {
     @State private var showingResetConfirmation = false
 
     var body: some View {
-        VStack {
-            if let image = image {
-                Image(uiImage: image)
-                    .resizable()
-                    .scaledToFit()
-            } else {
-                Text("Select an Image")
-            }
-            Button("Select Image") {
-                showingActionSheet = true
+        NavigationView {
+            VStack {
+                Text("Duck ID")
+                    .font(.largeTitle)
+                    .padding(.top)
+                
+                Spacer()
+                
+                if let image = image {
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(RoundedRectangle(cornerRadius: 25))
+                        .padding()
+                    
+                    Button("Reset Image") {
+                        showingResetConfirmation = true // Show reset confirmation
+                    }
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(RoundedRectangle(cornerRadius: 10).foregroundColor(.blue))
+                    .padding()
+                } else {
+                    VStack(spacing: 20) {
+                        Image(systemName: "camera.viewfinder")
+                            .font(.largeTitle)
+                            .foregroundColor(.blue)
+                        Text("Here you can store your digital duck ID to get into the Student Recreation Center.")
+                            .font(.headline)
+                            .foregroundColor(.secondary)
+                            .multilineTextAlignment(.center)
+                            .padding()
+                        Text("Simply take a photo of the barcode on the back and come back to the app when you need to scan in.")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal)
+                        Button(action: {
+                            showingActionSheet = true
+                        }) {
+                            Text("Get Started")
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                                .padding()
+                                .background(RoundedRectangle(cornerRadius: 10).foregroundColor(.blue))
+                        }
+                    }
+                    .padding()
+                    .transition(.opacity.combined(with: .scale))
+                }
+                
+                Spacer()
             }
             .actionSheet(isPresented: $showingActionSheet) {
                 ActionSheet(title: Text("Select Image"), message: Text("Choose a source"), buttons: [
@@ -39,35 +81,31 @@ struct IdView: View {
                     .cancel()
                 ])
             }
-            Button("Reset Image") {
-                showingResetConfirmation = true // Show reset confirmation
+            .sheet(isPresented: $showingImagePicker) {
+                ImagePicker(imageSource: imageSource, selectedImage: $image)
             }
-        }
-        .sheet(isPresented: $showingImagePicker) {
-            ImagePicker(imageSource: imageSource, selectedImage: $image)
-        }
-        .onAppear {
-            image = ImageManager.shared.loadImage()
-        }
-        .onChange(of: image) { oldImage, newImage in
-            if let newImage = newImage {
-                _ = ImageManager.shared.saveImage(image: newImage)
+            .onAppear {
+                image = ImageManager.shared.loadImage()
             }
-        }
-        .alert(isPresented: $showingResetConfirmation) { // Confirmation alert
-            Alert(
-                title: Text("Are you sure?"),
-                message: Text("Do you want to reset the image? This action cannot be undone."),
-                primaryButton: .destructive(Text("Reset")) {
-                    image = nil // Proceed with resetting the image
-                },
-                secondaryButton: .cancel()
-            )
+            .onChange(of: image) { _, newImage in
+                if let newImage = newImage {
+                    _ = ImageManager.shared.saveImage(image: newImage)
+                }
+            }
+            .alert(isPresented: $showingResetConfirmation) {
+                Alert(
+                    title: Text("Are you sure?"),
+                    message: Text("Do you want to reset the image? This action cannot be undone."),
+                    primaryButton: .destructive(Text("Reset")) {
+                        image = nil // Proceed with resetting the image
+                    },
+                    secondaryButton: .cancel()
+                )
+            }
         }
     }
 }
 
-// Update ImagePicker to accept an image source
 struct ImagePicker: UIViewControllerRepresentable {
     var imageSource: UIImagePickerController.SourceType
     @Binding var selectedImage: UIImage?
@@ -75,10 +113,12 @@ struct ImagePicker: UIViewControllerRepresentable {
 
     func makeUIViewController(context: Context) -> UIImagePickerController {
         let picker = UIImagePickerController()
-        picker.sourceType = imageSource // Use the provided source type
+        picker.sourceType = imageSource
+        picker.allowsEditing = true // Enable the editing interface
         picker.delegate = context.coordinator
         return picker
     }
+
 
     func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {}
 
@@ -94,11 +134,16 @@ struct ImagePicker: UIViewControllerRepresentable {
         }
 
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-            if let image = info[.originalImage] as? UIImage {
+            // Attempt to use the edited image if available, otherwise fall back to the original image
+            let selectedImage = info[.editedImage] as? UIImage ?? info[.originalImage] as? UIImage
+            
+            if let image = selectedImage {
                 parent.selectedImage = image
             }
+            
             parent.presentationMode.wrappedValue.dismiss()
         }
+
     }
 }
 

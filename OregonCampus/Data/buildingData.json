@@ -344,7 +344,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1015,
-        "type": ["sportscourt"]
+        "type": ["figure.track.and.field", "sportscourt"]
     },
     {
         "name": "Autzen Stadium",
@@ -363,7 +363,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1016,
-        "type": ["sportscourt"]
+        "type": ["football", "sportscourt"]
     },
     {
         "name": "PK Park",
@@ -382,7 +382,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1017,
-        "type": ["sportscourt"]
+        "type": ["baseball", "sportscourt"]
     },
     {
         "name": "Pape Field",
@@ -401,7 +401,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1018,
-        "type": ["sportscourt"]
+        "type": ["soccerball", "sportscourt"]
     },
     {
         "name": "Matthew Knight Arena",
@@ -420,7 +420,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1019,
-        "type": ["sportscourt"]
+        "type": ["basketball", "sportscourt"]
     },
     {
         "name": "Jane Sanders Arena",
@@ -439,7 +439,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1020,
-        "type": ["sportscourt"]
+        "type": ["baseball", "sportscourt"]
     },
     {
         "name": "McArthur Court",

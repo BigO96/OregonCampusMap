@@ -34,7 +34,7 @@ struct BuildingDetail: View {
             
 //            DirectionsButton(destinationCoordinate: building.locationCoordinate, destinationName: building.name)
         }
-//        .padding([.top, .trailing])
+        .padding([.top, .trailing])
         
         
         GeometryReader { geometry in

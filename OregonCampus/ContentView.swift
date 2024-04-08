@@ -18,7 +18,7 @@ struct ContentView: View {
                 
             CampusMapView()
                 .tabItem {
-                    Label("Second", systemImage: "square.fill.text.grid.1x2")
+                    Label("Map", systemImage: "map")
                 }
             
             IdView()
