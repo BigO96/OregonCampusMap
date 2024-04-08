@@ -11,6 +11,11 @@ struct ContentView: View {
     var body: some View {
         TabView {
             
+//            AthleticsDetailView()
+//                .tabItem {
+//                    Label("Athletics", systemImage: "sportscourt.fill")
+//                }
+            
             BuildingList()
                 .tabItem {
                     Label("Buildings", systemImage: "building.columns.fill")

@@ -19,7 +19,7 @@ struct BuildingMapAlbumView: View {
             VStack {
                 VStack {
                     let imageAspectRatio: CGFloat = 1668 / 2388
-                    let frameWidth = geometry.size.width * 0.8
+                    let frameWidth = geometry.size.width * 0.9
                     let frameHeight = frameWidth / imageAspectRatio
                     BuildingMapView(imageName: imageNames[selectedPage])
                         .frame(width: frameWidth, height: frameHeight)
@@ -33,7 +33,7 @@ struct BuildingMapAlbumView: View {
                 HStack {
                     Button(action: {
                         withAnimation {
-                            selectedPage = max(selectedPage - 1, 0) // Ensure the index doesn't go below 0
+                            selectedPage = max(selectedPage - 1, 0)
                         }
                     }) {
                         Image(systemName: "arrow.left")
@@ -42,9 +42,13 @@ struct BuildingMapAlbumView: View {
                     
                     Spacer()
                     
+                    Text("Level \(selectedPage + 1)")
+                    
+                    Spacer()
+                    
                     Button(action: {
                         withAnimation {
-                            selectedPage = min(selectedPage + 1, imageNames.count - 1) // Ensure the index doesn't exceed the array bounds
+                            selectedPage = min(selectedPage + 1, imageNames.count - 1)
                         }
                     }) {
                         Image(systemName: "arrow.right")

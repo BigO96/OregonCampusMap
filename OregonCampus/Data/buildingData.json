@@ -51,7 +51,7 @@
         "pitch": 80,
         "heading": 330,
         "id": 1001,
-        "type": ["studentdesk", "cup.and.saucer", "books.vertical", "printer"]
+        "type": ["studentdesk", "cup.and.saucer.fill", "books.vertical.fill", "printer"]
     },
     {
         "name": "Knight Library",
@@ -61,12 +61,12 @@
         },
         "description": "Knight Library is the main facility of the University of Oregon's library system. The library design is emblematic of the architecture of the university's older buildings. As of 2008 it has a collection of more than 3 million volumes. The building was opened in 1937 to replace the original library building (the 'Old Libe,' Fenton Hall, completed in 1907), which the University's collections had outgrown. Above the main entry doors (also on the north facade), is a passage from the Bible (John 8:32), which proclaims over the northeast doors 'Ye shall know the truth', and over the northwest doors 'and the truth shall make you free.'",
         "imageNames": [
-            "KnightLVL1",
-            "KnightLVL2",
-            "KnightLVL3",
-            "KnightLVL4",
-            "KnightLVL5",
-            "KnightLVL6"
+            "KnightLibraryLVL0",
+            "KnightLibraryLVL1",
+            "KnightLibraryLVL2",
+            "KnightLibraryLVL3",
+            "KnightLibraryLVL4",
+            "KnightLibraryLVL5"
         ],
         "hoursComponentKeys": [
             "KnightLibrary",
@@ -80,7 +80,7 @@
         "pitch": 80,
         "heading": 160,
         "id": 1002,
-        "type": ["books.vertical", "studentdesk", "cup.and.saucer", "printer"]
+        "type": ["books.vertical.fill", "studentdesk", "cup.and.saucer.fill", "printer", "hand.raised.fingers.spread.fill"]
     },
     {
         "name": "Lillis Hall",
@@ -106,7 +106,7 @@
         "pitch": 80,
         "heading": -60,
         "id": 1003,
-        "type": ["studentdesk", "cup.and.saucer"]
+        "type": ["studentdesk", "cup.and.saucer.fill", "hand.raised.fingers.spread.fill"]
     },
     {
         "name": "McKenzie Hall",
@@ -116,7 +116,11 @@
         },
         "description": "Originally constructed to house the new Law Center, the building was renovated in 1999 and renamed Grayson Hall, then in 2002 it was renamed McKenzie Hall and houses information services, computing labs, the Department of History, and the Department of Cinema Studies.",
         "imageNames": [
-            "LawrenceLVL1"
+            "McKenzieLVL1",
+            "McKenzieLVL2",
+            "McKenzieLVL3",
+            "McKenzieLVL4",
+            "McKenzieLVL5"
         ],
         "hoursComponentKeys": [
             "McKenzieHall"
@@ -163,7 +167,7 @@
         "pitch": 80,
         "heading": 0,
         "id": 1006,
-        "type": ["studentdesk", "books.vertical"]
+        "type": ["studentdesk", "function", "books.vertical.fill"]
     },
     {
         "name": "Gerlinger Hall",
@@ -185,7 +189,7 @@
         "type": ["studentdesk"]
     },
     {
-        "name": "EMU",
+        "name": "Erb Memorial Union (EMU)",
         "coordinates": {
             "latitude": 44.044919,
             "longitude": -123.073664
@@ -201,7 +205,7 @@
         "pitch": 80,
         "heading": 120,
         "id": 1008,
-        "type": ["studentdesk", "cup.and.saucer", "fork.knife", "duckstore", "shop"]
+        "type": ["building.columns.fill", "studentdesk", "cup.and.saucer.fill", "fork.knife", "bird.fill", "cart.fill"]
     },
     {
         "name": "John E. Jaqua",
@@ -220,7 +224,7 @@
         "pitch": 80,
         "heading": 120,
         "id": 1009,
-        "type": ["studentdesk", "cup.and.saucer"]
+        "type": ["studentdesk", "cup.and.saucer.fill"]
     },
     {
         "name": "Unthank Hall",
@@ -239,7 +243,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1010,
-        "type": ["bed.double", "cup.and.saucer", "fork.knife", "shop"]
+        "type": ["bed.double.fill", "cup.and.saucer.fill", "fork.knife", "shop"]
     },
     {
         "name": "Tykeson Hall",
@@ -262,7 +266,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1011,
-        "type": ["studentdesk", "cup.and.saucer"]
+        "type": ["studentdesk", "cup.and.saucer.fill"]
     },
     {
         "name": "Barnhart Hall",
@@ -281,7 +285,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1012,
-        "type": ["bed.double", "cup.and.saucer", "fork.knife"]
+        "type": ["bed.double.fill", "cup.and.saucer.fill", "fork.knife"]
     },
     {
         "name": "Miller Theatre",
@@ -303,7 +307,7 @@
         "pitch": 50,
         "heading": 20,
         "id": 1013,
-        "type": ["studentdesk", "cup.and.saucer"]
+        "type": ["studentdesk"]
     },
     {
         "name": "Villard Hall",
@@ -325,10 +329,10 @@
         "pitch": 60,
         "heading": 20,
         "id": 1014,
-        "type": ["studentdesk", "cup.and.saucer"]
+        "type": ["studentdesk"]
     },
     {
-        "name": "Hawyard Field",
+        "name": "Hayward Field",
         "coordinates": {
             "latitude": 44.042216,
             "longitude": -123.070818
@@ -344,7 +348,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1015,
-        "type": ["figure.track.and.field", "sportscourt"]
+        "type": ["figure.run", "sportscourt"]
     },
     {
         "name": "Autzen Stadium",
@@ -420,7 +424,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1019,
-        "type": ["basketball", "sportscourt"]
+        "type": ["basketball", "volleyball", "sportscourt"]
     },
     {
         "name": "Jane Sanders Arena",
@@ -477,7 +481,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1022,
-        "type": ["studentdesk"]
+        "type": ["bed.double.fill", "studentdesk", "cup.and.saucer.fill", "fork.knife"]
     },
     {
         "name": "Kalapuya Ilihi Hall",
@@ -496,7 +500,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1023,
-        "type": ["bed.double"]
+        "type": ["bed.double.fill"]
     },
     {
         "name": "Hamilton Hall",
@@ -515,7 +519,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1024,
-        "type": ["bed.double"]
+        "type": ["bed.double.fill"]
     },
     {
         "name": "Carson Hall",
@@ -534,7 +538,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1025,
-        "type": ["bed.double"]
+        "type": ["bed.double.fill"]
     },
     {
         "name": "Earl Hall",
@@ -553,7 +557,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1026,
-        "type": ["bed.double"]
+        "type": ["bed.double.fill"]
     },
     {
         "name": "New Residence Hall",
@@ -572,7 +576,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1027,
-        "type": ["bed.double"]
+        "type": ["bed.double.fill"]
     },
     {
         "name": "Prince Lucien Campbell Hall",
@@ -591,7 +595,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1028,
-        "type": ["bed.double"]
+        "type": ["bed.double.fill"]
     },
     {
         "name": "Knight Campus",
@@ -686,7 +690,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1033,
-        "type": ["building.columns"]
+        "type": ["building.columns.fill"]
     },
     {
         "name": "Museum of Natural & Cultural History",
@@ -1161,26 +1165,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1058,
-        "type": ["bed.double"]
-    },
-    {
-        "name": "Living Learning Center",
-        "coordinates": {
-            "latitude": 44.043828,
-            "longitude": -123.071765
-        },
-        "description": "Named for renowned journalist Eric W. Allen, who founded the SOJC in 1916, today it’s home to state-of-the-art studios and collaboration spaces where students create compelling content using the latest media technologies.",
-        "imageNames": [
-            "MillerLVL1"
-        ],
-        "hoursComponentKeys": [
-            "LawrenceLibrary"
-        ],
-        "distance": 500,
-        "pitch": 80,
-        "heading": 20,
-        "id": 1059,
-        "type": ["bed.double"]
+        "type": ["bed.double.fill", "fork.knife"]
     },
     {
         "name": "Volcanology",
@@ -1237,7 +1222,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1062,
-        "type": ["books.vertical"]
+        "type": ["books.vertical.fill", "printer", "studentdesk"]
     },
     {
         "name": "Onyx Bridge",
@@ -1404,10 +1389,29 @@
         "hoursComponentKeys": [
             "LawrenceLibrary"
         ],
-        "distance": 500,
+        "distance": 300,
         "pitch": 80,
         "heading": 20,
         "id": 1071,
-        "type": ["studentdesk"]
+        "type": ["studentdesk", "books.vertical.fill", "basketball", "printer"]
+    },
+    {
+        "name": "Student Recreation Center",
+        "coordinates": {
+            "latitude": 44.042771,
+            "longitude": -123.073075
+        },
+        "description": "The Rec Center features sustainable, accessible, and diverse facilities designed to enhance your fitness, no matter how you choose to work out.",
+        "imageNames": [
+            "MillerLVL1"
+        ],
+        "hoursComponentKeys": [
+            "LawrenceLibrary"
+        ],
+        "distance": 400,
+        "pitch": 80,
+        "heading": 180,
+        "id": 1072,
+        "type": ["dumbbell.fill", "figure.run", "figure.basketball", "figure.climbing", "figure.pool.swim", "figure.pickleball", "studentdesk"]
     }
 ]

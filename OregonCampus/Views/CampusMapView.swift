@@ -12,7 +12,7 @@ import MapKit
 struct CampusMapView: View {
     @Environment(ModelData.self) var modelData
     @State private var position: MapCameraPosition = .automatic
-    @State private var selectedBuilding: Building? // Change to your Building type
+    @State private var selectedBuilding: Building?
 
     var body: some View {
         Map(position: $position) {
@@ -26,7 +26,7 @@ struct CampusMapView: View {
                         Image(systemName: building.type[0])
                             .padding(4)
                             .foregroundStyle(.white)
-                            .background(index == 0 ? Color.red : Color.brown)
+                            .background(colorForBuilding(building.type))
                             .cornerRadius(10)
                     }
                 }
@@ -36,6 +36,25 @@ struct CampusMapView: View {
         .sheet(item: $selectedBuilding) { building in
             BuildingDetail(building: building)
         }
+    }
+}
+
+func colorForBuilding(_ type: [String]) -> Color {
+    guard let firstType = type.first else { return .gray } // Fallback color if the list is unexpectedly empty
+    
+    switch firstType {
+    case "building.columns.fill":
+        return .red
+    case "dumbbell.fill":
+        return .red
+    case "bed.double":
+        return .blue
+    case "books.vertical":
+        return .purple
+    case "studentdesk":
+        return .brown
+    default:
+        return .green // Default color if the first item doesn't match any case
     }
 }
 

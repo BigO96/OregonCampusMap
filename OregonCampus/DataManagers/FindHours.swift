@@ -36,7 +36,7 @@ struct Place: Codable {
 }
 
 struct FindHours: View {
-
+    @Environment(\.colorScheme) var colorScheme
     let placeNames: [String]
     var places: Place = load("Hours.json")
     
@@ -79,7 +79,9 @@ struct FindHours: View {
                     Text("Unknown place: \(placeName)")
                 }
             }
+            
         }
+        .background(colorScheme == .dark ? Color.black: Color(.systemGray6))
         .padding(.top, -20)
         
     }
@@ -113,6 +115,7 @@ struct FindHours: View {
             }
         }
     }
+
 
     private func isClosingSoon(hours: OpenClose) -> Bool {
         let now = Date()

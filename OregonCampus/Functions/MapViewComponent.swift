@@ -25,6 +25,7 @@ struct MapViewComponent: UIViewRepresentable {
     
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
+        mapView.showsCompass = false
         mapView.mapType = .satelliteFlyover
         mapView.isUserInteractionEnabled = false
 
