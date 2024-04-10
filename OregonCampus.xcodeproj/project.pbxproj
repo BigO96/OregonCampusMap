@@ -57,6 +57,8 @@
 		E6A7DD022BA26588009AD73A /* MapViewTimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewTimerManager.swift; sourceTree = "<group>"; };
 		E6AD202D2BC3A0C20088E807 /* DisplayHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayHours.swift; sourceTree = "<group>"; };
 		E6AD202F2BC3A9D10088E807 /* BuildingServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingServices.swift; sourceTree = "<group>"; };
+		E6E30D9C2BC619A400DCE293 /* AthleticsTeams.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AthleticsTeams.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		E6E30D9D2BC619E900DCE293 /* AthleticsGames.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AthleticsGames.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				E6828BAE2BAFB9B800D402C5 /* BuildingMapView.swift */,
 				E6828BB02BAFB9F900D402C5 /* BuildingMapAlbumView.swift */,
+				E61A5D912BC486AB0029201D /* AthleticsDetailView.swift */,
 			);
 			path = InsideBuildingViews;
 			sourceTree = "<group>";
@@ -115,6 +118,8 @@
 			children = (
 				E653E0542BA6E01C0067FDEF /* buildingData.json */,
 				E653E0502BA5053F0067FDEF /* Hours.json */,
+				E6E30D9C2BC619A400DCE293 /* AthleticsTeams.json */,
+				E6E30D9D2BC619E900DCE293 /* AthleticsGames.json */,
 				E6828BB42BAFE95900D402C5 /* Building.swift */,
 			);
 			path = Data;
@@ -166,7 +171,6 @@
 				E6828BA82BAFB96B00D402C5 /* BuildingList.swift */,
 				E6828BAC2BAFB99500D402C5 /* BuildingDetails.swift */,
 				E61A5D932BC486B50029201D /* BuildingViews */,
-				E61A5D912BC486AB0029201D /* AthleticsDetailView.swift */,
 				E61BADD92BC1CBE3007B85FC /* CampusMapView.swift */,
 			);
 			path = Views;

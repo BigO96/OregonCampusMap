@@ -11,10 +11,10 @@ struct ContentView: View {
     var body: some View {
         TabView {
             
-//            AthleticsDetailView()
-//                .tabItem {
-//                    Label("Athletics", systemImage: "sportscourt.fill")
-//                }
+            AthleticsDetailView()
+                .tabItem {
+                    Label("Athletics", systemImage: "sportscourt.fill")
+                }
             
             BuildingList()
                 .tabItem {
