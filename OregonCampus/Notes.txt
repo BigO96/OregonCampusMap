@@ -24,5 +24,16 @@ Add more years to Atheletics View
 Make Atheltics Game schedule scalable
 - currently have a bunch of differnt views, a scalable version would be nice
 
+Refine Indoor map views
+- Lots of them are missing, also screenshots arent the best idea
+- The zoom view still sucks
+
+
+#
+class ModelData: ObservableObject {
+    @Published var buildings: [Building] = []
+    @Published var showBottomSheet: Bool = false  // State to control bottom view visibility
+}
+# Sample code to maybe combine modeldatas
 
 

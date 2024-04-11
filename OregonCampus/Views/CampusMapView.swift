@@ -13,7 +13,7 @@ struct CampusMapView: View {
     @Environment(ModelData.self) var modelData
     @State private var position: MapCameraPosition = .automatic
     @State private var selectedBuilding: Building?
-    @State private var showBottomSheet = true
+    @State private var showBottomSheet = false
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -38,6 +38,7 @@ struct CampusMapView: View {
             .sheet(item: $selectedBuilding) { building in
                 BuildingDetail(building: building)
             }
+            
             BottomView(isShowing: $showBottomSheet)
             
         }

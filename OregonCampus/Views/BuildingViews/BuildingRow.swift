@@ -14,6 +14,7 @@ struct BuildingRow: View {
 
         HStack {
             Text(building.name)
+                .foregroundColor(.primary)
             Spacer()
             
 //            ForEach(building.type, id: \.self) { type in

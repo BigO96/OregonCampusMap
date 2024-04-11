@@ -35,8 +35,18 @@ struct BuildingList: View {
     }
 
     var body: some View {
-        NavigationSplitView {
-            VStack {
+        
+        NavigationView {
+            VStack(spacing: 0) {
+                
+                RoundedRectangle(cornerRadius: 3)
+                    .frame(width: 36, height: 5)
+                    .foregroundColor(.gray.opacity(0.5))
+                    .padding(.top, 8)
+                    .padding(.bottom, 5)
+                
+                CustomSearchBar(text: $searchQuery)
+                    .padding(.top, 5)
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         ForEach(filterIcons.keys.sorted(), id: \.self) { key in
@@ -54,7 +64,6 @@ struct BuildingList: View {
                     }
                     .padding()
                 }
-
                 List(filteredBuildings) { building in
                     NavigationLink {
                         BuildingDetail(building: building)
@@ -62,13 +71,39 @@ struct BuildingList: View {
                         BuildingRow(building: building)
                     }
                 }
-                .searchable(text: $searchQuery, placement: .navigationBarDrawer(displayMode: .always))
+//                .searchable(text: $searchQuery, placement: .automatic)
             }
             .background(colorScheme == .dark ? Color(.systemGray6) : Color.white)
+            .ignoresSafeArea()
         }
-        detail: {
-            Text("Select a Building")
+    }
+}
+
+struct CustomSearchBar: View {
+    @Binding var text: String
+    var onCommit: () -> Void = {}
+    
+    var body: some View {
+        HStack {
+            Image(systemName: "magnifyingglass")
+            ZStack {
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(Color.gray.opacity(0.2))
+                
+                TextField("Search", text: $text, onCommit: onCommit)
+                    .foregroundColor(.primary)
+                    .padding(.leading, 10)
+            }
+            .frame(height: 36)
+            if !text.isEmpty {
+                Button(action: {
+                    self.text = ""
+                }) {
+                    Image(systemName: "xmark.circle.fill")
+                }
+            }
         }
+        .padding(.horizontal)
     }
 }
 

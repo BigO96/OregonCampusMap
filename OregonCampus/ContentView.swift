@@ -18,10 +18,10 @@ struct ContentView: View {
                     Label("Athletics", systemImage: "sportscourt.fill")
                 }
             
-            BuildingList()
-                .tabItem {
-                    Label("Buildings", systemImage: "building.columns.fill")
-                }
+//            BuildingList()
+//                .tabItem {
+//                    Label("Buildings", systemImage: "building.columns.fill")
+//                }
                 
             CampusMapView()
                 .tabItem {

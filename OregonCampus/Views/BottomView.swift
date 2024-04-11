@@ -15,10 +15,11 @@ struct BottomView: View {
         VStack {
 //            pullTab
             BuildingList()
+
         }
         .cornerRadius(40)
         .frame(maxWidth: .infinity)
-        .offset(y: isShowing ? UIScreen.main.bounds.height - 400 : UIScreen.main.bounds.height - 120)
+        .offset(y: isShowing ? UIScreen.main.bounds.height - 800 : UIScreen.main.bounds.height - 210)
         .animation(.easeInOut, value: isShowing)
         .gesture(
             DragGesture().onChanged { value in
@@ -34,8 +35,8 @@ struct BottomView: View {
     private var pullTab: some View {
         RoundedRectangle(cornerRadius: 5)
             .frame(width: 40, height: 5)
-            .padding()
-    }
+//            .padding()
+        }
 }
 
 
