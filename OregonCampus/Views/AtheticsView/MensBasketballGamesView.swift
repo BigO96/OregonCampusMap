@@ -1,5 +1,5 @@
 //
-//  BaseballGamesView.swift
+//  MensBasketballGamesView.swift
 //  OregonCampus
 //
 //  Created by Oscar Epp on 4/10/24.
@@ -7,24 +7,24 @@
 
 import SwiftUI
 
-struct BaseballGamesView: View {
+struct MensBasketballGamesView: View {
     
-    @Environment(ModelDataBaseball23.self) var modelDataBaseball23
+    @Environment(ModelDataMensBasketball23.self) var modelDataMensBasketball23
     
     var body: some View {
         ScrollView {
             VStack(spacing: 10) {
-                ForEach(modelDataBaseball23.baseball23) { game in
+                ForEach(modelDataMensBasketball23.mensBasketball23) { game in
                     HStack {
                         VStack(alignment: .leading, spacing: 5) {
-                            Text(game.Event)
+                            Text("\(game.Location == "Eugene, OR" ? "VS" : "@") \(game.Event)")
                                 .font(.headline)
                             Group {
                                 Text("Start: \(game.StartDate) \(game.StartTime) - End: \(game.EndDate) \(game.EndTime)")
                                     .font(.caption)
                                     .lineLimit(1)
-                                Text(game.Location)
-                                    .font(.caption)
+//                                Text(game.Location)
+//                                    .font(.caption)
                             }
                             .foregroundColor(.secondary)
                             
@@ -62,7 +62,7 @@ struct BaseballGamesView: View {
 }
 
 #Preview {
-    BaseballGamesView()
-        .environment(ModelDataBaseball23())
+    MensBasketballGamesView()
+        .environment(ModelDataMensBasketball23())
 
 }

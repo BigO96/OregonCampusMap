@@ -1,0 +1,263 @@
+[
+    {
+        "Event": "Mirabel Maui Jim Intercollegiate",
+        "StartDate": "9/8/23",
+        "StartTime": "4:46PM",
+        "EndDate": "9/8/23",
+        "EndTime": "7:46 PM",
+        "Location": "Scottsdale, Ariz.",
+        "id": 1000
+    },
+    {
+        "Event": "Mirabel Maui Jim Intercollegiate",
+        "StartDate": "9/9/23",
+        "StartTime": "All Day",
+        "EndDate": "9/9/23",
+        "EndTime": "3:00 AM",
+        "Location": "Scottsdale, Ariz.",
+        "id": 1001
+    },
+    {
+        "Event": "Mirabel Maui Jim Intercollegiate",
+        "StartDate": "9/10/23",
+        "StartTime": "All Day",
+        "EndDate": "9/10/23",
+        "EndTime": "3:00 AM",
+        "Location": "Scottsdale, Ariz.",
+        "id": 1002
+    },
+    {
+        "Event": "Husky Invitational",
+        "StartDate": "9/18/23",
+        "StartTime": "All Day",
+        "EndDate": "9/18/23",
+        "EndTime": "3:00 AM",
+        "Location": "Bremerton, Wash.",
+        "id": 1003
+    },
+    {
+        "Event": "Husky Invitational",
+        "StartDate": "9/19/23",
+        "StartTime": "All Day",
+        "EndDate": "9/19/23",
+        "EndTime": "3:00 AM",
+        "Location": "Bremerton, Wash.",
+        "id": 1004
+    },
+    {
+        "Event": "Ben Hogan Invitational",
+        "StartDate": "10/2/23",
+        "StartTime": "All Day",
+        "EndDate": "10/2/23",
+        "EndTime": "3:00 AM",
+        "Location": "Fort Worth, Texas",
+        "id": 1005
+    },
+    {
+        "Event": "Ben Hogan Invitational",
+        "StartDate": "10/3/23",
+        "StartTime": "All Day",
+        "EndDate": "10/3/23",
+        "EndTime": "3:00 AM",
+        "Location": "Fort Worth, Texas",
+        "id": 1006
+    },
+    {
+        "Event": "Cal Poly Invitational",
+        "StartDate": "10/30/23",
+        "StartTime": "All Day",
+        "EndDate": "10/30/23",
+        "EndTime": "3:00 AM",
+        "Location": "Carmel, Calif.",
+        "id": 1007
+    },
+    {
+        "Event": "Cal Poly Invitational",
+        "StartDate": "10/31/23",
+        "StartTime": "All Day",
+        "EndDate": "10/31/23",
+        "EndTime": "3:00 AM",
+        "Location": "Carmel, Calif.",
+        "id": 1008
+    },
+    {
+        "Event": "Amer Ari Invitational",
+        "StartDate": "2/8/24",
+        "StartTime": "All Day",
+        "EndDate": "2/8/24",
+        "EndTime": "3:00 AM",
+        "Location": "nil",
+        "id": 1009
+    },
+    {
+        "Event": "Amer Ari Invitational",
+        "StartDate": "2/9/24",
+        "StartTime": "All Day",
+        "EndDate": "2/9/24",
+        "EndTime": "3:00 AM",
+        "Location": "Waimea, Hawaii",
+        "id": 1010
+    },
+    {
+        "Event": "Amer Ari Invitational",
+        "StartDate": "2/10/24",
+        "StartTime": "All Day",
+        "EndDate": "2/10/24",
+        "EndTime": "3:00 AM",
+        "Location": "Waimea, Hawaii",
+        "id": 1011
+    },
+    {
+        "Event": "The Prestige",
+        "StartDate": "2/19/24",
+        "StartTime": "All Day",
+        "EndDate": "2/19/24",
+        "EndTime": "3:00 AM",
+        "Location": "La Quinta, Calif.",
+        "id": 1012
+    },
+    {
+        "Event": "The Prestige",
+        "StartDate": "2/20/24",
+        "StartTime": "All Day",
+        "EndDate": "2/20/24",
+        "EndTime": "3:00 AM",
+        "Location": "La Quinta, Calif.",
+        "id": 1013
+    },
+    {
+        "Event": "The Prestige",
+        "StartDate": "2/21/24",
+        "StartTime": "All Day",
+        "EndDate": "2/21/24",
+        "EndTime": "3:00 AM",
+        "Location": "La Quinta, Calif.",
+        "id": 1014
+    },
+    {
+        "Event": "Bandon Dunes Championship",
+        "StartDate": "3/10/24",
+        "StartTime": "All Day",
+        "EndDate": "3/10/24",
+        "EndTime": "3:00 AM",
+        "Location": "Bandon, Ore.",
+        "id": 1015
+    },
+    {
+        "Event": "Bandon Dunes Championship",
+        "StartDate": "3/11/24",
+        "StartTime": "All Day",
+        "EndDate": "3/11/24",
+        "EndTime": "3:00 AM",
+        "Location": "Bandon, Ore.",
+        "id": 1016
+    },
+    {
+        "Event": "Bandon Dunes Championship",
+        "StartDate": "3/12/24",
+        "StartTime": "All Day",
+        "EndDate": "3/12/24",
+        "EndTime": "3:00 AM",
+        "Location": "Bandon, Ore.",
+        "id": 1017
+    },
+    {
+        "Event": "The Duck Invite",
+        "StartDate": "3/25/24",
+        "StartTime": "All Day",
+        "EndDate": "3/25/24",
+        "EndTime": "3:00 AM",
+        "Location": "Eugene, Ore.",
+        "id": 1018
+    },
+    {
+        "Event": "The Duck Invite",
+        "StartDate": "3/26/24",
+        "StartTime": "All Day",
+        "EndDate": "3/26/24",
+        "EndTime": "3:00 AM",
+        "Location": "Eugene, Ore.",
+        "id": 1019
+    },
+    {
+        "Event": "The Goodwin",
+        "StartDate": "3/28/24",
+        "StartTime": "All Day",
+        "EndDate": "3/28/24",
+        "EndTime": "3:00 AM",
+        "Location": "San Francisco, Calif.",
+        "id": 1020
+    },
+    {
+        "Event": "The Goodwin",
+        "StartDate": "3/29/24",
+        "StartTime": "All Day",
+        "EndDate": "3/29/24",
+        "EndTime": "3:00 AM",
+        "Location": "San Francisco, Calif.",
+        "id": 1021
+    },
+    {
+        "Event": "The Goodwin",
+        "StartDate": "3/30/24",
+        "StartTime": "All Day",
+        "EndDate": "3/30/24",
+        "EndTime": "3:00 AM",
+        "Location": "San Francisco, Calif.",
+        "id": 1022
+    },
+    {
+        "Event": "The Western Intercollegiate",
+        "StartDate": "4/15/24",
+        "StartTime": "All Day",
+        "EndDate": "4/15/24",
+        "EndTime": "3:00 AM",
+        "Location": "Santa Cruz, Calif.",
+        "id": 1023
+    },
+    {
+        "Event": "The Western Intercollegiate",
+        "StartDate": "4/16/24",
+        "StartTime": "All Day",
+        "EndDate": "4/16/24",
+        "EndTime": "3:00 AM",
+        "Location": "Santa Cruz, Calif.",
+        "id": 1024
+    },
+    {
+        "Event": "The Western Intercollegiate",
+        "StartDate": "4/17/24",
+        "StartTime": "All Day",
+        "EndDate": "4/17/24",
+        "EndTime": "3:00 AM",
+        "Location": "Santa Cruz, Calif.",
+        "id": 1025
+    },
+    {
+        "Event": "Pac-12 Championship",
+        "StartDate": "4/26/24",
+        "StartTime": "All Day",
+        "EndDate": "4/26/24",
+        "EndTime": "3:00 AM",
+        "Location": "Scottsdale, Ariz.",
+        "id": 1026
+    },
+    {
+        "Event": "Pac-12 Championship",
+        "StartDate": "4/27/24",
+        "StartTime": "All Day",
+        "EndDate": "4/27/24",
+        "EndTime": "3:00 AM",
+        "Location": "Scottsdale, Ariz.",
+        "id": 1027
+    },
+    {
+        "Event": "Pac-12 Championship",
+        "StartDate": "4/28/24",
+        "StartTime": "All Day",
+        "EndDate": "4/28/24",
+        "EndTime": "3:00 AM",
+        "Location": "Scottsdale, Ariz.",
+        "id": 1028
+    }
+]

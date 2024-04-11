@@ -22,3 +22,65 @@ struct Baseball23: Hashable, Codable, Identifiable{
     let Result: String
 }
 
+struct MensBasketball23: Hashable, Codable, Identifiable{
+    var id: Int
+    let Event: String
+    let StartDate: String
+    let StartTime: String
+    let EndDate: String
+    let EndTime: String
+    let Location: String
+    let Result: String
+}
+
+struct MensGolf23: Hashable, Codable, Identifiable{
+    var id: Int
+    let Event: String
+    let StartDate: String
+    let StartTime: String
+    let EndDate: String
+    let EndTime: String
+    let Location: String
+}
+
+struct Football23: Hashable, Codable, Identifiable{
+    var id: Int
+    let Event: String
+    let StartDate: String
+    let StartTime: String
+    let EndDate: String
+    let EndTime: String
+    let Location: String
+    let Result: String
+}
+
+struct MensTennis23: Hashable, Codable, Identifiable{
+    var id: Int
+    let Event: String
+    let StartDate: String
+    let StartTime: String
+    let EndDate: String
+    let EndTime: String
+    let Location: String
+}
+
+struct TrackandField23: Hashable, Codable, Identifiable{
+    var id: Int
+    let Event: String
+    let StartDate: String
+    let StartTime: String
+    let EndDate: String
+    let EndTime: String
+    let Location: String
+}
+
+struct CrossCountry23: Hashable, Codable, Identifiable{
+    var id: Int
+    let Event: String
+    let StartDate: String
+    let StartTime: String
+    let EndDate: String
+    let EndTime: String
+    let Location: String
+    let Result: String
+}

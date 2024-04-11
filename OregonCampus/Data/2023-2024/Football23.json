@@ -1,0 +1,156 @@
+[
+    {
+        "Event": "Portland State",
+        "StartDate": "9/2/23",
+        "StartTime": "12:00PM",
+        "EndDate": "9/2/23",
+        "EndTime": "3:00 PM",
+        "Location": "Eugene, Ore.",
+        "Category": "Football",
+        "Result": "W 81-7",
+        "id": 1000
+    },
+    {
+        "Event": "Texas Tech",
+        "StartDate": "9/9/23",
+        "StartTime": "4:00PM",
+        "EndDate": "9/9/23",
+        "EndTime": "7:00 PM",
+        "Location": "Lubbock, Texas",
+        "Category": "Football",
+        "Result": "W 38-30",
+        "id": 1001
+    },
+    {
+        "Event": "Hawai'i",
+        "StartDate": "9/16/23",
+        "StartTime": "5:00PM",
+        "EndDate": "9/16/23",
+        "EndTime": "8:00 PM",
+        "Location": "Eugene, Ore.",
+        "Category": "Football",
+        "Result": "W 55-10",
+        "id": 1002
+    },
+    {
+        "Event": "Colorado",
+        "StartDate": "9/23/23",
+        "StartTime": "12:30PM",
+        "EndDate": "9/23/23",
+        "EndTime": "3:30 PM",
+        "Location": "Eugene, Ore.",
+        "Category": "Football",
+        "Result": "W 42-6",
+        "id": 1003
+    },
+    {
+        "Event": "Stanford",
+        "StartDate": "9/30/23",
+        "StartTime": "3:30PM",
+        "EndDate": "9/30/23",
+        "EndTime": "6:30 PM",
+        "Location": "Stanford, Calif.",
+        "Category": "Football",
+        "Result": "W 42-6",
+        "id": 1004
+    },
+    {
+        "Event": "Washington",
+        "StartDate": "10/14/23",
+        "StartTime": "12:30PM",
+        "EndDate": "10/14/23",
+        "EndTime": "3:30 PM",
+        "Location": "Seattle, Wash.",
+        "Category": "Football",
+        "Result": "L 33-36",
+        "id": 1005
+    },
+    {
+        "Event": "Washington State",
+        "StartDate": "10/21/23",
+        "StartTime": "12:30PM",
+        "EndDate": "10/21/23",
+        "EndTime": "3:30 PM",
+        "Location": "Eugene, Ore.",
+        "Category": "Football",
+        "Result": "W 38-24",
+        "id": 1006
+    },
+    {
+        "Event": "Utah",
+        "StartDate": "10/28/23",
+        "StartTime": "12:30PM",
+        "EndDate": "10/28/23",
+        "EndTime": "3:30 PM",
+        "Location": "Salt Lake City, Utah",
+        "Category": "Football",
+        "Result": "W 35-6",
+        "id": 1007
+    },
+    {
+        "Event": "California",
+        "StartDate": "11/4/23",
+        "StartTime": "2:30PM",
+        "EndDate": "11/4/23",
+        "EndTime": "5:30 PM",
+        "Location": "Eugene, Ore.",
+        "Category": "Football",
+        "Result": "W 63-19",
+        "id": 1008
+    },
+    {
+        "Event": "USC",
+        "StartDate": "11/11/23",
+        "StartTime": "7:30PM",
+        "EndDate": "11/11/23",
+        "EndTime": "10:30 PM",
+        "Location": "Eugene, Ore.",
+        "Category": "Football",
+        "Result": "W 36-27",
+        "id": 1009
+    },
+    {
+        "Event": "Arizona State",
+        "StartDate": "11/18/23",
+        "StartTime": "1:00PM",
+        "EndDate": "11/18/23",
+        "EndTime": "4:00 PM",
+        "Location": "Tempe, Ariz.",
+        "Category": "Football",
+        "Result": "W 49-13",
+        "id": 1010
+    },
+    {
+        "Event": "Oregon State",
+        "StartDate": "11/24/23",
+        "StartTime": "5:30PM",
+        "EndDate": "11/24/23",
+        "EndTime": "8:30 PM",
+        "Location": "Eugene, Ore.",
+        "Category": "Football",
+        "Result": "W 31-7",
+        "id": 1011
+    },
+    {
+        "Event": "Washington",
+        "StartDate": "12/1/23",
+        "StartTime": "5:00PM",
+        "EndDate": "12/1/23",
+        "EndTime": "8:00 PM",
+        "Location": "Las Vegas, Nev.",
+        "Category": "Football",
+        "Result": "L 31-34",
+        "id": 1012
+    },
+    {
+        "Event": "Liberty",
+        "StartDate": "1/1/24",
+        "StartTime": "10:00AM",
+        "EndDate": "1/1/24",
+        "EndTime": "1:00 PM",
+        "Location": "Glendale, Ariz.",
+        "Category": "Football",
+        "Result": "W 45-6",
+        "id": 1013
+    }
+]

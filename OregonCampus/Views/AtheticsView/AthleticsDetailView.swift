@@ -23,90 +23,118 @@ struct AthleticsDetailView: View {
     @Environment(ModelDataWomensTeams.self) var modelDataWomensTeams
 
     var body: some View {
-        VStack {
-            MapViewComponent(coordinate: currentMapCoordinate, distance: CLLocationDistance(currentMapDistance), pitch: CGFloat(currentMapPitch), heading: CLLocationDirection(currentMapHeading), isSpinningEnabled: false)
-                .frame(height: 400)
-
-            Button(action: {
-                isMensSports.toggle()
-            }) {
-                Text(isMensSports ? "Show Women's Sports" : "Show Men's Sports")
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(8)
-            }
-            .padding()
-            
-            if isMensSports {
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 10) {
-                        ForEach(modelDataMensTeams.mensTeams, id: \.self) { team in
-                            Button(action: {
-                                currentMapCoordinate = team.locationCoordinate
-                                currentMapDistance = team.distance
-                                currentMapPitch = team.pitch
-                                currentMapHeading = team.heading
-                            }) {
-                                VStack {
-                                    Image(systemName: team.symbol)
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 30, height: 30)
-                                        .padding()
-                                        .background(Color.blue.opacity(0.1))
-                                        .cornerRadius(8)
-                                        .foregroundColor(Color.blue)
-                                    
-                                    Text(team.name)
-                                        .font(.caption)
-                                        .foregroundColor(Color.secondary)
+        ScrollView{
+            VStack {
+                MapViewComponent(coordinate: currentMapCoordinate, distance: CLLocationDistance(currentMapDistance), pitch: CGFloat(currentMapPitch), heading: CLLocationDirection(currentMapHeading), isSpinningEnabled: false)
+                    .frame(height: 400)
+                
+                Button(action: {
+                    isMensSports.toggle()
+                }) {
+                    Text(isMensSports ? "Show Women's Sports" : "Show Men's Sports")
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(8)
+                }
+                .padding()
+                
+                if isMensSports {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 10) {
+                            ForEach(modelDataMensTeams.mensTeams, id: \.self) { team in
+                                Button(action: {
+                                    currentMapCoordinate = team.locationCoordinate
+                                    currentMapDistance = team.distance
+                                    currentMapPitch = team.pitch
+                                    currentMapHeading = team.heading
+                                    currentSport = team.name
+                                }) {
+                                    VStack {
+                                        Image(systemName: team.symbol)
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 30, height: 30)
+                                            .padding()
+                                            .background(Color.blue.opacity(0.1))
+                                            .cornerRadius(8)
+                                            .foregroundColor(Color.blue)
+                                        
+                                        Text(team.name)
+                                            .font(.caption)
+                                            .foregroundColor(Color.secondary)
+                                    }
+                                    .padding(.vertical, 4)
+                                    .cornerRadius(12)
                                 }
-                                .padding(.vertical, 4)
-                                .cornerRadius(12)
                             }
                         }
+                        .padding(.horizontal)
                     }
-                    .padding(.horizontal)
-                }
-            } else {
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 10) {
-                        ForEach(modelDataWomensTeams.womensTeams, id: \.self) { team in
-                            Button(action: {
-                                currentMapCoordinate = team.locationCoordinate
-                                currentMapDistance = team.distance
-                                currentMapPitch = team.pitch
-                                currentMapHeading = team.heading
-                            }) {
-                                VStack {
-                                    Image(systemName: team.symbol)
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 30, height: 30)
-                                        .padding()
-                                        .background(Color.blue.opacity(0.1))
-                                        .cornerRadius(8)
-                                        .foregroundColor(Color.blue)
-                                    
-                                    Text(team.name)
-                                        .font(.caption)
-                                        .foregroundColor(Color.secondary)
+                } else {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 10) {
+                            ForEach(modelDataWomensTeams.womensTeams, id: \.self) { team in
+                                Button(action: {
+                                    currentMapCoordinate = team.locationCoordinate
+                                    currentMapDistance = team.distance
+                                    currentMapPitch = team.pitch
+                                    currentMapHeading = team.heading
+                                }) {
+                                    VStack {
+                                        Image(systemName: team.symbol)
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 30, height: 30)
+                                            .padding()
+                                            .background(Color.blue.opacity(0.1))
+                                            .cornerRadius(8)
+                                            .foregroundColor(Color.blue)
+                                        
+                                        Text(team.name)
+                                            .font(.caption)
+                                            .foregroundColor(Color.secondary)
+                                    }
+                                    .padding(.vertical, 4)
+                                    .cornerRadius(12)
                                 }
-                                .padding(.vertical, 4)
-                                .cornerRadius(12)
                             }
                         }
+                        .padding(.horizontal)
                     }
-                    .padding(.horizontal)
                 }
+                
+                if currentSport == "Baseball" {
+                    BaseballGamesView()
+                        .environment(ModelDataBaseball23())
+                }
+                if currentSport == "Basketball" {
+                    if isMensSports{
+                        MensBasketballGamesView()
+                            .environment(ModelDataMensBasketball23())
+                    }
+                }
+                if currentSport == "Golf" {
+                    if isMensSports{
+                        MensGolfGamesView()
+                            .environment(ModelDataMensGolf23())
+                    }
+                }
+                if currentSport == "Football" {
+                    FootballGamesView()
+                        .environment(ModelDataFootball23())
+                }
+                if currentSport == "Track & Field" {
+                    TrackandFieldGamesView()
+                        .environment(ModelDataTrackandField23())
+                }
+                
+                
+                
+                
+                Spacer()
             }
-            
-            BaseballGamesView()
-                .environment(ModelDataBaseball23())
-
-            Spacer()
         }
         .ignoresSafeArea()
     }

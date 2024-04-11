@@ -1,5 +1,5 @@
 //
-//  BaseballGamesView.swift
+//  TrackandFieldGamesView.swift
 //  OregonCampus
 //
 //  Created by Oscar Epp on 4/10/24.
@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct BaseballGamesView: View {
+struct TrackandFieldGamesView: View {
     
-    @Environment(ModelDataBaseball23.self) var modelDataBaseball23
+    @Environment(ModelDataTrackandField23.self) var modelDataTrackandField23
     
     var body: some View {
         ScrollView {
             VStack(spacing: 10) {
-                ForEach(modelDataBaseball23.baseball23) { game in
+                ForEach(modelDataTrackandField23.trackandField23) { game in
                     HStack {
                         VStack(alignment: .leading, spacing: 5) {
-                            Text(game.Event)
+                            Text("\(game.Event)")
                                 .font(.headline)
                             Group {
                                 Text("Start: \(game.StartDate) \(game.StartTime) - End: \(game.EndDate) \(game.EndTime)")
@@ -27,14 +27,6 @@ struct BaseballGamesView: View {
                                     .font(.caption)
                             }
                             .foregroundColor(.secondary)
-                            
-                            HStack {
-                                Circle()
-                                    .frame(width: 10, height: 10)
-                                    .foregroundColor(resultColor(for: game.Result))
-                                Text(game.Result)
-                                    .font(.caption)
-                            }
                         }
                         Spacer()
                     }
@@ -62,7 +54,7 @@ struct BaseballGamesView: View {
 }
 
 #Preview {
-    BaseballGamesView()
-        .environment(ModelDataBaseball23())
+    TrackandFieldGamesView()
+        .environment(ModelDataTrackandField23())
 
 }
