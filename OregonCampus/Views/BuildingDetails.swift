@@ -45,7 +45,11 @@ struct BuildingDetail: View {
         "figure.pickleball": "Pickleball",
         "dumbbell.fill": "Weights",
         "function": "Math Help",
-        "hand.raised.fingers.spread.fill" : "Tutoring"
+        "hand.raised.fingers.spread.fill" : "Tutoring",
+        "figure.hiking" : "Hiking",
+        "figure.fishing" : "Fishing",
+        "figure.outdoor.cycle" : "Biking",
+        "figure.skiing.downhill" : "Skiing"
     ]
     
     @State private var isTextExpanded: Bool = false
@@ -178,6 +182,6 @@ struct BuildingDetail: View {
 
 #Preview {
     let modelData = ModelData()
-    return BuildingDetail(building: modelData.buildings[3])
+    return BuildingDetail(building: modelData.buildings[48])
         .environment(modelData)
 }

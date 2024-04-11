@@ -30,10 +30,9 @@ struct TrackandFieldGamesView: View {
                         }
                         Spacer()
                     }
-                    .padding(10)
                     .background(RoundedRectangle(cornerRadius: 8).fill(Color(.systemBackground)))
-                    .shadow(radius: 1)
-                    .padding(.horizontal, 10)
+                    .padding(.horizontal, 20)
+                    Divider()
                 }
             }
             .padding(.top, 5)

@@ -971,11 +971,11 @@
         "hoursComponentKeys": [
             "LawrenceLibrary"
         ],
-        "distance": 500,
+        "distance": 100,
         "pitch": 80,
-        "heading": 20,
+        "heading": 120,
         "id": 1048,
-        "type": ["figure.hiking"]
+        "type": ["figure.hiking", "figure.climbing", "figure.fishing", "figure.outdoor.cycle", "figure.skiing.downhill"]
     },
     {
         "name": "Student Tennis Center",
