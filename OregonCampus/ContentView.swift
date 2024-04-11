@@ -12,6 +12,8 @@ struct ContentView: View {
         TabView {
             
             AthleticsDetailView()
+                .environment(ModelDataMensTeams())
+                .environment(ModelDataWomensTeams())
                 .tabItem {
                     Label("Athletics", systemImage: "sportscourt.fill")
                 }
@@ -37,5 +39,6 @@ struct ContentView: View {
 #Preview {
     ContentView()
         .environment(ModelData())
+
 }
  

@@ -1,0 +1,326 @@
+[
+    {
+        "Event": "Georgia",
+        "Start Date": "11/6/23",
+        "Start Time": "1:30PM",
+        "End Date": "11/6/23",
+        "End Time": "4:30 PM",
+        "Location": "Las Vegas, NV",
+        "Result": "W 82-71"
+    },
+    {
+        "Event": "Montana",
+        "Start Date": "11/10/23",
+        "Start Time": "6:00PM",
+        "End Date": "11/10/23",
+        "End Time": "9:00 PM",
+        "Location": "Eugene, OR",
+        "Result": "W 75-61"
+    },
+    {
+        "Event": "Tennessee State",
+        "Start Date": "11/17/23",
+        "Start Time": "6:00PM",
+        "End Date": "11/17/23",
+        "End Time": "9:00 PM",
+        "Location": "Eugene, OR",
+        "Result": "W 92-67"
+    },
+    {
+        "Event": "Florida A&M",
+        "Start Date": "11/20/23",
+        "Start Time": "5:00PM",
+        "End Date": "11/20/23",
+        "End Time": "8:00 PM",
+        "Location": "Tallahassee, FL",
+        "Result": "W 67-54"
+    },
+    {
+        "Event": "Santa Clara",
+        "Start Date": "11/24/23",
+        "Start Time": "6:30PM",
+        "End Date": "11/24/23",
+        "End Time": "9:30 PM",
+        "Location": "Niceville, FL",
+        "Result": "L 82-88"
+    },
+    {
+        "Event": "Alabama",
+        "Start Date": "11/25/23",
+        "Start Time": "1:00PM",
+        "End Date": "11/25/23",
+        "End Time": "4:00 PM",
+        "Location": "Niceville , FL",
+        "Result": "L 91-99"
+    },
+    {
+        "Event": "Michigan",
+        "Start Date": "12/2/23",
+        "Start Time": "12:30PM",
+        "End Date": "12/2/23",
+        "End Time": "3:30 PM",
+        "Location": "Eugene, OR",
+        "Result": "W 86-83"
+    },
+    {
+        "Event": "UTEP",
+        "Start Date": "12/9/23",
+        "Start Time": "6:00PM",
+        "End Date": "12/9/23",
+        "End Time": "9:00 PM",
+        "Location": "Eugene, OR",
+        "Result": "W 71-49"
+    },
+    {
+        "Event": "California Baptist",
+        "Start Date": "12/12/23",
+        "Start Time": "7:00PM",
+        "End Date": "12/12/23",
+        "End Time": "10:00 PM",
+        "Location": "Eugene, OR",
+        "Result": "W 76-55"
+    },
+    {
+        "Event": "Syracuse",
+        "Start Date": "12/17/23",
+        "Start Time": "10:00AM",
+        "End Date": "12/17/23",
+        "End Time": "1:00 PM",
+        "Location": "Sioux Falls, SD",
+        "Result": "L 63-83"
+    },
+    {
+        "Event": "Kent State",
+        "Start Date": "12/21/23",
+        "Start Time": "6:00PM",
+        "End Date": "12/21/23",
+        "End Time": "9:00 PM",
+        "Location": "Eugene, OR",
+        "Result": "W 84-70"
+    },
+    {
+        "Event": "USC",
+        "Start Date": "12/28/23",
+        "Start Time": "6:00PM",
+        "End Date": "12/28/23",
+        "End Time": "9:00 PM",
+        "Location": "Eugene, OR",
+        "Result": "W 82-74"
+    },
+    {
+        "Event": "UCLA",
+        "Start Date": "12/30/23",
+        "Start Time": "1:00PM",
+        "End Date": "12/30/23",
+        "End Time": "4:00 PM",
+        "Location": "Eugene, OR",
+        "Result": "W 64-59"
+    },
+    {
+        "Event": "Washington",
+        "Start Date": "1/4/24",
+        "Start Time": "6:00PM",
+        "End Date": "1/4/24",
+        "End Time": "9:00 PM",
+        "Location": "Seattle, WA",
+        "Result": "W 76-74"
+    },
+    {
+        "Event": "Washington State",
+        "Start Date": "1/6/24",
+        "Start Time": "7:00PM",
+        "End Date": "1/6/24",
+        "End Time": "10:00 PM",
+        "Location": "Pullman, WA",
+        "Result": "W 89-84"
+    },
+    {
+        "Event": "California",
+        "Start Date": "1/13/24",
+        "Start Time": "5:00PM",
+        "End Date": "1/13/24",
+        "End Time": "8:00 PM",
+        "Location": "Eugene, OR",
+        "Result": "W 80-73"
+    },
+    {
+        "Event": "Colorado",
+        "Start Date": "1/18/24",
+        "Start Time": "7:30PM",
+        "End Date": "1/18/24",
+        "End Time": "10:30 PM",
+        "Location": "Boulder, CO",
+        "Result": "L 70-86"
+    },
+    {
+        "Event": "Utah",
+        "Start Date": "1/21/24",
+        "Start Time": "12:00PM",
+        "End Date": "1/21/24",
+        "End Time": "3:00 PM",
+        "Location": "Salt Lake City, UT",
+        "Result": "L 77-80"
+    },
+    {
+        "Event": "Arizona State",
+        "Start Date": "1/25/24",
+        "Start Time": "6:00PM",
+        "End Date": "1/25/24",
+        "End Time": "9:00 PM",
+        "Location": "Eugene, OR",
+        "Result": "W 80-61"
+    },
+    {
+        "Event": "Arizona",
+        "Start Date": "1/27/24",
+        "Start Time": "2:30PM",
+        "End Date": "1/27/24",
+        "End Time": "5:30 PM",
+        "Location": "Eugene, OR",
+        "Result": "L 78-87"
+    },
+    {
+        "Event": "USC",
+        "Start Date": "2/1/24",
+        "Start Time": "7:30PM",
+        "End Date": "2/1/24",
+        "End Time": "10:30 PM",
+        "Location": "Los Angeles, CA",
+        "Result": "W 78-69"
+    },
+    {
+        "Event": "UCLA",
+        "Start Date": "2/3/24",
+        "Start Time": "7:25PM",
+        "End Date": "2/3/24",
+        "End Time": "10:25 PM",
+        "Location": "Los Angeles, CA",
+        "Result": "L 63-71"
+    },
+    {
+        "Event": "Washington",
+        "Start Date": "2/8/24",
+        "Start Time": "7:00PM",
+        "End Date": "2/8/24",
+        "End Time": "10:00 PM",
+        "Location": "Eugene, OR",
+        "Result": "W 85-80"
+    },
+    {
+        "Event": "Washington State",
+        "Start Date": "2/10/24",
+        "Start Time": "2:00PM",
+        "End Date": "2/10/24",
+        "End Time": "5:00 PM",
+        "Location": "Eugene, OR",
+        "Result": "L 56-62"
+    },
+    {
+        "Event": "Oregon State",
+        "Start Date": "2/17/24",
+        "Start Time": "7:00PM",
+        "End Date": "2/17/24",
+        "End Time": "10:00 PM",
+        "Location": "Corvallis, OR",
+        "Result": "W 60-58"
+    },
+    {
+        "Event": "Stanford",
+        "Start Date": "2/22/24",
+        "Start Time": "8:00PM",
+        "End Date": "2/22/24",
+        "End Time": "11:00 PM",
+        "Location": "Stanford, CA",
+        "Result": "W 78-65"
+    },
+    {
+        "Event": "California",
+        "Start Date": "2/24/24",
+        "Start Time": "4:00PM",
+        "End Date": "2/24/24",
+        "End Time": "7:00 PM",
+        "Location": "Berkeley, CA",
+        "Result": "L 64-69"
+    },
+    {
+        "Event": "Oregon State",
+        "Start Date": "2/28/24",
+        "Start Time": "8:00PM",
+        "End Date": "2/28/24",
+        "End Time": "11:00 PM",
+        "Location": "Eugene, OR",
+        "Result": "W 78-71"
+    },
+    {
+        "Event": "Arizona",
+        "Start Date": "3/2/24",
+        "Start Time": "11:00AM",
+        "End Date": "3/2/24",
+        "End Time": "2:00 PM",
+        "Location": "Tucson, AZ",
+        "Result": "L 83-103"
+    },
+    {
+        "Event": "Colorado",
+        "Start Date": "3/7/24",
+        "Start Time": "6:00PM",
+        "End Date": "3/7/24",
+        "End Time": "9:00 PM",
+        "Location": "Eugene, OR",
+        "Result": "L 75-79"
+    },
+    {
+        "Event": "Utah",
+        "Start Date": "3/9/24",
+        "Start Time": "4:00PM",
+        "End Date": "3/9/24",
+        "End Time": "7:00 PM",
+        "Location": "Eugene, OR",
+        "Result": "W 66-65"
+    },
+    {
+        "Event": "UCLA",
+        "Start Date": "3/14/24",
+        "Start Time": "2:30PM",
+        "End Date": "3/14/24",
+        "End Time": "5:30 PM",
+        "Location": "Las Vegas, NV",
+        "Result": "W 68-66"
+    },
+    {
+        "Event": "Arizona",
+        "Start Date": "3/15/24",
+        "Start Time": "5:00PM",
+        "End Date": "3/15/24",
+        "End Time": "8:00 PM",
+        "Location": "Las Vegas, NV",
+        "Result": "W 67-59"
+    },
+    {
+        "Event": "Colorado",
+        "Start Date": "3/16/24",
+        "Start Time": "6:00PM",
+        "End Date": "3/16/24",
+        "End Time": "9:00 PM",
+        "Location": "Las Vegas, NV",
+        "Result": "W 75-68"
+    },
+    {
+        "Event": "South Carolina",
+        "Start Date": "3/21/24",
+        "Start Time": "1:00PM",
+        "End Date": "3/21/24",
+        "End Time": "4:00 PM",
+        "Location": "Pittsburgh, PA",
+        "Result": "W 87-73"
+    },
+    {
+        "Event": "Creighton",
+        "Start Date": "3/23/24",
+        "Start Time": "6:40PM",
+        "End Date": "3/23/24",
+        "End Time": "9:40 PM",
+        "Location": "Pittsburgh, PA",
+        "Result": "L 73-86"
+    }
+]

@@ -145,7 +145,6 @@ struct BuildingDetail: View {
                                         .scaledToFit()
                                         .cornerRadius(10)
                                         .frame(height: 200)
-
                                 }
                             }
                         }
@@ -154,12 +153,9 @@ struct BuildingDetail: View {
                         .mask(Rectangle().cornerRadius(25))
                     }
                 }
-                
                 /// Open Hours
                 FindHours(building.hoursComponentKeys)
                     .scaledToFit()
-                
-                
             }
             .ignoresSafeArea()
             .background(colorScheme == .dark ? Color.black: Color(.systemGray6))

@@ -13,6 +13,23 @@ class ModelData{
     var buildings: [Building] = load(filename: "buildingData.json")
 }
 
+@Observable
+class ModelDataMensTeams {
+    var mensTeams: [MensTeams] = load(filename: "mensTeams.json")
+}
+
+@Observable
+class ModelDataWomensTeams {
+    var womensTeams: [WomensTeams] = load(filename: "womensTeams.json")
+}
+
+@Observable
+class ModelDataBaseball23 {
+    var baseball23: [Baseball23] = load(filename: "Baseball23.json")
+}
+
+
+
 
 func load<T: Decodable>(  filename: String) -> T {
     let data: Data
@@ -36,3 +53,4 @@ func load<T: Decodable>(  filename: String) -> T {
     }
     
 }
+
