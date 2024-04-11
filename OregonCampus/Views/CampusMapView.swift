@@ -13,34 +13,39 @@ struct CampusMapView: View {
     @Environment(ModelData.self) var modelData
     @State private var position: MapCameraPosition = .automatic
     @State private var selectedBuilding: Building?
+    @State private var showBottomSheet = true
 
     var body: some View {
-        Map(position: $position) {
-            ForEach(modelData.buildings.indices, id: \.self) { index in
-                let building = modelData.buildings[index]
-
-                Annotation(building.name, coordinate: building.locationCoordinate) {
-                    Button(action: {
-                        self.selectedBuilding = building
-                    }) {
-                        Image(systemName: building.type[0])
-                            .padding(4)
-                            .foregroundStyle(.white)
-                            .background(colorForBuilding(building.type))
-                            .cornerRadius(10)
+        ZStack(alignment: .bottom) {
+            Map(position: $position) {
+                ForEach(modelData.buildings.indices, id: \.self) { index in
+                    let building = modelData.buildings[index]
+                    
+                    Annotation(building.name, coordinate: building.locationCoordinate) {
+                        Button(action: {
+                            self.selectedBuilding = building
+                        }) {
+                            Image(systemName: building.type[0])
+                                .padding(4)
+                                .foregroundStyle(.white)
+                                .background(colorForBuilding(building.type))
+                                .cornerRadius(10)
+                        }
                     }
                 }
             }
-        }
-        .mapStyle(.standard(elevation: .realistic))
-        .sheet(item: $selectedBuilding) { building in
-            BuildingDetail(building: building)
+            .mapStyle(.standard(elevation: .realistic))
+            .sheet(item: $selectedBuilding) { building in
+                BuildingDetail(building: building)
+            }
+            BottomView(isShowing: $showBottomSheet)
+            
         }
     }
 }
 
 func colorForBuilding(_ type: [String]) -> Color {
-    guard let firstType = type.first else { return .gray } // Fallback color if the list is unexpectedly empty
+    guard let firstType = type.first else { return .gray }
     
     switch firstType {
     case "building.columns.fill":
@@ -54,7 +59,7 @@ func colorForBuilding(_ type: [String]) -> Color {
     case "studentdesk":
         return .brown
     default:
-        return .green // Default color if the first item doesn't match any case
+        return .green
     }
 }
 

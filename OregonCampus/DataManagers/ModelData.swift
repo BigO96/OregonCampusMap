@@ -45,7 +45,7 @@ class ModelDataFootball23 {
 
 @Observable
 class ModelDataMensTennis23 {
-    var mensTennis23: [MensTennis23] = load(filename: "MensTennis23.json")
+    var mensTennis23: [MensTennis23] = load(filename: "MensTennis.json")
 }
 
 @Observable

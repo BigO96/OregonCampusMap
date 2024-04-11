@@ -30,6 +30,7 @@
 		E6A7DD032BA26588009AD73A /* MapViewTimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A7DD022BA26588009AD73A /* MapViewTimerManager.swift */; };
 		E6AD202E2BC3A0C20088E807 /* DisplayHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD202D2BC3A0C20088E807 /* DisplayHours.swift */; };
 		E6AD20302BC3A9D10088E807 /* BuildingServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD202F2BC3A9D10088E807 /* BuildingServices.swift */; };
+		E6D7C88A2BC8756B00B6AA2B /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D7C8892BC8756B00B6AA2B /* BottomView.swift */; };
 		E6E30D9F2BC61FE000DCE293 /* Athletics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E30D9E2BC61FE000DCE293 /* Athletics.swift */; };
 		E6E30DA22BC667B900DCE293 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E30DA12BC667B900DCE293 /* TestView.swift */; };
 		E6E30DA32BC66BAC00DCE293 /* mensTeams.json in Resources */ = {isa = PBXBuildFile; fileRef = E6E30DA02BC630CE00DCE293 /* mensTeams.json */; };
@@ -49,6 +50,7 @@
 		E6E30DC92BC7803000DCE293 /* TrackandFieldGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E30DC82BC7803000DCE293 /* TrackandFieldGamesView.swift */; };
 		E6E30DCB2BC781E600DCE293 /* MensTennisGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E30DCA2BC781E600DCE293 /* MensTennisGamesView.swift */; };
 		E6E30DCC2BC784E000DCE293 /* MensTennis23.json in Resources */ = {isa = PBXBuildFile; fileRef = E6E30DBE2BC7793D00DCE293 /* MensTennis23.json */; };
+		E6E30DCE2BC85C0200DCE293 /* CrossCountryGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E30DCD2BC85C0200DCE293 /* CrossCountryGamesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,7 @@
 		E6A7DD022BA26588009AD73A /* MapViewTimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewTimerManager.swift; sourceTree = "<group>"; };
 		E6AD202D2BC3A0C20088E807 /* DisplayHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayHours.swift; sourceTree = "<group>"; };
 		E6AD202F2BC3A9D10088E807 /* BuildingServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingServices.swift; sourceTree = "<group>"; };
+		E6D7C8892BC8756B00B6AA2B /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 		E6E30D9E2BC61FE000DCE293 /* Athletics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athletics.swift; sourceTree = "<group>"; };
 		E6E30DA02BC630CE00DCE293 /* mensTeams.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mensTeams.json; sourceTree = "<group>"; };
 		E6E30DA12BC667B900DCE293 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		E6E30DC62BC77D1800DCE293 /* FootballGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballGamesView.swift; sourceTree = "<group>"; };
 		E6E30DC82BC7803000DCE293 /* TrackandFieldGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackandFieldGamesView.swift; sourceTree = "<group>"; };
 		E6E30DCA2BC781E600DCE293 /* MensTennisGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensTennisGamesView.swift; sourceTree = "<group>"; };
+		E6E30DCD2BC85C0200DCE293 /* CrossCountryGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossCountryGamesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,8 +212,10 @@
 				E6147CD52BBE849100661484 /* IdView.swift */,
 				E6828BA82BAFB96B00D402C5 /* BuildingList.swift */,
 				E6828BAC2BAFB99500D402C5 /* BuildingDetails.swift */,
-				E61A5D932BC486B50029201D /* BuildingViews */,
 				E61BADD92BC1CBE3007B85FC /* CampusMapView.swift */,
+				E6D7C8892BC8756B00B6AA2B /* BottomView.swift */,
+				E6E30DA12BC667B900DCE293 /* TestView.swift */,
+				E61A5D932BC486B50029201D /* BuildingViews */,
 				E6E30DA92BC7385B00DCE293 /* AtheticsView */,
 			);
 			path = Views;
@@ -220,14 +226,7 @@
 			children = (
 				E61A5D912BC486AB0029201D /* AthleticsDetailView.swift */,
 				E6E30DA72BC6F5B200DCE293 /* SportCarousell.swift */,
-				E6E30DA12BC667B900DCE293 /* TestView.swift */,
 				E6E30DB52BC75EB800DCE293 /* GamesView */,
-				E6E30DB32BC74D1F00DCE293 /* BaseballGamesView.swift */,
-				E6E30DCA2BC781E600DCE293 /* MensTennisGamesView.swift */,
-				E6E30DB82BC767CA00DCE293 /* MensBasketballGamesView.swift */,
-				E6E30DC62BC77D1800DCE293 /* FootballGamesView.swift */,
-				E6E30DC42BC7795A00DCE293 /* MensGolfGamesView.swift */,
-				E6E30DC82BC7803000DCE293 /* TrackandFieldGamesView.swift */,
 			);
 			path = AtheticsView;
 			sourceTree = "<group>";
@@ -249,6 +248,13 @@
 		E6E30DB52BC75EB800DCE293 /* GamesView */ = {
 			isa = PBXGroup;
 			children = (
+				E6E30DB32BC74D1F00DCE293 /* BaseballGamesView.swift */,
+				E6E30DCA2BC781E600DCE293 /* MensTennisGamesView.swift */,
+				E6E30DB82BC767CA00DCE293 /* MensBasketballGamesView.swift */,
+				E6E30DC62BC77D1800DCE293 /* FootballGamesView.swift */,
+				E6E30DC42BC7795A00DCE293 /* MensGolfGamesView.swift */,
+				E6E30DC82BC7803000DCE293 /* TrackandFieldGamesView.swift */,
+				E6E30DCD2BC85C0200DCE293 /* CrossCountryGamesView.swift */,
 			);
 			path = GamesView;
 			sourceTree = "<group>";
@@ -342,8 +348,10 @@
 				E6AD20302BC3A9D10088E807 /* BuildingServices.swift in Sources */,
 				E61BADDA2BC1CBE3007B85FC /* CampusMapView.swift in Sources */,
 				E6828BB92BAFE9DC00D402C5 /* ModelData.swift in Sources */,
+				E6D7C88A2BC8756B00B6AA2B /* BottomView.swift in Sources */,
 				E6E30DA82BC6F5B200DCE293 /* SportCarousell.swift in Sources */,
 				E6147CD62BBE849100661484 /* IdView.swift in Sources */,
+				E6E30DCE2BC85C0200DCE293 /* CrossCountryGamesView.swift in Sources */,
 				E6828BB52BAFE95900D402C5 /* Building.swift in Sources */,
 				E6E30DB22BC7464200DCE293 /* Games.swift in Sources */,
 				E6828BB72BAFE97B00D402C5 /* FindHours.swift in Sources */,

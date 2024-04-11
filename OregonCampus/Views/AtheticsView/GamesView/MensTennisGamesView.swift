@@ -17,7 +17,7 @@
 //                ForEach(modelDataMensTennis23.mensTennis23) { game in
 //                    HStack {
 //                        VStack(alignment: .leading, spacing: 5) {
-//                            Text("\(game.Location == "Eugene, OR" ? "VS" : "@") \(game.Event)")
+//                            Text("\(game.Event)")
 //                                .font(.headline)
 //                            Group {
 //                                Text("Start: \(game.StartDate) \(game.StartTime) - End: \(game.EndDate) \(game.EndTime)")

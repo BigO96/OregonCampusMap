@@ -6,7 +6,6 @@
         "EndDate": "9/2/23",
         "EndTime": "3:00 PM",
         "Location": "Eugene, Ore.",
-        "Category": "Football",
         "Result": "W 81-7",
         "id": 1000
     },
@@ -17,7 +16,6 @@
         "EndDate": "9/9/23",
         "EndTime": "7:00 PM",
         "Location": "Lubbock, Texas",
-        "Category": "Football",
         "Result": "W 38-30",
         "id": 1001
     },
@@ -28,7 +26,6 @@
         "EndDate": "9/16/23",
         "EndTime": "8:00 PM",
         "Location": "Eugene, Ore.",
-        "Category": "Football",
         "Result": "W 55-10",
         "id": 1002
     },
@@ -39,7 +36,6 @@
         "EndDate": "9/23/23",
         "EndTime": "3:30 PM",
         "Location": "Eugene, Ore.",
-        "Category": "Football",
         "Result": "W 42-6",
         "id": 1003
     },
@@ -50,7 +46,6 @@
         "EndDate": "9/30/23",
         "EndTime": "6:30 PM",
         "Location": "Stanford, Calif.",
-        "Category": "Football",
         "Result": "W 42-6",
         "id": 1004
     },
@@ -61,7 +56,6 @@
         "EndDate": "10/14/23",
         "EndTime": "3:30 PM",
         "Location": "Seattle, Wash.",
-        "Category": "Football",
         "Result": "L 33-36",
         "id": 1005
     },
@@ -72,7 +66,6 @@
         "EndDate": "10/21/23",
         "EndTime": "3:30 PM",
         "Location": "Eugene, Ore.",
-        "Category": "Football",
         "Result": "W 38-24",
         "id": 1006
     },
@@ -83,7 +76,6 @@
         "EndDate": "10/28/23",
         "EndTime": "3:30 PM",
         "Location": "Salt Lake City, Utah",
-        "Category": "Football",
         "Result": "W 35-6",
         "id": 1007
     },
@@ -94,7 +86,6 @@
         "EndDate": "11/4/23",
         "EndTime": "5:30 PM",
         "Location": "Eugene, Ore.",
-        "Category": "Football",
         "Result": "W 63-19",
         "id": 1008
     },
@@ -105,7 +96,6 @@
         "EndDate": "11/11/23",
         "EndTime": "10:30 PM",
         "Location": "Eugene, Ore.",
-        "Category": "Football",
         "Result": "W 36-27",
         "id": 1009
     },
@@ -116,7 +106,6 @@
         "EndDate": "11/18/23",
         "EndTime": "4:00 PM",
         "Location": "Tempe, Ariz.",
-        "Category": "Football",
         "Result": "W 49-13",
         "id": 1010
     },
@@ -127,7 +116,6 @@
         "EndDate": "11/24/23",
         "EndTime": "8:30 PM",
         "Location": "Eugene, Ore.",
-        "Category": "Football",
         "Result": "W 31-7",
         "id": 1011
     },
@@ -138,7 +126,6 @@
         "EndDate": "12/1/23",
         "EndTime": "8:00 PM",
         "Location": "Las Vegas, Nev.",
-        "Category": "Football",
         "Result": "L 31-34",
         "id": 1012
     },
@@ -149,7 +136,6 @@
         "EndDate": "1/1/24",
         "EndTime": "1:00 PM",
         "Location": "Glendale, Ariz.",
-        "Category": "Football",
         "Result": "W 45-6",
         "id": 1013
     }

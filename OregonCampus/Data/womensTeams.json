@@ -108,18 +108,6 @@
       "id": 1007
     },
     {
-      "name": "Beach Volleyball",
-      "symbol": "beach.umbrella.fill",
-      "coordinates": {
-          "latitude": 44.040589,
-          "longitude": -123.073416
-      },
-      "distance": 400,
-      "pitch": 60,
-      "heading": 120,
-      "id": 1008
-    },
-    {
       "name": "Acrobatics",
       "symbol": "figure.mixed.cardio",
       "coordinates": {
@@ -130,5 +118,17 @@
       "pitch": 60,
       "heading": 0,
       "id": 1009
+    },
+    {
+      "name": "Beach Volleyball",
+      "symbol": "beach.umbrella.fill",
+      "coordinates": {
+          "latitude": 44.040589,
+          "longitude": -123.073416
+      },
+      "distance": 400,
+      "pitch": 60,
+      "heading": 120,
+      "id": 1008
     }
 ]

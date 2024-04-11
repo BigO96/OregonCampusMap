@@ -1,5 +1,5 @@
 //
-//  MensBasketballGamesView.swift
+//  BaseballGamesView.swift
 //  OregonCampus
 //
 //  Created by Oscar Epp on 4/10/24.
@@ -7,24 +7,37 @@
 
 import SwiftUI
 
-struct MensBasketballGamesView: View {
+struct BaseballGamesView: View {
     
-    @Environment(ModelDataMensBasketball23.self) var modelDataMensBasketball23
+    @Environment(ModelDataBaseball23.self) var modelDataBaseball23
+    var sortOption: String
+    
+    private var sortedGames: [Baseball23] {
+        switch sortOption {
+        case "Season":
+            return modelDataBaseball23.baseball23.sorted { $0.startDate ?? Date.distantPast < $1.startDate ?? Date.distantPast }
+        case "Upcoming":
+            let now = Date()
+            return modelDataBaseball23.baseball23.filter { $0.startDate ?? Date.distantFuture > now }
+                .sorted { $0.startDate ?? Date.distantPast < $1.startDate ?? Date.distantPast }
+        default:
+            return modelDataBaseball23.baseball23
+        }
+    }
+    
     
     var body: some View {
         ScrollView {
             VStack(spacing: 10) {
-                ForEach(modelDataMensBasketball23.mensBasketball23) { game in
+                ForEach(sortedGames, id: \.id) { game in
                     HStack {
                         VStack(alignment: .leading, spacing: 5) {
-                            Text("\(game.Location == "Eugene, OR" ? "VS" : "@") \(game.Event)")
+                            Text("\(game.Location == "Eugene, Ore." ? "VS" : "@") \(game.Event)")
                                 .font(.headline)
                             Group {
                                 Text("Start: \(game.StartDate) \(game.StartTime) - End: \(game.EndDate) \(game.EndTime)")
                                     .font(.caption)
                                     .lineLimit(1)
-//                                Text(game.Location)
-//                                    .font(.caption)
                             }
                             .foregroundColor(.secondary)
                             
@@ -61,7 +74,7 @@ struct MensBasketballGamesView: View {
 }
 
 #Preview {
-    MensBasketballGamesView()
-        .environment(ModelDataMensBasketball23())
+    BaseballGamesView(sortOption: "Upcoming")
+        .environment(ModelDataBaseball23())
 
 }

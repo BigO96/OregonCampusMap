@@ -13,6 +13,8 @@ struct AthleticsDetailView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var isMensSports = true
     @State private var currentSport = "Track & Field"
+    @State private var selectedSortOption = "Season"
+    let sortOptions = ["Season", "Upcoming"]
 
     @State private var currentMapCoordinate = CLLocationCoordinate2D(latitude: 44.042216, longitude: -123.070818)
     @State private var currentMapDistance = 400
@@ -27,9 +29,9 @@ struct AthleticsDetailView: View {
             VStack {
                 MapViewComponent(coordinate: currentMapCoordinate, distance: CLLocationDistance(currentMapDistance), pitch: CGFloat(currentMapPitch), heading: CLLocationDirection(currentMapHeading), isSpinningEnabled: false)
                     .frame(height: 400)
-                            
+                
                 HStack{
-                    
+
                     Button(action: {
                         isMensSports.toggle()
                     }) {
@@ -50,7 +52,7 @@ struct AthleticsDetailView: View {
                         .padding(.leading, 10)
                         .cornerRadius(12)
                     }
-
+                    
                     
                     if isMensSports {
                         ScrollView(.horizontal, showsIndicators: false) {
@@ -84,6 +86,7 @@ struct AthleticsDetailView: View {
                                 }
                             }
                         }
+                        .padding(.trailing)
                     } else {
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 10) {
@@ -114,52 +117,70 @@ struct AthleticsDetailView: View {
                                 }
                             }
                         }
+                        .padding(.trailing)
                     }
                 }
-
+                .cornerRadius(20)
                 
                 Divider()
                 
-                
-                HStack{
-                    Text("\(currentSport) Schedule")
-                        .font(.title2)
-                        .padding(.horizontal, 20)
-                    Spacer()
+                VStack{
+                    HStack{
+                        Text("\(currentSport) Schedule")
+                            .font(.title2)
+                            .padding(.horizontal, 20)
+                        Spacer()
+                        
+                        Text("Year")
+                            .padding(.horizontal, 20)
+                    }
                     
-                    Text("Year")
-                        .padding(.horizontal, 20)
+                    Picker("Sort by", selection: $selectedSortOption) {
+                        ForEach(sortOptions, id: \.self) {
+                            Text($0)
+                        }
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    .padding(.horizontal)
                 }
+                .padding(.vertical)
 
-//                Divider()
+                Divider()
                 
                 if currentSport == "Baseball" {
-                    BaseballGamesView()
+                    BaseballGamesView(sortOption: selectedSortOption)
                         .environment(ModelDataBaseball23())
+                        .padding(.bottom, 100)
                 }
                 if currentSport == "Basketball" {
                     if isMensSports{
-                        MensBasketballGamesView()
+                        MensBasketballGamesView(sortOption: selectedSortOption)
                             .environment(ModelDataMensBasketball23())
+                            .padding(.bottom, 100)
                     }
                 }
                 if currentSport == "Golf" {
                     if isMensSports{
-                        MensGolfGamesView()
+                        MensGolfGamesView(sortOption: selectedSortOption)
                             .environment(ModelDataMensGolf23())
+                            .padding(.bottom, 100)
                     }
                 }
                 if currentSport == "Football" {
-                    FootballGamesView()
+                    FootballGamesView(sortOption: selectedSortOption)
                         .environment(ModelDataFootball23())
+                        .padding(.bottom, 100)
                 }
                 if currentSport == "Track & Field" {
-                    TrackandFieldGamesView()
+                    TrackandFieldGamesView(sortOption: selectedSortOption)
                         .environment(ModelDataTrackandField23())
+                        .padding(.bottom, 100)
                 }
-                
-                
-                
+                if currentSport == "Cross Country" {
+                    CrossCountryGamesView(sortOption: selectedSortOption)
+                        .environment(ModelDataCrossCountry23())
+                        .padding(.bottom, 100)
+                }
                 
                 Spacer()
             }

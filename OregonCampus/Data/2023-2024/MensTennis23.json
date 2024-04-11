@@ -2,7 +2,7 @@
     {
         "Event": "ITA All-American",
         "StartDate": "10/1/23",
-        "StartTime": "nope",
+        "StartTime": "All Day",
         "EndDate": "10/7/23",
         "EndTime": "11:59 PM",
         "Location": "Tulsa, Okla.",
@@ -11,7 +11,7 @@
     {
         "Event": "ITA Northwest Regionals",
         "StartDate": "10/6/23",
-        "StartTime": "nope",
+        "StartTime": "All Day",
         "EndDate": "10/7/23",
         "EndTime": "11:59 PM",
         "Location": "Seattle",
@@ -20,16 +20,16 @@
     {
         "Event": "ITA Super Regional",
         "StartDate": "10/20/23",
-        "StartTime": "nope",
+        "StartTime": "All Day",
         "EndDate": "10/22/23",
         "EndTime": "11:59 PM",
-        "Location": "nope",
+        "Location": "Princeton University",
         "id": 1002
     },
     {
         "Event": "SoCal Intercollegiate Championships",
         "StartDate": "10/26/23",
-        "StartTime": "nope",
+        "StartTime": "All Day",
         "EndDate": "10/28/23",
         "EndTime": "11:59 PM",
         "Location": "Los Angeles",
@@ -38,7 +38,7 @@
     {
         "Event": "ITA Fall National Championships",
         "StartDate": "11/1/23",
-        "StartTime": "nope",
+        "StartTime": "All Day",
         "EndDate": "11/4/23",
         "EndTime": "11:59 PM",
         "Location": "San Diego",
@@ -47,7 +47,7 @@
     {
         "Event": "Jack Kramer Invitational",
         "StartDate": "11/2/23",
-        "StartTime": "nope",
+        "StartTime": "All Day",
         "EndDate": "11/4/23",
         "EndTime": "11:59 PM",
         "Location": "Rolling Hills Estates, Calif.",
