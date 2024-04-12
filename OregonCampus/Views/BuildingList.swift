@@ -13,6 +13,7 @@ struct BuildingList: View {
     @State private var selectedFilter: String? = nil
     @Environment(\.colorScheme) var colorScheme
     @Binding var showBottomSheet: Bool
+    @State private var selectedBuilding: Building? // State to track selected building
 
     let filterIcons: [String: String] = [
         "cup.and.saucer.fill": "cup.and.saucer.fill",
@@ -36,10 +37,8 @@ struct BuildingList: View {
     }
 
     var body: some View {
-        
         NavigationView {
             VStack(spacing: 0) {
-                
                 RoundedRectangle(cornerRadius: 3)
                     .frame(width: 36, height: 5)
                     .foregroundColor(.gray.opacity(0.5))
@@ -48,6 +47,7 @@ struct BuildingList: View {
                 
                 CustomSearchBar(text: $searchQuery, showBottomSheet: $showBottomSheet)
                     .padding(.top, 5)
+                
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         ForEach(filterIcons.keys.sorted(), id: \.self) { key in
@@ -65,14 +65,17 @@ struct BuildingList: View {
                     }
                     .padding()
                 }
+                
                 List(filteredBuildings) { building in
-                    NavigationLink {
-                        BuildingDetail(building: building)
-                    } label: {
+                    Button(action: {
+                        self.selectedBuilding = building
+                    }) {
                         BuildingRow(building: building)
                     }
                 }
-//                .searchable(text: $searchQuery, placement: .automatic)
+                .sheet(item: $selectedBuilding) { building in
+                    BuildingDetail(building: building)
+                }
             }
             .background(colorScheme == .dark ? Color(.systemGray6) : Color.white)
             .ignoresSafeArea()
@@ -111,8 +114,8 @@ struct CustomSearchBar: View {
         .padding(.horizontal)
     }
 }
-//
+
 //#Preview {
-//    BuildingList()
+//    BuildingList(showBottomSheet: true)
 //        .environment(ModelData())
 //}
