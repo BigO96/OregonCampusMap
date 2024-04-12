@@ -12,7 +12,8 @@ struct BuildingList: View {
     @State private var searchQuery = ""
     @State private var selectedFilter: String? = nil
     @Environment(\.colorScheme) var colorScheme
-    
+    @Binding var showBottomSheet: Bool
+
     let filterIcons: [String: String] = [
         "cup.and.saucer.fill": "cup.and.saucer.fill",
         "books.vertical.fill": "books.vertical.fill",
@@ -45,7 +46,7 @@ struct BuildingList: View {
                     .padding(.top, 8)
                     .padding(.bottom, 5)
                 
-                CustomSearchBar(text: $searchQuery)
+                CustomSearchBar(text: $searchQuery, showBottomSheet: $showBottomSheet)
                     .padding(.top, 5)
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
@@ -81,6 +82,7 @@ struct BuildingList: View {
 
 struct CustomSearchBar: View {
     @Binding var text: String
+    @Binding var showBottomSheet: Bool
     var onCommit: () -> Void = {}
     
     var body: some View {
@@ -93,6 +95,9 @@ struct CustomSearchBar: View {
                 TextField("Search", text: $text, onCommit: onCommit)
                     .foregroundColor(.primary)
                     .padding(.leading, 10)
+                    .onTapGesture {
+                        self.showBottomSheet = true
+                    }
             }
             .frame(height: 36)
             if !text.isEmpty {
@@ -106,8 +111,8 @@ struct CustomSearchBar: View {
         .padding(.horizontal)
     }
 }
-
-#Preview {
-    BuildingList()
-        .environment(ModelData())
-}
+//
+//#Preview {
+//    BuildingList()
+//        .environment(ModelData())
+//}

@@ -39,7 +39,7 @@ struct CampusMapView: View {
                 BuildingDetail(building: building)
             }
             
-            BottomView(isShowing: $showBottomSheet)
+            BottomView(showBottomSheet: $showBottomSheet)
             
         }
     }

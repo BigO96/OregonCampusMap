@@ -8,25 +8,25 @@
 import SwiftUI
 
 struct BottomView: View {
-    @Binding var isShowing: Bool
+    @Binding var showBottomSheet: Bool
     @State private var searchText = ""
 
     var body: some View {
         VStack {
 //            pullTab
-            BuildingList()
+            BuildingList(showBottomSheet: $showBottomSheet)
 
         }
         .cornerRadius(40)
         .frame(maxWidth: .infinity)
-        .offset(y: isShowing ? UIScreen.main.bounds.height - 800 : UIScreen.main.bounds.height - 210)
-        .animation(.easeInOut, value: isShowing)
+        .offset(y: showBottomSheet ? UIScreen.main.bounds.height - 800 : UIScreen.main.bounds.height - 210)
+        .animation(.easeInOut, value: showBottomSheet)
         .gesture(
             DragGesture().onChanged { value in
                 if value.translation.height > 0 {
-                    isShowing = false
+                    showBottomSheet = false
                 } else {
-                    isShowing = true
+                    showBottomSheet = true
                 }
             }
         )
