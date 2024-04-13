@@ -13,7 +13,7 @@ struct BuildingList: View {
     @State private var selectedFilter: String? = nil
     @Environment(\.colorScheme) var colorScheme
     @Binding var showBottomSheet: Bool
-    @State private var selectedBuilding: Building? // State to track selected building
+    @State private var selectedBuilding: Building?
 
     let filterIcons: [String: String] = [
         "cup.and.saucer.fill": "cup.and.saucer.fill",
@@ -39,11 +39,6 @@ struct BuildingList: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                RoundedRectangle(cornerRadius: 3)
-                    .frame(width: 36, height: 5)
-                    .foregroundColor(.gray.opacity(0.5))
-                    .padding(.top, 8)
-                    .padding(.bottom, 5)
                 
                 CustomSearchBar(text: $searchQuery, showBottomSheet: $showBottomSheet)
                     .padding(.top, 5)

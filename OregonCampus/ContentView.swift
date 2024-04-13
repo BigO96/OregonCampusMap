@@ -17,12 +17,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Athletics", systemImage: "sportscourt.fill")
                 }
-            
-//            BuildingList()
-//                .tabItem {
-//                    Label("Buildings", systemImage: "building.columns.fill")
-//                }
-                
+                            
             CampusMapView()
                 .tabItem {
                     Label("Map", systemImage: "map")

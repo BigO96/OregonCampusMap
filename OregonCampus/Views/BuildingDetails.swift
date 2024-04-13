@@ -137,26 +137,28 @@ struct BuildingDetail: View {
                 Divider()
 
                 /// Inside Map
-                Button(action: {
-                    self.showingAlbum = true
-                }) {
-                    VStack {
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 20) {
-                                ForEach(building.imageNames, id: \.self) { imageName in
-                                    Image(imageName)
-                                        .resizable()
-                                        .scaledToFit()
-                                        .cornerRadius(10)
-                                        .frame(height: 200)
-                                }
-                            }
-                        }
-                        .padding()
-//                        .background(colorScheme == .dark ? Color(.secondarySystemBackground) : Color.white)
-                        .mask(Rectangle().cornerRadius(25))
-                    }
-                }
+//                Button(action: {
+//                    self.showingAlbum = true
+//                }) {
+//                    VStack {
+//                        ScrollView(.horizontal, showsIndicators: false) {
+//                            HStack(spacing: 20) {
+//                                ForEach(building.imageNames, id: \.self) { imageName in
+//                                    Image(imageName)
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .cornerRadius(10)
+//                                        .frame(height: 200)
+//                                }
+//                            }
+//                        }
+//                        .padding()
+////                        .background(colorScheme == .dark ? Color(.secondarySystemBackground) : Color.white)
+//                        .mask(Rectangle().cornerRadius(25))
+//                    }
+//                }
+                
+                
                 /// Open Hours
                 FindHours(building.hoursComponentKeys)
                     .scaledToFit()
