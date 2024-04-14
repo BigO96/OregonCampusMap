@@ -33,6 +33,7 @@
 		E66A5D812BCC711500BB11EA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D802BCC711500BB11EA /* MapView.swift */; };
 		E66A5D832BCC71A200BB11EA /* IdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D822BCC71A200BB11EA /* IdView.swift */; };
 		E66A5D852BCC71C700BB11EA /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D842BCC71C700BB11EA /* ImageHelper.swift */; };
+		E66A5D872BCCA0C400BB11EA /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D862BCCA0C400BB11EA /* InfoView.swift */; };
 		E6A7DCF22BA26437009AD73A /* OregonCampusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A7DCF12BA26437009AD73A /* OregonCampusApp.swift */; };
 		E6A7DCF42BA26437009AD73A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A7DCF32BA26437009AD73A /* ContentView.swift */; };
 		E6A7DCF62BA26438009AD73A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A7DCF52BA26438009AD73A /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 		E66A5D802BCC711500BB11EA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		E66A5D822BCC71A200BB11EA /* IdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdView.swift; sourceTree = "<group>"; };
 		E66A5D842BCC71C700BB11EA /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		E66A5D862BCCA0C400BB11EA /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		E6A7DCEE2BA26437009AD73A /* OregonCampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OregonCampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A7DCF12BA26437009AD73A /* OregonCampusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OregonCampusApp.swift; sourceTree = "<group>"; };
 		E6A7DCF32BA26437009AD73A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				E66A5D822BCC71A200BB11EA /* IdView.swift */,
+				E66A5D862BCCA0C400BB11EA /* InfoView.swift */,
 			);
 			path = IdView;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				E66A5D852BCC71C700BB11EA /* ImageHelper.swift in Sources */,
 				E66A5D832BCC71A200BB11EA /* IdView.swift in Sources */,
 				E66A5D7F2BCC6DC900BB11EA /* MapViewTimerManager.swift in Sources */,
+				E66A5D872BCCA0C400BB11EA /* InfoView.swift in Sources */,
 				E6A7DCF42BA26437009AD73A /* ContentView.swift in Sources */,
 				E66A5D7D2BCC6D9400BB11EA /* MapViewComponent.swift in Sources */,
 				E66A5D772BCC65AD00BB11EA /* BuildingsDataHelper.swift in Sources */,
@@ -454,6 +458,8 @@
 				DEVELOPMENT_TEAM = A8H5RFL64F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SwooshU;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -464,7 +470,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = BigOEnterprise.OregonCampus;
+				PRODUCT_BUNDLE_IDENTIFIER = BigOEnterprise.SwooshU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -489,6 +495,8 @@
 				DEVELOPMENT_TEAM = A8H5RFL64F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SwooshU;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -499,7 +507,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = BigOEnterprise.OregonCampus;
+				PRODUCT_BUNDLE_IDENTIFIER = BigOEnterprise.SwooshU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

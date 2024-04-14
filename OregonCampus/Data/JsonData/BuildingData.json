@@ -51,7 +51,7 @@
         "pitch": 80,
         "heading": 330,
         "id": 1001,
-        "type": ["studentdesk", "cup.and.saucer.fill", "books.vertical.fill", "printer"]
+        "type": ["studentdesk", "cup.and.saucer.fill", "books.vertical.fill", "printer.fill"]
     },
     {
         "name": "Knight Library",
@@ -80,7 +80,7 @@
         "pitch": 80,
         "heading": 160,
         "id": 1002,
-        "type": ["books.vertical.fill", "studentdesk", "cup.and.saucer.fill", "printer", "hand.raised.fingers.spread.fill"]
+        "type": ["books.vertical.fill", "studentdesk", "cup.and.saucer.fill", "printer.fill", "hand.raised.fingers.spread.fill"]
     },
     {
         "name": "Lillis Hall",
@@ -348,7 +348,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1015,
-        "type": ["figure.run", "sportscourt"]
+        "type": ["figure.run", "sportscourt.fill"]
     },
     {
         "name": "Autzen Stadium",
@@ -367,7 +367,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1016,
-        "type": ["football", "sportscourt"]
+        "type": ["football.fill", "sportscourt.fill"]
     },
     {
         "name": "PK Park",
@@ -386,7 +386,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1017,
-        "type": ["baseball", "sportscourt"]
+        "type": ["baseball.fill", "sportscourt.fill"]
     },
     {
         "name": "Pape Field",
@@ -405,7 +405,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1018,
-        "type": ["soccerball", "sportscourt"]
+        "type": ["soccerball", "sportscourt.fill"]
     },
     {
         "name": "Matthew Knight Arena",
@@ -424,7 +424,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1019,
-        "type": ["basketball", "volleyball", "sportscourt"]
+        "type": ["basketball.fill", "volleyball.fill", "sportscourt.fill"]
     },
     {
         "name": "Jane Sanders Arena",
@@ -443,7 +443,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1020,
-        "type": ["baseball", "sportscourt"]
+        "type": ["baseball.fill", "sportscourt.fill"]
     },
     {
         "name": "McArthur Court",
@@ -462,7 +462,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1021,
-        "type": ["sportscourt"]
+        "type": ["sportscourt.fill"]
     },
     {
         "name": "Global Scholars Hall",
@@ -1222,7 +1222,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1062,
-        "type": ["books.vertical.fill", "printer", "studentdesk"]
+        "type": ["books.vertical.fill", "printer.fill", "studentdesk"]
     },
     {
         "name": "Onyx Bridge",
@@ -1393,7 +1393,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1071,
-        "type": ["studentdesk", "books.vertical.fill", "basketball", "printer"]
+        "type": ["studentdesk", "books.vertical.fill", "basketball", "printer.fill"]
     },
     {
         "name": "Student Recreation Center",

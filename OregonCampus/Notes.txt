@@ -1,39 +1,11 @@
 #  Notes
 
-
-
-Add custom search bar to CampusMapView
-- Need to make the pull up bar more useable
-
-Fix Tennis View
-- Still broken, cant find data
-
 Add Womens Schedule to Athetics View
 - Need the womens games!
 
 Add information seciton
 - My information, app info etc.
 
-Fix file system
-- Some view previews still dont work in certain file, no idea why
-
-Add more years to Atheletics View
-- need to add a year selection
-- could make it a filter parameter and then just add all years instead of just 23
-
-Make Atheltics Game schedule scalable
-- currently have a bunch of differnt views, a scalable version would be nice
-
 Refine Indoor map views
 - Lots of them are missing, also screenshots arent the best idea
 - The zoom view still sucks
-
-
-#
-class ModelData: ObservableObject {
-    @Published var buildings: [Building] = []
-    @Published var showBottomSheet: Bool = false  // State to control bottom view visibility
-}
-# Sample code to maybe combine modeldatas
-
-

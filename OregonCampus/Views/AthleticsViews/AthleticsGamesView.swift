@@ -13,7 +13,7 @@ struct AthleticsGamesView: View {
     @State private var selectedYear: Int = 2023
     @State private var selectedSortOption = "Season"
     let sortOptions = ["Season", "Upcoming"]
-    let yearOptions = Array(2015...2024)
+    let yearOptions = Array(2020...2024)
 
     private var selectedGames: [Game] {
         let allGames: [Game]

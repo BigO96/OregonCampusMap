@@ -13,6 +13,7 @@ struct IdView: View {
     @State private var image: UIImage?
     @State private var showingActionSheet = false
     @State private var showingResetConfirmation = false
+    @State private var showingInfoSheet = false
 
     var body: some View {
         NavigationView {
@@ -68,6 +69,15 @@ struct IdView: View {
                 
                 Spacer()
             }
+            .navigationBarItems(trailing: Button(action: {
+                    showingInfoSheet = true
+                }) {
+                    Image(systemName: "info.circle")
+                        .imageScale(.large)
+                })
+                .sheet(isPresented: $showingInfoSheet) {
+                    InfoView()
+                }
             .actionSheet(isPresented: $showingActionSheet) {
                 ActionSheet(title: Text("Select Image"), message: Text("Choose a source"), buttons: [
                     .default(Text("Camera")) {

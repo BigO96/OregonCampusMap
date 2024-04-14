@@ -29,12 +29,7 @@ struct AthleticsView: View {
             
             AthleticsGamesView(selectedTeam: $SelectedTeam)
                 .environmentObject(GameData())
-            
 
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            Spacer()
-            Image(systemName: "person.2.fill")
-            
         }
         .edgesIgnoringSafeArea([.top])
     }
