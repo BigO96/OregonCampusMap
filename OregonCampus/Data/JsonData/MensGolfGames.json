@@ -1,0 +1,349 @@
+
+[
+    {
+        "event": "Mirabel Maui Jim Intercollegiate",
+        "startDate": "9/8/23",
+        "startTime": "4:46PM",
+        "endDate": "9/8/23",
+        "endTime": "7:46 PM",
+        "location": "Scottsdale, Ariz.",
+        "id": 1000,
+        "year": 2023,
+        "result": "None"
+    },
+    {
+        "event": "Mirabel Maui Jim Intercollegiate",
+        "startDate": "9/9/23",
+        "startTime": "All Day",
+        "endDate": "9/9/23",
+        "endTime": "3:00 AM",
+        "location": "Scottsdale, Ariz.",
+        "id": 1001,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "Mirabel Maui Jim Intercollegiate",
+        "startDate": "9/10/23",
+        "startTime": "All Day",
+        "endDate": "9/10/23",
+        "endTime": "3:00 AM",
+        "location": "Scottsdale, Ariz.",
+        "id": 1002,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "Husky Invitational",
+        "startDate": "9/18/23",
+        "startTime": "All Day",
+        "endDate": "9/18/23",
+        "endTime": "3:00 AM",
+        "location": "Bremerton, Wash.",
+        "id": 1003,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "Husky Invitational",
+        "startDate": "9/19/23",
+        "startTime": "All Day",
+        "endDate": "9/19/23",
+        "endTime": "3:00 AM",
+        "location": "Bremerton, Wash.",
+        "id": 1004,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "Ben Hogan Invitational",
+        "startDate": "10/2/23",
+        "startTime": "All Day",
+        "endDate": "10/2/23",
+        "endTime": "3:00 AM",
+        "location": "Fort Worth, Texas",
+        "id": 1005,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "Ben Hogan Invitational",
+        "startDate": "10/3/23",
+        "startTime": "All Day",
+        "endDate": "10/3/23",
+        "endTime": "3:00 AM",
+        "location": "Fort Worth, Texas",
+        "id": 1006,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "Cal Poly Invitational",
+        "startDate": "10/30/23",
+        "startTime": "All Day",
+        "endDate": "10/30/23",
+        "endTime": "3:00 AM",
+        "location": "Carmel, Calif.",
+        "id": 1007,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "Cal Poly Invitational",
+        "startDate": "10/31/23",
+        "startTime": "All Day",
+        "endDate": "10/31/23",
+        "endTime": "3:00 AM",
+        "location": "Carmel, Calif.",
+        "id": 1008,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "Amer Ari Invitational",
+        "startDate": "2/8/24",
+        "startTime": "All Day",
+        "endDate": "2/8/24",
+        "endTime": "3:00 AM",
+        "location": "nil",
+        "id": 1009,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "Amer Ari Invitational",
+        "startDate": "2/9/24",
+        "startTime": "All Day",
+        "endDate": "2/9/24",
+        "endTime": "3:00 AM",
+        "location": "Waimea, Hawaii",
+        "id": 1010,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "Amer Ari Invitational",
+        "startDate": "2/10/24",
+        "startTime": "All Day",
+        "endDate": "2/10/24",
+        "endTime": "3:00 AM",
+        "location": "Waimea, Hawaii",
+        "id": 1011,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "The Prestige",
+        "startDate": "2/19/24",
+        "startTime": "All Day",
+        "endDate": "2/19/24",
+        "endTime": "3:00 AM",
+        "location": "La Quinta, Calif.",
+        "id": 1012,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "The Prestige",
+        "startDate": "2/20/24",
+        "startTime": "All Day",
+        "endDate": "2/20/24",
+        "endTime": "3:00 AM",
+        "location": "La Quinta, Calif.",
+        "id": 1013,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "The Prestige",
+        "startDate": "2/21/24",
+        "startTime": "All Day",
+        "endDate": "2/21/24",
+        "endTime": "3:00 AM",
+        "location": "La Quinta, Calif.",
+        "id": 1014,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "Bandon Dunes Championship",
+        "startDate": "3/10/24",
+        "startTime": "All Day",
+        "endDate": "3/10/24",
+        "endTime": "3:00 AM",
+        "location": "Bandon, Ore.",
+        "id": 1015,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "Bandon Dunes Championship",
+        "startDate": "3/11/24",
+        "startTime": "All Day",
+        "endDate": "3/11/24",
+        "endTime": "3:00 AM",
+        "location": "Bandon, Ore.",
+        "id": 1016,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "Bandon Dunes Championship",
+        "startDate": "3/12/24",
+        "startTime": "All Day",
+        "endDate": "3/12/24",
+        "endTime": "3:00 AM",
+        "location": "Bandon, Ore.",
+        "id": 1017,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "The Duck Invite",
+        "startDate": "3/25/24",
+        "startTime": "All Day",
+        "endDate": "3/25/24",
+        "endTime": "3:00 AM",
+        "location": "Eugene, Ore.",
+        "id": 1018,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "The Duck Invite",
+        "startDate": "3/26/24",
+        "startTime": "All Day",
+        "endDate": "3/26/24",
+        "endTime": "3:00 AM",
+        "location": "Eugene, Ore.",
+        "id": 1019,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "The Goodwin",
+        "startDate": "3/28/24",
+        "startTime": "All Day",
+        "endDate": "3/28/24",
+        "endTime": "3:00 AM",
+        "location": "San Francisco, Calif.",
+        "id": 1020,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "The Goodwin",
+        "startDate": "3/29/24",
+        "startTime": "All Day",
+        "endDate": "3/29/24",
+        "endTime": "3:00 AM",
+        "location": "San Francisco, Calif.",
+        "id": 1021,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "The Goodwin",
+        "startDate": "3/30/24",
+        "startTime": "All Day",
+        "endDate": "3/30/24",
+        "endTime": "3:00 AM",
+        "location": "San Francisco, Calif.",
+        "id": 1022,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "The Western Intercollegiate",
+        "startDate": "4/15/24",
+        "startTime": "All Day",
+        "endDate": "4/15/24",
+        "endTime": "3:00 AM",
+        "location": "Santa Cruz, Calif.",
+        "id": 1023,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "The Western Intercollegiate",
+        "startDate": "4/16/24",
+        "startTime": "All Day",
+        "endDate": "4/16/24",
+        "endTime": "3:00 AM",
+        "location": "Santa Cruz, Calif.",
+        "id": 1024,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "The Western Intercollegiate",
+        "startDate": "4/17/24",
+        "startTime": "All Day",
+        "endDate": "4/17/24",
+        "endTime": "3:00 AM",
+        "location": "Santa Cruz, Calif.",
+        "id": 1025,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "Pac-12 Championship",
+        "startDate": "4/26/24",
+        "startTime": "All Day",
+        "endDate": "4/26/24",
+        "endTime": "3:00 AM",
+        "location": "Scottsdale, Ariz.",
+        "id": 1026,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "Pac-12 Championship",
+        "startDate": "4/27/24",
+        "startTime": "All Day",
+        "endDate": "4/27/24",
+        "endTime": "3:00 AM",
+        "location": "Scottsdale, Ariz.",
+        "id": 1027,
+        "year": 2023,
+        "result": "None"
+
+    },
+    {
+        "event": "Pac-12 Championship",
+        "startDate": "4/28/24",
+        "startTime": "All Day",
+        "endDate": "4/28/24",
+        "endTime": "3:00 AM",
+        "location": "Scottsdale, Ariz.",
+        "id": 1028,
+        "year": 2023,
+        "result": "None"
+    }
+]
