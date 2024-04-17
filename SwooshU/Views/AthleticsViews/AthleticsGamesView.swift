@@ -10,6 +10,8 @@ import SwiftUI
 struct AthleticsGamesView: View {
     @EnvironmentObject var gameDataLocal: GameData
     @Binding var selectedTeam: String
+    @Binding var isMensSports: Bool
+
     @State private var selectedYear: Int = 2023
     @State private var selectedSortOption = "Season"
     let sortOptions = ["Season", "Upcoming"]
@@ -21,7 +23,7 @@ struct AthleticsGamesView: View {
         case "Football":
             allGames = gameDataLocal.FootballGames
         case "Basketball":
-            allGames = gameDataLocal.MensBasketballGames
+            allGames = isMensSports ? gameDataLocal.MensBasketballGames : gameDataLocal.WomensBasketballGames
         case "Baseball":
             allGames = gameDataLocal.BaseballGames
         case "Track & Field":
@@ -32,6 +34,7 @@ struct AthleticsGamesView: View {
             allGames = gameDataLocal.MensGolfGames
         case "Cross Country":
             allGames = gameDataLocal.CrossCountryGames
+            
         default:
             return []
         }
@@ -125,6 +128,6 @@ struct AthleticsGamesView: View {
 
 
 #Preview {
-    AthleticsGamesView(selectedTeam: .constant("Football"))
+    AthleticsGamesView(selectedTeam: .constant("Football"), isMensSports: .constant(true))
         .environmentObject(GameData())
 }

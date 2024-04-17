@@ -28,6 +28,8 @@ class GameData: ObservableObject {
     @Published var BaseballGames: [Game] = []
     @Published var MensGolfGames: [Game] = []
     @Published var TennisGames: [Game] = []
+    
+    @Published var WomensBasketballGames: [Game] = []
 
     @Published var TrackandFieldGames: [Game] = []
     @Published var CrossCountryGames: [Game] = []
@@ -42,6 +44,8 @@ class GameData: ObservableObject {
         BaseballGames = load("BaseballGames.json")
         MensGolfGames = load("MensGolfGames.json")
         TennisGames = load("TennisGames.json")
+        
+        WomensBasketballGames = load("WomensBasketballGames.json")
         
         TrackandFieldGames = load("TrackandFieldGames.json")
         CrossCountryGames = load("CrossCountryGames.json")

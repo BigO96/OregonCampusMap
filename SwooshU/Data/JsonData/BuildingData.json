@@ -205,7 +205,7 @@
         "pitch": 80,
         "heading": 120,
         "id": 1008,
-        "type": ["building.columns.fill", "studentdesk", "cup.and.saucer.fill", "fork.knife", "bird.fill", "cart.fill"]
+        "type": ["building.columns.fill", "studentdesk", "cup.and.saucer.fill", "fork.knife", "bird.fill", "cart.fill", "bicycle"]
     },
     {
         "name": "John E. Jaqua",
@@ -224,7 +224,7 @@
         "pitch": 80,
         "heading": 120,
         "id": 1009,
-        "type": ["studentdesk", "cup.and.saucer.fill"]
+        "type": ["studentdesk", "cup.and.saucer.fill", "fork.knife"]
     },
     {
         "name": "Unthank Hall",
@@ -614,7 +614,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1029,
-        "type": ["studentdesk"]
+        "type": ["studentdesk", "cup.and.saucer"]
     },
     {
         "name": "Pioneer Cemetery",
@@ -717,7 +717,7 @@
             "latitude": 44.046342,
             "longitude": -123.078266
         },
-        "description": "The Museum of Natural and Cultural History enhances knowledge of Earth's environments and cultures, inspiring stewardship of our collective past, present, and future.",
+        "description": "The Technology Service Desk, located in the Computing Center provides, UO students and employees with free assistance on a range of technology topics, including email, the wireless network, accounts and a variety of software and devices. It is open Monday through Friday, 8 a.m. to 5 p.m., year-round.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -736,7 +736,7 @@
             "latitude": 44.045876,
             "longitude": -123.078368
         },
-        "description": "The Museum of Natural and Cultural History enhances knowledge of Earth's environments and cultures, inspiring stewardship of our collective past, present, and future.",
+        "description": "The Chiles Center, opened in 1985, includes additional case rooms and houses the college's business technology center and computer labs. A new $1 million endowment established in 2008 enabled a major upgrade to the computer labs in Chiles and will help ensure continual enhancements in perpetuity as technology advances.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -755,7 +755,7 @@
             "latitude": 44.045771,
             "longitude": -123.077998
         },
-        "description": "The Museum of Natural and Cultural History enhances knowledge of Earth's environments and cultures, inspiring stewardship of our collective past, present, and future.",
+        "description": " In 2007, Peterson Hall, home to the Oregon MBA, was completely gutted—only the building façade remained. Three years later, thanks to Hope Anstett's gift commemorating her husband Joseph, the school was able to undertake similarly extensive renovations of the facility formerly known as Gilbert Hall.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -774,7 +774,7 @@
             "latitude": 44.045744,
             "longitude": -123.077236
         },
-        "description": "The Museum of Natural and Cultural History enhances knowledge of Earth's environments and cultures, inspiring stewardship of our collective past, present, and future.",
+        "description": "Formerly known as Gilbert Hall, renamed Anstett Hall, the building re-opened in March 2011. Its first floor houses classrooms and offices, while its second and third floors are the new location of the Anstett Family Accounting Suite.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -793,7 +793,7 @@
             "latitude": 44.045798,
             "longitude": -123.078954
         },
-        "description": "The Museum of Natural and Cultural History enhances knowledge of Earth's environments and cultures, inspiring stewardship of our collective past, present, and future.",
+        "description": "The Duck Store is your official store for University of Oregon Ducks apparel. Enjoy one stop shopping for Ducks t-shirts, textbooks, technology and more!",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -812,7 +812,7 @@
             "latitude": 44.044094,
             "longitude": -123.076287
         },
-        "description": "The Museum of Natural and Cultural History enhances knowledge of Earth's environments and cultures, inspiring stewardship of our collective past, present, and future.",
+        "description": "The Philosophy Department is located in room 211 on the second floor of Susan Campbell Hall. The Religious Studies Department is located in Susan Campbell Hall on the third floor.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -831,7 +831,7 @@
             "latitude": 44.044094,
             "longitude": -123.075218
         },
-        "description": "The Museum of Natural and Cultural History enhances knowledge of Earth's environments and cultures, inspiring stewardship of our collective past, present, and future.",
+        "description": "The School of Planning, Public Policy and Management is housed in Hendricks Hall, situated in the heart of campus. The school's space consists of faculty and staff offices, graduate employee offices, conference rooms, a student lounge and a computer lab. A comfortable open-hearth fireplace on the first floor serves as a gathering and presentation space, and a place for study and relaxation.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -850,7 +850,7 @@
             "latitude": 44.043065,
             "longitude": -123.079834
         },
-        "description": "The Museum of Natural and Cultural History enhances knowledge of Earth's environments and cultures, inspiring stewardship of our collective past, present, and future.",
+        "description": "Small event space on campus.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -907,7 +907,7 @@
             "latitude": 44.040496,
             "longitude": -123.079141
         },
-        "description": "Our HEDCO Education Building features design elements—the hipped roof, vertical windows, red brick exterior, and covered walkways—that echo the original brick education facilities built in 1921.",
+        "description": "The UO Clinical Services Building houses the OHSU Child Development and Rehabilitation Center, Eugene.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -945,7 +945,7 @@
             "latitude": 44.040265,
             "longitude": -123.077900
         },
-        "description": "The Frohnmayer Music Building features studios and private rehearsal rooms and a central courtyard for students to socialize or meet between classes.",
+        "description": "For the first time in its history, Oregon Bach Festival has a building to call its own, thanks to generous lead capital gifts from Andrew & Phyllis Berwick and Donald & Willie Tykeson. The 10,000 square foot building is located on the University of Oregon campus next to the School of Music and Dance (SOMD) on 18th Avenue.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -983,7 +983,7 @@
             "latitude": 44.041476,
             "longitude": -123.073154
         },
-        "description": "The Outdoor Program provides low-priced gear and bike rentals to help facilitate your land, water, and snow adventures.",
+        "description": "Opened in September 2000, the Student Tennis Center at the University of Oregon was a tremendous step forward in solidifying the presence of Duck Tennis as a major component of the University’s athletic culture",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1002,7 +1002,7 @@
             "latitude": 44.042548,
             "longitude": -123.074013
         },
-        "description": "The Outdoor Program provides low-priced gear and bike rentals to help facilitate your land, water, and snow adventures.",
+        "description": "Esslinger Hall is conencted to the rec and McArthur court. It mostly has classes fouced on human physiology.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1021,7 +1021,7 @@
             "latitude": 44.043828,
             "longitude": -123.073015
         },
-        "description": "The Outdoor Program provides low-priced gear and bike rentals to help facilitate your land, water, and snow adventures.",
+        "description": "Originally designed in 1928 as a dormitory, the University of Oregon’s Straub Hall was repurposed in the 1970s as a classroom facility for the Psychology department. Requiring a modernization to suit the needs of faculty and students, the university worked with Glumac’s engineering staff to help usher this building into the 21st century, while maintaining its Colonial Revival aesthetic.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1040,7 +1040,7 @@
             "latitude": 44.043188,
             "longitude": -123.076646
         },
-        "description": "The Outdoor Program provides low-priced gear and bike rentals to help facilitate your land, water, and snow adventures.",
+        "description": "The Gerlinger Annex houses some classrooms, but is mostly used for the basketball courts.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1059,7 +1059,7 @@
             "latitude": 44.044927,
             "longitude": -123.075118
         },
-        "description": "The Outdoor Program provides low-priced gear and bike rentals to help facilitate your land, water, and snow adventures.",
+        "description": "Collier House is easily identified by its 19th century architecture. Built 135 years ago as a private residence by physics professor George Haskell Collier, the historic landmark has undergone many changes over the decades.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1078,7 +1078,7 @@
             "latitude": 44.045810,
             "longitude": -123.075193
         },
-        "description": "The Outdoor Program provides low-priced gear and bike rentals to help facilitate your land, water, and snow adventures.",
+        "description": "Friendly Hall overlooks the old campus quad, which dates to the founding of the university in 1876 and which includes some of the oldest and most historically significant buildings on campus, including University Hall (1876), Villard Hall (1886) and Fenton Hall (1906). The building was named for Samson Friendly, a Eugene merchant, Eugene city mayor (1893–95) and a member of the Union University Association, which established the university.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1116,7 +1116,7 @@
             "latitude": 44.046415,
             "longitude": -123.074221
         },
-        "description": "Named for renowned journalist Eric W. Allen, who founded the SOJC in 1916, today it’s home to state-of-the-art studios and collaboration spaces where students create compelling content using the latest media technologies.",
+        "description": "Opened in 1952, Pacific Hall supported cutting edge research in the natural sciences and provided a top-notch facility for the science of the time. As more recent buildings and labs have been designed to facilitate interdisciplinary approaches, Pacific Hall has been repurposed for other fields.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1135,7 +1135,7 @@
             "latitude": 44.045783,
             "longitude": -123.074237
         },
-        "description": "Named for renowned journalist Eric W. Allen, who founded the SOJC in 1916, today it’s home to state-of-the-art studios and collaboration spaces where students create compelling content using the latest media technologies.",
+        "description": "Until 2015, Columbia 150 was the largest lecture hall on the University of Oregon Campus. The 500-capacity room was built in 1960 as an extension of the science building now known as Pacific Hall.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1154,7 +1154,7 @@
             "latitude": 44.043828,
             "longitude": -123.071765
         },
-        "description": "Named for renowned journalist Eric W. Allen, who founded the SOJC in 1916, today it’s home to state-of-the-art studios and collaboration spaces where students create compelling content using the latest media technologies.",
+        "description": "The Living Learning Center (LLC) has multi-gendered floors, classroom spaces, smart board study rooms, and a performance hall. The lounges and outdoor lawn are favorite hangout spots for students who live in LLC and neighboring communities.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1173,7 +1173,7 @@
             "latitude": 44.045791,
             "longitude": -123.073740
         },
-        "description": "Named for renowned journalist Eric W. Allen, who founded the SOJC in 1916, today it’s home to state-of-the-art studios and collaboration spaces where students create compelling content using the latest media technologies.",
+        "description": "In 1965 the University of Oregon established a Center for Volcanology as a part of the Department of Geology to provide opportunities for research and graduate instruction in the broad field of volcanic geology and igneous processes.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1192,7 +1192,7 @@
             "latitude": 44.046334,
             "longitude": -123.073660
         },
-        "description": "Named for renowned journalist Eric W. Allen, who founded the SOJC in 1916, today it’s home to state-of-the-art studios and collaboration spaces where students create compelling content using the latest media technologies.",
+        "description": "Cascade Hall is an extension of the Science buildings on campus. The cascade courtyard is very relaxing courtyard offering a peaceful and intimate setting slightly removed from the hustle and bustle on campus.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1230,7 +1230,7 @@
             "latitude": 44.046620,
             "longitude": -123.073806
         },
-        "description": "The Allan Price Science Commons and Research Library (or 'Price Science Commons') supports the natural and physical sciences.",
+        "description": "In 1960 construction was underway on the new East Wing to the Science Building. The building was constructed to house laboratories and offices. Later named Onyx Bridge, so named because it was designed to straddle Onyx Street (although the street was closed during construction and never reopened), the unique building was a result of a new type of architectural design - an external structural support system.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1249,7 +1249,7 @@
             "latitude": 44.045872,
             "longitude": -123.072827
         },
-        "description": "The Allan Price Science Commons and Research Library (or 'Price Science Commons') supports the natural and physical sciences.",
+        "description": "Willamette Hall is a building on the University of Oregon campus in Eugene, Oregon. Opened in 1990, it is home to the university's Physics Department. The four-story building contains numerous faculty offices, a 224-seat lecture hall, classrooms, and laboratories. The atrium is named after Paul Olum, former university president and mathematician.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1268,7 +1268,7 @@
             "latitude": 44.046438,
             "longitude": -123.072621
         },
-        "description": "The Allan Price Science Commons and Research Library (or 'Price Science Commons') supports the natural and physical sciences.",
+        "description": "The University of Oregon completed its final touches on the Klamath Hall renovation project in October. The project began November 2016 to redesign the hall’s third floor, which houses several science laboratories. The original building design, completed in 1966, did not meet current lab standards.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1287,7 +1287,7 @@
             "latitude": 44.045910,
             "longitude": -123.070398
         },
-        "description": "The Allan Price Science Commons and Research Library (or 'Price Science Commons') supports the natural and physical sciences.",
+        "description": "Housing some classrooms, Oregon Hall is mostly used as an office space for facutly",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1306,7 +1306,7 @@
             "latitude": 44.045903,
             "longitude": -123.072020
         },
-        "description": "The Allan Price Science Commons and Research Library (or 'Price Science Commons') supports the natural and physical sciences.",
+        "description": "Huestis Hall is UO’s teaching and research hub for neuroscience, biology, and psychology. The building has labs and classrooms designed to help students with research and, with up to  3,000 students using the building each year, faculty and staff say an update on the 48-year-old building is much needed. The Hall is currently under contruction",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1325,7 +1325,7 @@
             "latitude": 44.046427,
             "longitude": -123.071987
         },
-        "description": "The Allan Price Science Commons and Research Library (or 'Price Science Commons') supports the natural and physical sciences.",
+        "description": "George Streisinger was many things: refugee; anti-war protestor; amateur magician; and, of course, the first person to successfully clone a vertebrate. But while many University of Oregon students may not know his story, many know the building that bears his name: Streisinger Hall, part of the Lorry I. Lokey Science Complex.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1344,7 +1344,7 @@
             "latitude": 44.046381,
             "longitude": -123.071311
         },
-        "description": "The Allan Price Science Commons and Research Library (or 'Price Science Commons') supports the natural and physical sciences.",
+        "description": "The Lewis Integrative Science Building is home to strategic research clusters centered around interdisciplinary and integrative research missions; its purpose is to create new synergies across diverse academic disciplines by literally uniting the sciences.",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1363,7 +1363,7 @@
             "latitude": 44.040188,
             "longitude": -123.069179
         },
-        "description": "The Allan Price Science Commons and Research Library (or 'Price Science Commons') supports the natural and physical sciences.",
+        "description": "Come here in the fall to see thousands of Vaux's Swifts (birds) migrate from the smoke stack",
         "imageNames": [
             "MillerLVL1"
         ],
@@ -1393,7 +1393,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1071,
-        "type": ["studentdesk", "books.vertical.fill", "basketball", "printer.fill"]
+        "type": ["studentdesk", "books.vertical.fill", "basketball.fill", "printer.fill"]
     },
     {
         "name": "Student Recreation Center",

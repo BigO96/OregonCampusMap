@@ -49,7 +49,8 @@ struct BuildingDetail: View {
         "figure.hiking" : "Hiking",
         "figure.fishing" : "Fishing",
         "figure.outdoor.cycle" : "Biking",
-        "figure.skiing.downhill" : "Skiing"
+        "figure.skiing.downhill" : "Skiing",
+        "bicycle" : "Biking"
     ]
     
     @State private var isTextExpanded: Bool = false

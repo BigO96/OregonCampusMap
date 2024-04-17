@@ -20,7 +20,7 @@ struct InfoView: View {
                 }
                 
                 Section(header: Text("Feedback")) {
-                    NavigationLink("Provide Feedback", destination: FeedbackView())
+                    Link("Provide Feedback", destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSd3FQAuGbBYThDTOgaMv0kFFPh_2y9Xh7w9pEqfCBpyW5LJFg/viewform?usp=sf_link")!)
                     Text("Your feedback is valuable to us. It helps us understand your needs and improve the app.")
                 }
                 Section(){

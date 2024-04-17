@@ -9,9 +9,9 @@ import SwiftUI
 import MapKit
 
 struct AthleticsCarouselView: View {
-    @State private var isMensSports = true
     @EnvironmentObject var teamDataLocal: TeamData
     
+    @Binding var isMensSports: Bool
     @Binding var SelectedTeam: String
     @Binding var currentMapCoordinate: CLLocationCoordinate2D
     @Binding var currentMapDistance: Int
