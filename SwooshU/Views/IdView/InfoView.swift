@@ -21,7 +21,7 @@ struct InfoView: View {
                 
                 Section(header: Text("Feedback")) {
                     Link("Provide Feedback", destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSd3FQAuGbBYThDTOgaMv0kFFPh_2y9Xh7w9pEqfCBpyW5LJFg/viewform?usp=sf_link")!)
-                    Text("Your feedback is valuable to us. It helps us understand your needs and improve the app.")
+                    Text("Your feedback & questions are valuable to us. It helps us understand your needs and improve the app.")
                 }
                 Section(){
                     Text("Copyright © 2024 Oscar Epp. All rights reserved.")

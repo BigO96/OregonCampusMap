@@ -34,7 +34,6 @@ struct BuildingDetail: View {
         "fork.knife": "Dining",
         "bed.double.fill": "Housing",
         "sports": "Sports",
-        "bird.fill": "Duck Store",
         "cart.fill": "Shopping",
         "printer.fill": "Printing",
         "tutoring": "Tutoring",
@@ -50,7 +49,12 @@ struct BuildingDetail: View {
         "figure.fishing" : "Fishing",
         "figure.outdoor.cycle" : "Biking",
         "figure.skiing.downhill" : "Skiing",
-        "bicycle" : "Biking"
+        "bicycle" : "Biking",
+        "fossil.shell.fill" : "Museum",
+        "tennisball.fill" : "Tennis",
+        "tree.fill" : "Park",
+        "paintbrush.fill" : "Museum",
+        "tshirt.fill" : "Duck Store"
     ]
     
     @State private var isTextExpanded: Bool = false

@@ -205,7 +205,7 @@
         "pitch": 80,
         "heading": 120,
         "id": 1008,
-        "type": ["building.columns.fill", "studentdesk", "cup.and.saucer.fill", "fork.knife", "bird.fill", "cart.fill", "bicycle"]
+        "type": ["building.columns.fill", "studentdesk", "cup.and.saucer.fill", "fork.knife", "tshirt.fill", "cart.fill", "bicycle"]
     },
     {
         "name": "John E. Jaqua",
@@ -538,7 +538,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1025,
-        "type": ["bed.double.fill"]
+        "type": ["bed.double.fill", "fork.knife"]
     },
     {
         "name": "Earl Hall",
@@ -633,7 +633,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1030,
-        "type": ["tree"]
+        "type": ["tree.fill"]
     },
     {
         "name": "Schnitzer Museum of Art",
@@ -652,7 +652,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1031,
-        "type": ["paintbrush"]
+        "type": ["paintbrush.fill"]
     },
     {
         "name": "Chapman Hall",
@@ -709,7 +709,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1034,
-        "type": ["fossil.shell"]
+        "type": ["fossil.shell.fill"]
     },
     {
         "name": "Computing Center",
@@ -804,7 +804,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1039,
-        "type": ["tshirt"]
+        "type": ["tshirt.fill"]
     },
     {
         "name": "Susan Campbell Hall",
@@ -994,7 +994,7 @@
         "pitch": 80,
         "heading": 20,
         "id": 1049,
-        "type": ["tennisball"]
+        "type": ["tennisball.fill"]
     },
     {
         "name": "Esslinger Hall",

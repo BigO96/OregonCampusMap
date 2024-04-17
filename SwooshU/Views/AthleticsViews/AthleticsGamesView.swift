@@ -29,25 +29,46 @@ struct AthleticsGamesView: View {
         case "Track & Field":
             allGames = gameDataLocal.TrackandFieldGames
         case "Tennis":
-            allGames = gameDataLocal.TennisGames
+            allGames = isMensSports ? gameDataLocal.MensTennisGames : gameDataLocal.WomensTennisGames
         case "Golf":
-            allGames = gameDataLocal.MensGolfGames
+            allGames = isMensSports ? gameDataLocal.MensGolfGames : gameDataLocal.WomensGolfGames
         case "Cross Country":
             allGames = gameDataLocal.CrossCountryGames
-            
+        case "Acrobatics":
+            allGames = gameDataLocal.AcrobaticsGames
+        case "Beach Volleyball":
+            allGames = gameDataLocal.BeachVolleyballGames
+        case "Softball":
+            allGames = gameDataLocal.SoftballGames
+        case "Soccer":
+            allGames = gameDataLocal.SoccerGames
+        case "Volleyball":
+            allGames = gameDataLocal.VolleyballGames
+        case "Lacrosse":
+            allGames = gameDataLocal.LacrosseGames
         default:
             return []
         }
         
-        
+        func dateFromString(_ dateString: String, timeString: String) -> Date {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MM/dd/yy"
+            dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+            let fullDateString = "\(dateString) \(timeString)"
+            return dateFormatter.date(from: fullDateString) ?? Date()
+        }
+
         let filteredGames = allGames.filter { $0.year == selectedYear }
-        
+
         switch selectedSortOption {
         case "Season":
-            return filteredGames.sorted { $0.startDate < $1.startDate }
+            return filteredGames.sorted {
+                dateFromString($0.startDate, timeString: $0.startTime) > dateFromString($1.startDate, timeString: $1.startTime)
+            }
         case "Upcoming":
-            return filteredGames.filter { $0.result.contains("TBD") }
-                .sorted { $0.startDate < $1.startDate }
+            return filteredGames.filter { $0.result.contains("TBD") }.sorted {
+                dateFromString($0.startDate, timeString: $0.startTime) > dateFromString($1.startDate, timeString: $1.startTime)
+            }
         default:
             return filteredGames
         }

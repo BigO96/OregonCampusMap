@@ -27,9 +27,17 @@ class GameData: ObservableObject {
     @Published var MensBasketballGames: [Game] = []
     @Published var BaseballGames: [Game] = []
     @Published var MensGolfGames: [Game] = []
-    @Published var TennisGames: [Game] = []
+    @Published var MensTennisGames: [Game] = []
     
     @Published var WomensBasketballGames: [Game] = []
+    @Published var AcrobaticsGames: [Game] = []
+    @Published var BeachVolleyballGames: [Game] = []
+    @Published var SoftballGames: [Game] = []
+    @Published var SoccerGames: [Game] = []
+    @Published var WomensGolfGames: [Game] = []
+    @Published var VolleyballGames: [Game] = []
+    @Published var WomensTennisGames: [Game] = []
+    @Published var LacrosseGames: [Game] = []
 
     @Published var TrackandFieldGames: [Game] = []
     @Published var CrossCountryGames: [Game] = []
@@ -43,14 +51,23 @@ class GameData: ObservableObject {
         MensBasketballGames = load("MensBasketballGames.json")
         BaseballGames = load("BaseballGames.json")
         MensGolfGames = load("MensGolfGames.json")
-        TennisGames = load("TennisGames.json")
+        MensTennisGames = load("MensTennisGames.json")
         
         WomensBasketballGames = load("WomensBasketballGames.json")
-        
+        AcrobaticsGames = load("AcrobaticsGames.json")
+        BeachVolleyballGames = load("BeachVolleyballGames.json")
+        SoftballGames = load("SoftballGames.json")
+        SoccerGames = load("SoccerGames.json")
+        WomensGolfGames = load("WomensGolfGames.json")
+        VolleyballGames = load("VolleyballGames.json")
+        WomensTennisGames = load("WomensTennisGames.json")
+        LacrosseGames = load("LacrosseGames.json")
+
+
         TrackandFieldGames = load("TrackandFieldGames.json")
         CrossCountryGames = load("CrossCountryGames.json")
     }
-    
+
     private func load<T: Decodable>(_ filename: String) -> T {
         let data: Data
 
