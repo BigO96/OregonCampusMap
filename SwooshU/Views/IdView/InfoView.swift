@@ -16,7 +16,7 @@ struct InfoView: View {
                 }
                 
                 Section(header: Text("About the Developer")) {
-                    Text("Developed by Oscar Epp, a dedicated developer with a passion for creating educational tools that enhance student life. Oscar is always looking to innovate and improve the college experience through technology.")
+                    Text("Developed by Oscar Epp")
                 }
                 
                 Section(header: Text("Feedback")) {

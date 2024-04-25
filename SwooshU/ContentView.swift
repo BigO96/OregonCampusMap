@@ -16,7 +16,6 @@ struct ContentView: View {
                     Label("Athletics", systemImage: "sportscourt.fill")
                 }
 
-
             SearchView()
                 .tabItem {
                     Label("Search", systemImage: "magnifyingglass")

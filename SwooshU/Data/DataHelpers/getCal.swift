@@ -106,8 +106,14 @@ class EventViewModel: ObservableObject {
         summary = summary.replacingOccurrences(of: "Track and Field  ", with: "")
         summary = summary.replacingOccurrences(of: "Cross Country  ", with: "")
         summary = summary.replacingOccurrences(of: "Golf  ", with: "")
+        summary = summary.replacingOccurrences(of: "Acrobatics & Tumbling  ", with: "")
+        summary = summary.replacingOccurrences(of: "Beach Volleyball  ", with: "")
+        summary = summary.replacingOccurrences(of: "Lacrosse  ", with: "")
+        summary = summary.replacingOccurrences(of: "Soccer  ", with: "")
+        summary = summary.replacingOccurrences(of: "Volleyball  ", with: "")
+        summary = summary.replacingOccurrences(of: "Softball  ", with: "")
         summary = summary.replacingOccurrences(of: "Men's ", with: "")
-        summary = summary.replacingOccurrences(of: "Womens's ", with: "")
+        summary = summary.replacingOccurrences(of: "Women's ", with: "")
 
         summary = summary.components(separatedBy: "-").first?.trimmingCharacters(in: .whitespaces) ?? ""
         
