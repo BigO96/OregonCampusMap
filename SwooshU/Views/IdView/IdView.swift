@@ -14,7 +14,8 @@ struct IdView: View {
     @State private var showingActionSheet = false
     @State private var showingResetConfirmation = false
     @State private var showingInfoSheet = false
-
+    @State private var showingPermissionAlert = false
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -32,7 +33,7 @@ struct IdView: View {
                         .padding()
                     
                     Button("Reset Image") {
-                        showingResetConfirmation = true // Show reset confirmation
+                        showingResetConfirmation = true
                     }
                     .padding()
                     .foregroundColor(.white)
@@ -70,27 +71,33 @@ struct IdView: View {
                 Spacer()
             }
             .navigationBarItems(trailing: Button(action: {
-                    showingInfoSheet = true
-                }) {
-                    Image(systemName: "info.circle")
-                        .imageScale(.large)
-                })
-                .sheet(isPresented: $showingInfoSheet) {
-                    InfoView()
-                }
+                showingInfoSheet = true
+            }) {
+                Image(systemName: "info.circle")
+                    .imageScale(.large)
+            })
+            .sheet(isPresented: $showingInfoSheet) {
+                InfoView()
+            }
             .actionSheet(isPresented: $showingActionSheet) {
                 ActionSheet(title: Text("Select Image"), message: Text("Choose a source"), buttons: [
                     .default(Text("Camera")) {
-                        imageSource = .camera
-                        showingImagePicker = true
+                        self.imageSource = .camera
+                        checkCameraPermissions { granted in
+                            if granted {
+                                self.imageSource = .camera
+                                self.showingImagePicker = true
+                            }
+                        }
                     },
                     .default(Text("Photo Library")) {
-                        imageSource = .photoLibrary
-                        showingImagePicker = true
+                        self.imageSource = .photoLibrary
+                        self.showingImagePicker = true
                     },
                     .cancel()
                 ])
             }
+            
             .sheet(isPresented: $showingImagePicker) {
                 ImagePicker(imageSource: imageSource, selectedImage: $image)
             }

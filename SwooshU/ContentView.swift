@@ -15,7 +15,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Athletics", systemImage: "sportscourt.fill")
                 }
-                .environmentObject(TeamData())
+
 
             SearchView()
                 .tabItem {
