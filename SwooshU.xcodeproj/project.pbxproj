@@ -30,6 +30,7 @@
 		E6E144D82BDB02290092E7D6 /* TeamsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E144D72BDB02290092E7D6 /* TeamsStruct.swift */; };
 		E6E144DA2BDB02390092E7D6 /* getCal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E144D92BDB02390092E7D6 /* getCal.swift */; };
 		E6E144DC2BDB02470092E7D6 /* TeamScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E144DB2BDB02470092E7D6 /* TeamScheduleView.swift */; };
+		E6E9CE802BDCDCD800993C02 /* ZoomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E9CE7F2BDCDCD800993C02 /* ZoomImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		E6E144D72BDB02290092E7D6 /* TeamsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsStruct.swift; sourceTree = "<group>"; };
 		E6E144D92BDB02390092E7D6 /* getCal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getCal.swift; sourceTree = "<group>"; };
 		E6E144DB2BDB02470092E7D6 /* TeamScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamScheduleView.swift; sourceTree = "<group>"; };
+		E6E9CE7F2BDCDCD800993C02 /* ZoomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				E66A5D722BCC622300BB11EA /* SearchView.swift */,
 				E66A5D7A2BCC6A8B00BB11EA /* BuildingDetailView.swift */,
+				E6E9CE7F2BDCDCD800993C02 /* ZoomImage.swift */,
 				E66A5D742BCC651900BB11EA /* BuildingRowView.swift */,
 				E66A5D7C2BCC6D9400BB11EA /* MapViewComponent.swift */,
 				E66A5D7E2BCC6DC900BB11EA /* MapViewTimerManager.swift */,
@@ -267,6 +270,7 @@
 				E66A5D732BCC622300BB11EA /* SearchView.swift in Sources */,
 				E66A5D812BCC711500BB11EA /* MapView.swift in Sources */,
 				E6E144D82BDB02290092E7D6 /* TeamsStruct.swift in Sources */,
+				E6E9CE802BDCDCD800993C02 /* ZoomImage.swift in Sources */,
 				E64C109B2BD1E35B002FEC11 /* CameraHelper.swift in Sources */,
 				E66A5D752BCC651A00BB11EA /* BuildingRowView.swift in Sources */,
 				E66A5D852BCC71C700BB11EA /* ImageHelper.swift in Sources */,
@@ -433,7 +437,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = BigOEnterprise.SwooshU;
 				PRODUCT_NAME = SwooshU;
@@ -473,7 +477,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = BigOEnterprise.SwooshU;
 				PRODUCT_NAME = SwooshU;

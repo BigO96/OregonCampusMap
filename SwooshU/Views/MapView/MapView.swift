@@ -51,7 +51,7 @@ func colorForBuilding(_ type: [String]) -> Color {
         return .red
     case "dumbbell.fill":
         return .red
-    case "bed.double":
+    case "bed.double.fill":
         return .blue
     case "books.vertical":
         return .purple

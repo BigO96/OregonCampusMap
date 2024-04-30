@@ -1413,5 +1413,24 @@
         "heading": 180,
         "id": 1072,
         "type": ["dumbbell.fill", "figure.run", "figure.basketball", "figure.climbing", "figure.pool.swim", "figure.pickleball", "studentdesk"]
+    },
+    {
+        "name": "Justice Bean Hall (BEA)",
+        "coordinates": {
+            "latitude": 44.043836,
+            "longitude": -123.067440
+        },
+        "description": "Justice Bean Hall has newly renovated community spaces and room finishes, and it houses several Academic Residential Communities.",
+        "imageNames": [
+            "MillerLVL1"
+        ],
+        "hoursComponentKeys": [
+            "LawrenceLibrary"
+        ],
+        "distance": 400,
+        "pitch": 80,
+        "heading": 180,
+        "id": 1073,
+        "type": ["bed.double.fill"]
     }
 ]

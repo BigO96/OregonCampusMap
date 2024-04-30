@@ -17,7 +17,20 @@ struct TeamScheduleView: View {
     private var groupedEvents: [String: [SportsEvent]] {
         Dictionary(grouping: viewModel.events, by: { monthYearFormatter.string(from: $0.start) })
     }
-
+    
+    private func colorForResult(_ result: String) -> Color {
+        switch result {
+        case "W":
+            return .green
+        case "L":
+            return .red
+        case "D":
+            return .gray
+        default:
+            return .black
+        }
+    }
+    
     var body: some View {
         List {
             /// Lists months
@@ -37,6 +50,11 @@ struct TeamScheduleView: View {
 
                             }
                             Spacer()
+                            
+                            Text(event.isWin)
+                                .foregroundColor(colorForResult(event.isWin))
+                            
+
                         }
                     }
                 }

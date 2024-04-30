@@ -19,7 +19,7 @@ struct BuildingDetail: View {
     var landmarkIndex: Int? {
         BuildingDataLocal.Buildings.firstIndex(where: { $0.id == building.id })
     }
-
+    
     let typeDescriptions: [String: String] = [
         "building.columns.fill": "Public",
         "football.fill": "Football",
@@ -59,13 +59,10 @@ struct BuildingDetail: View {
     
     @State private var isTextExpanded: Bool = false
     private let characterLimit: Int = 100
+    @State private var selectedTabIndex = 0
     
     var body: some View {
-        
-        
         ScrollView {
-            /// Map View
-            
             MapViewComponent(
                 coordinate: building.locationCoordinate,
                 distance: building.distance,
@@ -73,116 +70,152 @@ struct BuildingDetail: View {
                 heading: building.heading, isSpinningEnabled: true
             )
             .frame(height: 500)
-            
-            /// Title & Button
-            HStack {
-                Text(building.name)
-                    .font(.title)
-                    .padding(.leading)
-                
-                Spacer()
-                
-                
-                //                    DisplayHours(hoursComponentKeys: building.hoursComponentKeys)
-                
-                //            DirectionsButton(destinationCoordinate: building.locationCoordinate, destinationName: building.name)
-            }
-            .padding([.top, .trailing])
-            
+            TitleandButton
+            BuildingServices
+            About
             Divider()
-            
-            /// Building Services
-            
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 10) {
-                    ForEach(building.type, id: \.self) { type in
-                        VStack {
-                            Image(systemName: type)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 30, height: 30)
-                                .padding()
-                                .background(Color.blue.opacity(0.1))
-                                .cornerRadius(8)
-                                .foregroundColor(Color.blue)
-                            
-                            Text(typeDescriptions[type] ?? "Unknown")
-                                .font(.caption)
-                                .foregroundColor(Color.secondary)
-                        }
-                        .padding(.vertical, 4)
-                        .cornerRadius(12)
-                    }
-                }
-                .padding(.horizontal)
-            }
-            
-            /// About
-            VStack(alignment: .leading, spacing: 5) {
-                Text(building.description)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .lineLimit(isTextExpanded ? nil : 3)
-                    .animation(.easeInOut, value: isTextExpanded)
-                    .transition(.slide)
-                
-                if building.description.count > characterLimit && !isTextExpanded {
-                    Text("Read More")
-                        .foregroundColor(.blue)
-                        .bold()
-                        .onTapGesture {
-                            withAnimation {
-                                isTextExpanded = true
-                            }
-                        }
-                }
-            }
-            .padding()
-            
-            Divider()
-            
-            /// Inside Map
-            //                Button(action: {
-            //                    self.showingAlbum = true
-            //                }) {
-            //                    VStack {
-            //                        ScrollView(.horizontal, showsIndicators: false) {
-            //                            HStack(spacing: 20) {
-            //                                ForEach(building.imageNames, id: \.self) { imageName in
-            //                                    Image(imageName)
-            //                                        .resizable()
-            //                                        .scaledToFit()
-            //                                        .cornerRadius(10)
-            //                                        .frame(height: 200)
-            //                                }
-            //                            }
-            //                        }
-            //                        .padding()
-            ////                        .background(colorScheme == .dark ? Color(.secondarySystemBackground) : Color.white)
-            //                        .mask(Rectangle().cornerRadius(25))
-            //                    }
-            //                }
-            
-            
-            /// Open Hours
-            //                FindHours(building.hoursComponentKeys)
-            //                    .scaledToFit()
-            //            }
-            //            .ignoresSafeArea()
-            //            .background(colorScheme == .dark ? Color.black: Color(.systemGray6))
-            //            .sheet(isPresented: $showingAlbum) {
-            //                NavigationView {
-            //                    BuildingMapAlbumView(imageNames: building.imageNames)
-            //                        .toolbar {
-            //                            ToolbarItem(placement: .cancellationAction) {
-            //                                Button("Close") {
-            //                                    showingAlbum = false
-            //                                }
-            //                            }
-            //                        }
-            //                }
-            //                .cornerRadius(10)
+            InsideView
+            OpenHours
         }
     }
+}
+
+extension BuildingDetail {
+    private var TitleandButton: some View {
+        HStack {
+            Text(building.name)
+                .font(.title)
+                .padding(.leading)
+            
+            Spacer()
+            
+            
+            //                    DisplayHours(hoursComponentKeys: building.hoursComponentKeys)
+            
+            //            DirectionsButton(destinationCoordinate: building.locationCoordinate, destinationName: building.name)
+        }
+        .padding([.top, .trailing])
+    }
+}
+
+extension BuildingDetail {
+    private var BuildingServices: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 10) {
+                ForEach(building.type, id: \.self) { type in
+                    VStack {
+                        Image(systemName: type)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 30, height: 30)
+                            .padding()
+                            .background(Color.blue.opacity(0.1))
+                            .cornerRadius(8)
+                            .foregroundColor(Color.blue)
+                        
+                        Text(typeDescriptions[type] ?? "Unknown")
+                            .font(.caption)
+                            .foregroundColor(Color.secondary)
+                    }
+                    .padding(.vertical, 4)
+                    .cornerRadius(12)
+                }
+            }
+            .padding(.horizontal)
+        }
+    }
+}
+
+extension BuildingDetail {
+    private var About: some View {
+        VStack(alignment: .leading, spacing: 5) {
+            Text(building.description)
+                .fixedSize(horizontal: false, vertical: true)
+                .lineLimit(isTextExpanded ? nil : 3)
+                .animation(.easeInOut, value: isTextExpanded)
+                .transition(.slide)
+            
+            if building.description.count > characterLimit && !isTextExpanded {
+                Text("Read More")
+                    .foregroundColor(.blue)
+                    .bold()
+                    .onTapGesture {
+                        withAnimation {
+                            isTextExpanded = true
+                        }
+                    }
+            }
+        }
+        .padding()
+    }
+}
+
+extension BuildingDetail {
+    private var InsideView: some View {
+        TabView {
+            Group {
+                Image("FentonLVL1")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: getRect().width - 30, height: 250)
+                    .cornerRadius(15)
+                    .addPinchZoom()
+                    .tag(0)
+                
+                Image("FentonLVL2")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: getRect().width - 30, height: 250)
+                    .cornerRadius(15)
+                    .addPinchZoom()
+                    .tag(1)
+                
+                Image("FentonLVL3")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: getRect().width - 30, height: 250)
+                    .cornerRadius(15)
+                    .addPinchZoom()
+                    .tag(2)
+                
+                Image("FentonLVL4")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: getRect().width - 30, height: 250)
+                    .cornerRadius(15)
+                    .addPinchZoom()
+                    .tag(3)
+            }
+            .padding()
+        }
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+        .frame(height: 250)
+        .padding(.top)
+        .zIndex(1000)
+    }
+}
+
+extension BuildingDetail {
+    private var OpenHours: some View {
+    Text("Hello, World!")
+//        FindHours(building.hoursComponentKeys)
+//            .scaledToFit()
+//    }
+//        .ignoresSafeArea()
+//        .background(colorScheme == .dark ? Color.black: Color(.systemGray6))
+//        .sheet(isPresented: $showingAlbum) {
+//            NavigationView {
+//                BuildingMapAlbumView(imageNames: building.imageNames)
+//                    .toolbar {
+//                        ToolbarItem(placement: .cancellationAction) {
+//                            Button("Close") {
+//                                showingAlbum = false
+//                            }
+//                        }
+//                    }
+//            }
+//            .cornerRadius(10)
+        }
 }
 
 
@@ -194,13 +227,14 @@ struct BuildingDetail_Previews: PreviewProvider {
             description: "This is a description of the sample building.",
             imageNames: ["image1", "image2"],
             hoursComponentKeys: ["Monday: 9-5", "Tuesday: 9-5"],
-            distance: 0.5,
-            pitch: 30.0,
+            distance: 300,
+            pitch: 80,
             heading: 90.0,
             type: ["Library"],
-            coordinates: Building.Coordinates(latitude: 44.5651, longitude: -123.279)
+            coordinates: Building.Coordinates(latitude: 44.042771, longitude: -123.073075)
         )
         return BuildingDetail(building: sampleBuilding)
             .environmentObject(BuildingData())
     }
 }
+

@@ -97,44 +97,43 @@ class EventViewModel: ObservableObject {
               let location = dictionary["LOCATION"] else {
             return nil
         }
-
-        summary = summary.replacingOccurrences(of: "Oregon, University of ", with: "")
-        summary = summary.replacingOccurrences(of: "Football  ", with: "")
-        summary = summary.replacingOccurrences(of: "Baseball  ", with: "")
-        summary = summary.replacingOccurrences(of: "Basketball  ", with: "")
-        summary = summary.replacingOccurrences(of: "Tennis  ", with: "")
-        summary = summary.replacingOccurrences(of: "Track and Field  ", with: "")
-        summary = summary.replacingOccurrences(of: "Cross Country  ", with: "")
-        summary = summary.replacingOccurrences(of: "Golf  ", with: "")
-        summary = summary.replacingOccurrences(of: "Acrobatics & Tumbling  ", with: "")
-        summary = summary.replacingOccurrences(of: "Beach Volleyball  ", with: "")
-        summary = summary.replacingOccurrences(of: "Lacrosse  ", with: "")
-        summary = summary.replacingOccurrences(of: "Soccer  ", with: "")
-        summary = summary.replacingOccurrences(of: "Volleyball  ", with: "")
-        summary = summary.replacingOccurrences(of: "Softball  ", with: "")
-        summary = summary.replacingOccurrences(of: "Men's ", with: "")
-        summary = summary.replacingOccurrences(of: "Women's ", with: "")
-
+        /// Gets rid of unnecessary text
+        let replacements = [
+            "Oregon, University of ": "", "Football  ": "", "Baseball  ": "",
+            "Basketball  ": "", "Tennis  ": "", "Track and Field  ": "",
+            "Cross Country  ": "", "Golf  ": "", "Acrobatics & Tumbling  ": "",
+            "Beach Volleyball  ": "", "Lacrosse  ": "", "Soccer  ": "",
+            "Volleyball  ": "", "Softball  ": "", "Men's ": "", "Women's ": ""
+        ]
+        replacements.forEach { key, value in
+            summary = summary.replacingOccurrences(of: key, with: value)
+        }
         summary = summary.components(separatedBy: "-").first?.trimmingCharacters(in: .whitespaces) ?? ""
+        summary = location.contains("Eugene") ? "V.S. \(summary)" : "@ \(summary)"
         
-        if location.contains("Eugene") {
-            summary = "V.S. \(summary)"
-        } else {
-            summary = "@ \(summary)"
+        /// Finds Win
+        var isWin = ""
+
+        /// Refactor summary and determine win status
+        ["[W] ", "[N] ", "[L] "].forEach {
+            if summary.contains($0) {
+                if $0 == "[W] " {
+                    isWin = "W"
+                } else if $0 == "[L] " {
+                    isWin = "L"
+                } else {
+                    isWin = "N/A"
+                }
+                            
+            }
         }
-        
-        if summary.contains("[W]") {
-            summary = summary.replacingOccurrences(of: "[W] ", with: "")
-            summary = summary.appending(" [W]")
-        } else if summary.contains(" [N]") {
-            summary = summary.replacingOccurrences(of: "[N] ", with: "")
-            summary = summary.appending(" [N]")
-        } else if summary.contains(" [L]") {
-            summary = summary.replacingOccurrences(of: "[L] ", with: "")
-            summary = summary.appending(" [L]")
+    
+        ["[W] ", "[N] ", "[L] "].forEach {
+            if summary.contains($0) {
+                summary = summary.replacingOccurrences(of: $0, with: "")/*.trimmingCharacters(in: .whitespaces) + " \($0.trimmingCharacters(in: .whitespaces))"*/
+            }
         }
-        
-        
+            
         let dtStartKey = dictionary.keys.contains("DTSTART;VALUE=DATE") ? "DTSTART;VALUE=DATE" : "DTSTART"
         let dtEndKey = dictionary.keys.contains("DTEND;VALUE=DATE") ? "DTEND;VALUE=DATE" : "DTEND"
 
@@ -161,7 +160,7 @@ class EventViewModel: ObservableObject {
             return nil
         }
 
-        return SportsEvent(id: uid, summary: summary, start: start, end: end, description: description, location: location)
+        return SportsEvent(id: uid, summary: summary, start: start, end: end, description: description, location: location, isWin: isWin)
     }
 }
 
@@ -192,4 +191,5 @@ struct SportsEvent: Identifiable {
     var end: Date
     var description: String
     var location: String
+    var isWin: String
 }
