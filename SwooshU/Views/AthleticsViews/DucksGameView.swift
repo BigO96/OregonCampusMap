@@ -35,12 +35,19 @@ struct DucksGamesView: View {
             
             TeamScheduleView(viewModel: EventViewModel(teamName: selectedTeam.name))
         }
+        .background(Gradient(colors: gradientColors))
+
     }
 
     private var currentTeams: [DucksTeam] {
         isMensSports ? mensTeams : womensTeams
     }
 }
+
+let gradientColors: [Color] = [
+    .gradientTop,
+    .gradientBottom
+]
 
 extension DucksGamesView {
     private var button: some View {
@@ -53,15 +60,16 @@ extension DucksGamesView {
                     .scaledToFit()
                     .frame(width: 40, height: 40)
                     .padding()
-                    .background(Color.blue.opacity(0.1))
+                    .background(Color.blue.opacity(0.5))
                     .cornerRadius(8)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(Color.white)
                 
 //                            Text(isMensSports ? "Men" : "Women")
 //                                .font(.caption)
 //                                .foregroundColor(Color.secondary)
             }
             .cornerRadius(12)
+            
         }
         .padding(.leading, 10)
     }
@@ -79,9 +87,9 @@ extension DucksGamesView {
                         .scaledToFit()
                         .frame(width: 40, height: 40)
                         .padding()
-                        .background(selectedTeam == team ? Color.gray.opacity(0.4) : Color.blue.opacity(0.1))
+                        .background(selectedTeam == team ? Color.gray.opacity(0.9) : Color.blue.opacity(0.5))
                         .cornerRadius(8)
-                        .foregroundColor(Color.blue)
+                        .foregroundColor(Color.white)
                     
                     //                                Text(team.name)
                     //                                    .font(.caption)

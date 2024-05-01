@@ -76,6 +76,17 @@ struct BuildingDetail: View {
             Divider()
             InsideView
             OpenHours
+            Text("A")
+            Text("A")
+            Text("A")
+            Text("A")
+            Text("A")
+            Text("A")
+            Text("A")
+            Text("A")
+            Text("A")
+            Text("A")
+
         }
     }
 }
@@ -197,7 +208,8 @@ extension BuildingDetail {
 
 extension BuildingDetail {
     private var OpenHours: some View {
-    Text("Hello, World!")
+        Text("Hello, World!")
+        
 //        FindHours(building.hoursComponentKeys)
 //            .scaledToFit()
 //    }

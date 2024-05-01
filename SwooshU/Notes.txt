@@ -1,11 +1,6 @@
 #  Notes
 
-Add Womens Schedule to Athetics View
-- Need the womens games!
-
-Add information seciton
-- My information, app info etc.
 
 Refine Indoor map views
-- Lots of them are missing, also screenshots arent the best idea
+- Lots of them are missing, also screenshots aren't the best idea
 - The zoom view still sucks

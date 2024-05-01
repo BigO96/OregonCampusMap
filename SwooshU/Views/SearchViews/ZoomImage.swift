@@ -91,14 +91,15 @@ struct ZoomGesture: UIViewRepresentable {
         let view = UIView()
         view.backgroundColor = .clear
         
-        let Pinchgesture = UIPinchGestureRecognizer(target: context.coordinator, action: #selector(context.coordinator.handlePinch(sender:)))
+        let pinchGesture = UIPinchGestureRecognizer(target: context.coordinator, action: #selector(context.coordinator.handlePinch(sender:)))
         
-        let Pangesture = UIPanGestureRecognizer(target: context.coordinator, action: #selector(context.coordinator.handlePan(sender:)))
+        let panGesture = UIPanGestureRecognizer(target: context.coordinator, action: #selector(context.coordinator.handlePan(sender:)))
         
-        Pangesture.delegate = context.coordinator
+        panGesture.delegate = context.coordinator
+        panGesture.minimumNumberOfTouches = 2
         
-        view.addGestureRecognizer(Pinchgesture)
-        view.addGestureRecognizer(Pangesture)
+        view.addGestureRecognizer(pinchGesture)
+        view.addGestureRecognizer(panGesture)
         
         return view
     }

@@ -31,37 +31,6 @@ struct TeamScheduleView: View {
         }
     }
     
-    var body: some View {
-        List {
-            /// Lists months
-            ForEach(sortedMonthKeys(), id: \.self) { month in
-                Section(header: Text(month).font(.headline)) {
-                    /// Lists games
-                    ForEach(groupedEvents[month]!) { event in
-                        HStack {
-                            VStack(alignment: .leading) {
-                                Text(event.summary)
-                                    .font(.headline)
-
-                                Text("Starts: \(event.start, formatter: itemFormatter)")
-                                    .font(.caption)
-                                    .lineLimit(1)
-                                    .foregroundColor(.secondary)
-
-                            }
-                            Spacer()
-                            
-                            Text(event.isWin)
-                                .foregroundColor(colorForResult(event.isWin))
-                            
-
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
     private func sortedMonthKeys() -> [String] {
         let sortedKeys = groupedEvents.keys.sorted {
             guard let date1 = monthYearFormatter.date(from: $0), let date2 = monthYearFormatter.date(from: $1) else {
@@ -70,6 +39,52 @@ struct TeamScheduleView: View {
             return date1 < date2
         }
         return sortedKeys
+    }
+    
+    var body: some View {
+        ScrollView {
+            LazyVStack(alignment: .leading, spacing: 10) {
+                ForEach(sortedMonthKeys(), id: \.self) { month in
+                    Section(header: Text(month).font(.headline).padding(.vertical).foregroundColor(.white)) {
+                        ForEach(groupedEvents[month]!, id: \.id) { event in
+                            EventRowView(event: event)
+                                .padding(.vertical, 5)
+                        }
+                    }
+                }
+            }
+            .padding(.horizontal)
+        }
+    }
+}
+struct EventRowView: View {
+    var event: SportsEvent
+
+    var body: some View {
+        HStack {
+            
+            Image(systemName: "football")
+                .font(.largeTitle)
+            
+            VStack(alignment: .leading) {
+                Text(event.summary)
+                    .font(.headline)
+                Text("Starts: \(event.start, formatter: itemFormatter)")
+                    .font(.caption)
+                    .lineLimit(1)
+                    .foregroundColor(.white)
+            }
+            Spacer()
+        }
+        .padding()
+        .background {
+            RoundedRectangle(cornerRadius: 12)
+                .foregroundStyle(.tint)
+                .opacity(0.25)
+                .brightness(-0.4)
+
+        }
+        .foregroundStyle(.white)
     }
 }
 
