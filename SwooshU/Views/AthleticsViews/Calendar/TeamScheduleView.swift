@@ -63,8 +63,8 @@ struct EventRowView: View {
     var body: some View {
         HStack {
             
-            Image(systemName: "football")
-                .font(.largeTitle)
+//            Image(systemName: "football")
+//                .font(.largeTitle)
             
             VStack(alignment: .leading) {
                 Text(event.summary)

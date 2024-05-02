@@ -63,10 +63,6 @@ extension DucksGamesView {
                     .background(Color.blue.opacity(0.5))
                     .cornerRadius(8)
                     .foregroundColor(Color.white)
-                
-//                            Text(isMensSports ? "Men" : "Women")
-//                                .font(.caption)
-//                                .foregroundColor(Color.secondary)
             }
             .cornerRadius(12)
             
@@ -90,11 +86,6 @@ extension DucksGamesView {
                         .background(selectedTeam == team ? Color.gray.opacity(0.9) : Color.blue.opacity(0.5))
                         .cornerRadius(8)
                         .foregroundColor(Color.white)
-                    
-                    //                                Text(team.name)
-                    //                                    .font(.caption)
-                    //                                    .foregroundColor(Color.secondary)
-                    
                 }
                 .padding(.vertical, 4)
                 .cornerRadius(12)

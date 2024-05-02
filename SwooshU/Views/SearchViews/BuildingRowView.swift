@@ -12,7 +12,6 @@ struct BuildingRow: View {
     @EnvironmentObject var BuildingDataLocal: BuildingData
     
     var body: some View {
-
         HStack {
             Text(building.name)
                 .foregroundColor(.primary)

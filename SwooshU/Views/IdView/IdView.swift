@@ -119,6 +119,7 @@ struct IdView: View {
                     secondaryButton: .cancel()
                 )
             }
+//            .background(Gradient(colors: gradientColors))
         }
     }
 }
@@ -127,7 +128,7 @@ struct ImagePicker: UIViewControllerRepresentable {
     var imageSource: UIImagePickerController.SourceType
     @Binding var selectedImage: UIImage?
     @Environment(\.presentationMode) private var presentationMode
-
+    
     func makeUIViewController(context: Context) -> UIImagePickerController {
         let picker = UIImagePickerController()
         picker.sourceType = imageSource
@@ -135,21 +136,21 @@ struct ImagePicker: UIViewControllerRepresentable {
         picker.delegate = context.coordinator
         return picker
     }
-
-
+    
+    
     func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {}
-
+    
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
-
+    
     final class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
         var parent: ImagePicker
-
+        
         init(_ parent: ImagePicker) {
             self.parent = parent
         }
-
+        
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             let selectedImage = info[.editedImage] as? UIImage ?? info[.originalImage] as? UIImage
             
@@ -159,7 +160,7 @@ struct ImagePicker: UIViewControllerRepresentable {
             
             parent.presentationMode.wrappedValue.dismiss()
         }
-
+        
     }
 }
 

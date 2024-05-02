@@ -16,7 +16,7 @@ struct MapViewComponent: UIViewRepresentable {
     var isSpinningEnabled: Bool
     
     class Coordinator {
-        var timerManager: MapViewTimerManager?
+        var spinManager: MapViewSpinManager?
     }
 
     func makeCoordinator() -> Coordinator {
@@ -35,7 +35,7 @@ struct MapViewComponent: UIViewRepresentable {
         let camera = MKMapCamera(lookingAtCenter: coordinate, fromDistance: distance, pitch: pitch, heading: heading)
         mapView.setCamera(camera, animated: true)
 
-        context.coordinator.timerManager = MapViewTimerManager(mapView: mapView)
+        context.coordinator.spinManager = MapViewSpinManager(mapView: mapView)
         
         return mapView
     }
@@ -45,15 +45,15 @@ struct MapViewComponent: UIViewRepresentable {
         uiView.setCamera(camera, animated: true)
         
         if isSpinningEnabled {
-            context.coordinator.timerManager?.startRotatingCamera(distance: distance)
+            context.coordinator.spinManager?.startRotatingCamera(distance: distance)
         } else {
-            context.coordinator.timerManager?.stopRotatingCamera()
+            context.coordinator.spinManager?.stopRotatingCamera()
         }
     }
 
     
     static func dismantleUIView(_ uiView: MKMapView, coordinator: Coordinator) {
-        coordinator.timerManager?.stopRotatingCamera()
+        coordinator.spinManager?.stopRotatingCamera()
     }
     
     

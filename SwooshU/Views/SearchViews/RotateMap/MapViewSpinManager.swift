@@ -1,14 +1,14 @@
 //
-//  MapSpinHelper.swift
+//  MapViewSpinManager.swift
 //  SwooshU
 //
-//  Created by Oscar Epp on 4/13/24.
+//  Created by Oscar Epp on 4/14/24.
 //
 
 import Foundation
 import MapKit
 
-class MapSpinHelper {
+class MapViewSpinManager {
     var timer: Timer?
     weak var mapView: MKMapView?
 

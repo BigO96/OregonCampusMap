@@ -9,14 +9,12 @@
 /* Begin PBXBuildFile section */
 		E64C109B2BD1E35B002FEC11 /* CameraHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C109A2BD1E35B002FEC11 /* CameraHelper.swift */; };
 		E66A5D512BCB12B400BB11EA /* AthleticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D502BCB12B400BB11EA /* AthleticsView.swift */; };
-		E66A5D542BCB133300BB11EA /* MapSatelliteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D532BCB133300BB11EA /* MapSatelliteView.swift */; };
-		E66A5D562BCB13A600BB11EA /* MapSpinHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D552BCB13A600BB11EA /* MapSpinHelper.swift */; };
 		E66A5D732BCC622300BB11EA /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D722BCC622300BB11EA /* SearchView.swift */; };
 		E66A5D752BCC651A00BB11EA /* BuildingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D742BCC651900BB11EA /* BuildingRowView.swift */; };
-		E66A5D772BCC65AD00BB11EA /* BuildingsDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D762BCC65AD00BB11EA /* BuildingsDataHelper.swift */; };
+		E66A5D772BCC65AD00BB11EA /* BuildingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D762BCC65AD00BB11EA /* BuildingsData.swift */; };
 		E66A5D7B2BCC6A8B00BB11EA /* BuildingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D7A2BCC6A8B00BB11EA /* BuildingDetailView.swift */; };
 		E66A5D7D2BCC6D9400BB11EA /* MapViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D7C2BCC6D9400BB11EA /* MapViewComponent.swift */; };
-		E66A5D7F2BCC6DC900BB11EA /* MapViewTimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D7E2BCC6DC900BB11EA /* MapViewTimerManager.swift */; };
+		E66A5D7F2BCC6DC900BB11EA /* MapViewSpinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D7E2BCC6DC900BB11EA /* MapViewSpinManager.swift */; };
 		E66A5D812BCC711500BB11EA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D802BCC711500BB11EA /* MapView.swift */; };
 		E66A5D832BCC71A200BB11EA /* IdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D822BCC71A200BB11EA /* IdView.swift */; };
 		E66A5D852BCC71C700BB11EA /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A5D842BCC71C700BB11EA /* ImageHelper.swift */; };
@@ -37,14 +35,12 @@
 		E64C10992BD1E221002FEC11 /* OregonCampus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "OregonCampus-Info.plist"; sourceTree = "<group>"; };
 		E64C109A2BD1E35B002FEC11 /* CameraHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHelper.swift; sourceTree = "<group>"; };
 		E66A5D502BCB12B400BB11EA /* AthleticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleticsView.swift; sourceTree = "<group>"; };
-		E66A5D532BCB133300BB11EA /* MapSatelliteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSatelliteView.swift; sourceTree = "<group>"; };
-		E66A5D552BCB13A600BB11EA /* MapSpinHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSpinHelper.swift; sourceTree = "<group>"; };
 		E66A5D722BCC622300BB11EA /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E66A5D742BCC651900BB11EA /* BuildingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingRowView.swift; sourceTree = "<group>"; };
-		E66A5D762BCC65AD00BB11EA /* BuildingsDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsDataHelper.swift; sourceTree = "<group>"; };
+		E66A5D762BCC65AD00BB11EA /* BuildingsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsData.swift; sourceTree = "<group>"; };
 		E66A5D7A2BCC6A8B00BB11EA /* BuildingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingDetailView.swift; sourceTree = "<group>"; };
 		E66A5D7C2BCC6D9400BB11EA /* MapViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewComponent.swift; sourceTree = "<group>"; };
-		E66A5D7E2BCC6DC900BB11EA /* MapViewTimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewTimerManager.swift; sourceTree = "<group>"; };
+		E66A5D7E2BCC6DC900BB11EA /* MapViewSpinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewSpinManager.swift; sourceTree = "<group>"; };
 		E66A5D802BCC711500BB11EA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		E66A5D822BCC71A200BB11EA /* IdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdView.swift; sourceTree = "<group>"; };
 		E66A5D842BCC71C700BB11EA /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
@@ -77,7 +73,6 @@
 		E66A5D482BCB121700BB11EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E66A5D522BCB130A00BB11EA /* ViewHelpers */,
 				E66A5D492BCB124100BB11EA /* AthleticsViews */,
 				E66A5D4A2BCB124C00BB11EA /* SearchViews */,
 				E66A5D4B2BCB125900BB11EA /* MapView */,
@@ -91,7 +86,7 @@
 			children = (
 				E66A5D502BCB12B400BB11EA /* AthleticsView.swift */,
 				E6E144D52BDB020A0092E7D6 /* DucksGameView.swift */,
-				E6E144DB2BDB02470092E7D6 /* TeamScheduleView.swift */,
+				E6E9CE822BE2DF3400993C02 /* Calendar */,
 			);
 			path = AthleticsViews;
 			sourceTree = "<group>";
@@ -101,10 +96,11 @@
 			children = (
 				E66A5D722BCC622300BB11EA /* SearchView.swift */,
 				E66A5D7A2BCC6A8B00BB11EA /* BuildingDetailView.swift */,
-				E6E9CE7F2BDCDCD800993C02 /* ZoomImage.swift */,
 				E66A5D742BCC651900BB11EA /* BuildingRowView.swift */,
-				E66A5D7C2BCC6D9400BB11EA /* MapViewComponent.swift */,
-				E66A5D7E2BCC6DC900BB11EA /* MapViewTimerManager.swift */,
+				E6E9CE812BE2DE7A00993C02 /* RotateMap */,
+				E66A5D762BCC65AD00BB11EA /* BuildingsData.swift */,
+				E6E9CE7F2BDCDCD800993C02 /* ZoomImage.swift */,
+				E66A5D842BCC71C700BB11EA /* ImageHelper.swift */,
 			);
 			path = SearchViews;
 			sourceTree = "<group>";
@@ -121,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				E66A5D822BCC71A200BB11EA /* IdView.swift */,
+				E64C109A2BD1E35B002FEC11 /* CameraHelper.swift */,
 				E66A5D862BCCA0C400BB11EA /* InfoView.swift */,
 			);
 			path = IdView;
@@ -129,31 +126,9 @@
 		E66A5D4D2BCB127700BB11EA /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				E66A5D4F2BCB128700BB11EA /* DataHelpers */,
 				E66A94E92BDB068900747B6A /* BuildingData.json */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		E66A5D4F2BCB128700BB11EA /* DataHelpers */ = {
-			isa = PBXGroup;
-			children = (
-				E66A5D762BCC65AD00BB11EA /* BuildingsDataHelper.swift */,
-				E66A5D842BCC71C700BB11EA /* ImageHelper.swift */,
-				E6E144D72BDB02290092E7D6 /* TeamsStruct.swift */,
-				E6E144D92BDB02390092E7D6 /* getCal.swift */,
-			);
-			path = DataHelpers;
-			sourceTree = "<group>";
-		};
-		E66A5D522BCB130A00BB11EA /* ViewHelpers */ = {
-			isa = PBXGroup;
-			children = (
-				E66A5D532BCB133300BB11EA /* MapSatelliteView.swift */,
-				E66A5D552BCB13A600BB11EA /* MapSpinHelper.swift */,
-				E64C109A2BD1E35B002FEC11 /* CameraHelper.swift */,
-			);
-			path = ViewHelpers;
 			sourceTree = "<group>";
 		};
 		E6A7DCE52BA26437009AD73A = {
@@ -193,6 +168,25 @@
 				E6A7DCF82BA26438009AD73A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E6E9CE812BE2DE7A00993C02 /* RotateMap */ = {
+			isa = PBXGroup;
+			children = (
+				E66A5D7C2BCC6D9400BB11EA /* MapViewComponent.swift */,
+				E66A5D7E2BCC6DC900BB11EA /* MapViewSpinManager.swift */,
+			);
+			path = RotateMap;
+			sourceTree = "<group>";
+		};
+		E6E9CE822BE2DF3400993C02 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				E6E144DB2BDB02470092E7D6 /* TeamScheduleView.swift */,
+				E6E144D72BDB02290092E7D6 /* TeamsStruct.swift */,
+				E6E144D92BDB02390092E7D6 /* getCal.swift */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,14 +269,12 @@
 				E66A5D752BCC651A00BB11EA /* BuildingRowView.swift in Sources */,
 				E66A5D852BCC71C700BB11EA /* ImageHelper.swift in Sources */,
 				E66A5D832BCC71A200BB11EA /* IdView.swift in Sources */,
-				E66A5D7F2BCC6DC900BB11EA /* MapViewTimerManager.swift in Sources */,
+				E66A5D7F2BCC6DC900BB11EA /* MapViewSpinManager.swift in Sources */,
 				E66A5D872BCCA0C400BB11EA /* InfoView.swift in Sources */,
 				E6E144DA2BDB02390092E7D6 /* getCal.swift in Sources */,
 				E6A7DCF42BA26437009AD73A /* ContentView.swift in Sources */,
 				E66A5D7D2BCC6D9400BB11EA /* MapViewComponent.swift in Sources */,
-				E66A5D772BCC65AD00BB11EA /* BuildingsDataHelper.swift in Sources */,
-				E66A5D562BCB13A600BB11EA /* MapSpinHelper.swift in Sources */,
-				E66A5D542BCB133300BB11EA /* MapSatelliteView.swift in Sources */,
+				E66A5D772BCC65AD00BB11EA /* BuildingsData.swift in Sources */,
 				E6E144DC2BDB02470092E7D6 /* TeamScheduleView.swift in Sources */,
 				E66A5D7B2BCC6A8B00BB11EA /* BuildingDetailView.swift in Sources */,
 				E6A7DCF22BA26437009AD73A /* SwooshUApp.swift in Sources */,
