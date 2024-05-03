@@ -15,7 +15,7 @@ struct DucksGamesView: View {
     let womensTeams: [DucksTeam] = duckswomensteams
     
     init() {
-        _selectedTeam = State(initialValue: ducksmensteams[0])
+        _selectedTeam = State(initialValue: ducksmensteams[2])
     }
 
     var body: some View {
@@ -23,17 +23,15 @@ struct DucksGamesView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) {
                     
-                    
                     button
                     sports
-                    
                     
                 }
                 .padding(.horizontal)
             }
             .padding(.vertical)
             
-            TeamScheduleView(viewModel: EventViewModel(teamName: selectedTeam.name))
+            ScheduleListView(viewModel: EventViewModel(teamName: selectedTeam.name))
         }
         .background(Gradient(colors: gradientColors))
 
@@ -48,28 +46,6 @@ let gradientColors: [Color] = [
     .gradientTop,
     .gradientBottom
 ]
-
-extension DucksGamesView {
-    private var button: some View {
-        Button(action: {
-            isMensSports.toggle()
-        }) {
-            VStack {
-                Image(systemName: isMensSports ? "mustache.fill" : "mouth.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 40, height: 40)
-                    .padding()
-                    .background(Color.blue.opacity(0.5))
-                    .cornerRadius(8)
-                    .foregroundColor(Color.white)
-            }
-            .cornerRadius(12)
-            
-        }
-        .padding(.leading, 10)
-    }
-}
 
 extension DucksGamesView {
     private var sports: some View {
@@ -93,6 +69,30 @@ extension DucksGamesView {
         }
     }
 }
+
+extension DucksGamesView {
+    private var button: some View {
+        Button(action: {
+            isMensSports.toggle()
+        }) {
+            VStack {
+                Image(systemName: isMensSports ? "mustache.fill" : "mouth.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 40, height: 40)
+                    .padding()
+                    .background(Color.blue.opacity(0.5))
+                    .cornerRadius(8)
+                    .foregroundColor(Color.white)
+            }
+            .cornerRadius(12)
+            
+        }
+//        .padding(.leading, 10)
+    }
+}
+
+
 
 
 

@@ -27,8 +27,9 @@
 		E6E144D62BDB020A0092E7D6 /* DucksGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E144D52BDB020A0092E7D6 /* DucksGameView.swift */; };
 		E6E144D82BDB02290092E7D6 /* TeamsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E144D72BDB02290092E7D6 /* TeamsStruct.swift */; };
 		E6E144DA2BDB02390092E7D6 /* getCal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E144D92BDB02390092E7D6 /* getCal.swift */; };
-		E6E144DC2BDB02470092E7D6 /* TeamScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E144DB2BDB02470092E7D6 /* TeamScheduleView.swift */; };
+		E6E144DC2BDB02470092E7D6 /* ScheduleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E144DB2BDB02470092E7D6 /* ScheduleListView.swift */; };
 		E6E9CE802BDCDCD800993C02 /* ZoomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E9CE7F2BDCDCD800993C02 /* ZoomImage.swift */; };
+		E6E9CE842BE3172000993C02 /* BuildingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E9CE832BE3172000993C02 /* BuildingListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,8 +56,9 @@
 		E6E144D52BDB020A0092E7D6 /* DucksGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DucksGameView.swift; sourceTree = "<group>"; };
 		E6E144D72BDB02290092E7D6 /* TeamsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsStruct.swift; sourceTree = "<group>"; };
 		E6E144D92BDB02390092E7D6 /* getCal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getCal.swift; sourceTree = "<group>"; };
-		E6E144DB2BDB02470092E7D6 /* TeamScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamScheduleView.swift; sourceTree = "<group>"; };
+		E6E144DB2BDB02470092E7D6 /* ScheduleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListView.swift; sourceTree = "<group>"; };
 		E6E9CE7F2BDCDCD800993C02 /* ZoomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomImage.swift; sourceTree = "<group>"; };
+		E6E9CE832BE3172000993C02 /* BuildingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		E6E9CE812BE2DE7A00993C02 /* RotateMap */ = {
 			isa = PBXGroup;
 			children = (
+				E6E9CE832BE3172000993C02 /* BuildingListView.swift */,
 				E66A5D7C2BCC6D9400BB11EA /* MapViewComponent.swift */,
 				E66A5D7E2BCC6DC900BB11EA /* MapViewSpinManager.swift */,
 			);
@@ -182,7 +185,7 @@
 		E6E9CE822BE2DF3400993C02 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				E6E144DB2BDB02470092E7D6 /* TeamScheduleView.swift */,
+				E6E144DB2BDB02470092E7D6 /* ScheduleListView.swift */,
 				E6E144D72BDB02290092E7D6 /* TeamsStruct.swift */,
 				E6E144D92BDB02390092E7D6 /* getCal.swift */,
 			);
@@ -274,8 +277,9 @@
 				E6E144DA2BDB02390092E7D6 /* getCal.swift in Sources */,
 				E6A7DCF42BA26437009AD73A /* ContentView.swift in Sources */,
 				E66A5D7D2BCC6D9400BB11EA /* MapViewComponent.swift in Sources */,
+				E6E9CE842BE3172000993C02 /* BuildingListView.swift in Sources */,
 				E66A5D772BCC65AD00BB11EA /* BuildingsData.swift in Sources */,
-				E6E144DC2BDB02470092E7D6 /* TeamScheduleView.swift in Sources */,
+				E6E144DC2BDB02470092E7D6 /* ScheduleListView.swift in Sources */,
 				E66A5D7B2BCC6A8B00BB11EA /* BuildingDetailView.swift in Sources */,
 				E6A7DCF22BA26437009AD73A /* SwooshUApp.swift in Sources */,
 				E66A5D512BCB12B400BB11EA /* AthleticsView.swift in Sources */,

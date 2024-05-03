@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            
             DucksGamesView()
                 .tabItem {
                     Label("Athletics", systemImage: "sportscourt.fill")
@@ -20,19 +19,18 @@ struct ContentView: View {
                 .tabItem {
                     Label("Search", systemImage: "magnifyingglass")
                 }
-                .environmentObject(BuildingData())
             
             MapView()
                 .tabItem {
                     Label("Map", systemImage: "map")
                 }
-                .environmentObject(BuildingData())
             
             IdView()
                 .tabItem {
                     Label("Id", systemImage: "person.text.rectangle")
                 }
         }
+        .environmentObject(BuildingData())
     }
 }
 

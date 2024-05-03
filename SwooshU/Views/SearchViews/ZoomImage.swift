@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ZoomImage: View {
     var body: some View {
+        Text("Hello, World!")
         VStack {
             
             Image("FentonLVL1")
@@ -64,8 +65,8 @@ struct PinchZoomContext<Content: View>: View {
             )
             .scaleEffect(1 + scale, anchor: .init(x: scalePosition.x, y: scalePosition.y))
             .zIndex(scale != 0 ? 1000 : 0)
-            .onChange(of: scale) { newValue in
-                if scale == -1 {
+            .onChange(of: scale) { oldValue, newValue in
+                if newValue == -1 {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
                         scale = 0
                     }

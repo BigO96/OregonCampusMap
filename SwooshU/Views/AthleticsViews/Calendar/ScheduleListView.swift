@@ -1,5 +1,5 @@
 //
-//  TeamScheduleView.swift
+//  ScheduleListView.swift
 //  OregonCampus
 //
 //  Created by Oscar Epp on 4/25/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TeamScheduleView: View {
+struct ScheduleListView: View {
     @ObservedObject var viewModel: EventViewModel
 
     init(viewModel: EventViewModel) {
@@ -57,6 +57,7 @@ struct TeamScheduleView: View {
         }
     }
 }
+
 struct EventRowView: View {
     var event: SportsEvent
 
@@ -103,7 +104,7 @@ let monthYearFormatter: DateFormatter = {
 
 struct TeamScheduleView_Previews: PreviewProvider {
     static var previews: some View {
-        TeamScheduleView(viewModel: EventViewModel(teamName: "Football"))
+        ScheduleListView(viewModel: EventViewModel(teamName: "Football"))
     }
 }
 

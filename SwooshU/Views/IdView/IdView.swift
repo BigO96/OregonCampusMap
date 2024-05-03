@@ -67,9 +67,9 @@ struct IdView: View {
                     .padding()
                     .transition(.opacity.combined(with: .scale))
                 }
-                
                 Spacer()
             }
+            .background(Gradient(colors: gradientColors))
             .navigationBarItems(trailing: Button(action: {
                 showingInfoSheet = true
             }) {
@@ -119,7 +119,7 @@ struct IdView: View {
                     secondaryButton: .cancel()
                 )
             }
-//            .background(Gradient(colors: gradientColors))
+            //            .background(Gradient(colors: gradientColors))
         }
     }
 }

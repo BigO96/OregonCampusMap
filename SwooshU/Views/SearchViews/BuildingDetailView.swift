@@ -9,10 +9,16 @@ import SwiftUI
 import UIKit
 import MapKit
 
+struct IdentifiableImage: Identifiable {
+    let id: String
+}
+
+
 struct BuildingDetail: View {
     @EnvironmentObject var BuildingDataLocal: BuildingData
     @Environment(\.colorScheme) var colorScheme
     @State private var showingAlbum = false
+    @State private var selectedImage: IdentifiableImage?
     
     var building: Building
     
@@ -75,18 +81,8 @@ struct BuildingDetail: View {
             About
             Divider()
             InsideView
+            Divider()
             OpenHours
-            Text("A")
-            Text("A")
-            Text("A")
-            Text("A")
-            Text("A")
-            Text("A")
-            Text("A")
-            Text("A")
-            Text("A")
-            Text("A")
-
         }
     }
 }
@@ -163,90 +159,82 @@ extension BuildingDetail {
 
 extension BuildingDetail {
     private var InsideView: some View {
-        TabView {
-            Group {
-                Image("FentonLVL1")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: getRect().width - 30, height: 250)
-                    .cornerRadius(15)
-                    .addPinchZoom()
-                    .tag(0)
-                
-                Image("FentonLVL2")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: getRect().width - 30, height: 250)
-                    .cornerRadius(15)
-                    .addPinchZoom()
-                    .tag(1)
-                
-                Image("FentonLVL3")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: getRect().width - 30, height: 250)
-                    .cornerRadius(15)
-                    .addPinchZoom()
-                    .tag(2)
-                
-                Image("FentonLVL4")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: getRect().width - 30, height: 250)
-                    .cornerRadius(15)
-                    .addPinchZoom()
-                    .tag(3)
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack{
+                ForEach(building.imageNames, id: \.self) { name in
+                    Button(action: {
+                        self.selectedImage = IdentifiableImage(id: name)
+                    }) {
+                        Image(name)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: getRect().width - 30, height: 250)
+                            .cornerRadius(15)        
+                            .gesture(
+                                MagnificationGesture()
+                                    .onChanged { value in
+                                        if value > 1.5 { // Adjust the value based on how much zoom triggers the action
+                                            self.selectedImage = IdentifiableImage(id: name)
+                                        }
+                                    }
+                            )
+                    }
+                    .sheet(item: $selectedImage) { identifiableImage in
+                        VStack {
+                            Image(systemName: "hand.tap")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .padding()
+                            
+                            Spacer()
+                            
+                            Image(identifiableImage.id)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: getRect().width - 30, height: 250)
+                                .cornerRadius(15)
+                                .addPinchZoom()
+                            
+                            Spacer()
+                        }
+                    }
+
+                }
             }
             .padding()
         }
-        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
-        .frame(height: 250)
-        .padding(.top)
-        .zIndex(1000)
     }
 }
 
 extension BuildingDetail {
     private var OpenHours: some View {
-        Text("Hello, World!")
+        Text("Building Hours go here!")
         
-//        FindHours(building.hoursComponentKeys)
-//            .scaledToFit()
-//    }
-//        .ignoresSafeArea()
-//        .background(colorScheme == .dark ? Color.black: Color(.systemGray6))
-//        .sheet(isPresented: $showingAlbum) {
-//            NavigationView {
-//                BuildingMapAlbumView(imageNames: building.imageNames)
-//                    .toolbar {
-//                        ToolbarItem(placement: .cancellationAction) {
-//                            Button("Close") {
-//                                showingAlbum = false
-//                            }
-//                        }
-//                    }
-//            }
-//            .cornerRadius(10)
-        }
+        //        FindHours(building.hoursComponentKeys)
+        //            .scaledToFit()
+        //    }
+        //        .ignoresSafeArea()
+        //        .background(colorScheme == .dark ? Color.black: Color(.systemGray6))
+        //        .sheet(isPresented: $showingAlbum) {
+        //            NavigationView {
+        //                BuildingMapAlbumView(imageNames: building.imageNames)
+        //                    .toolbar {
+        //                        ToolbarItem(placement: .cancellationAction) {
+        //                            Button("Close") {
+        //                                showingAlbum = false
+        //                            }
+        //                        }
+        //                    }
+        //            }
+        //            .cornerRadius(10)
+    }
 }
 
 
-struct BuildingDetail_Previews: PreviewProvider {
-    static var previews: some View {
-        let sampleBuilding = Building(
-            id: 1,
-            name: "Sample Building",
-            description: "This is a description of the sample building.",
-            imageNames: ["image1", "image2"],
-            hoursComponentKeys: ["Monday: 9-5", "Tuesday: 9-5"],
-            distance: 300,
-            pitch: 80,
-            heading: 90.0,
-            type: ["Library"],
-            coordinates: Building.Coordinates(latitude: 44.042771, longitude: -123.073075)
-        )
-        return BuildingDetail(building: sampleBuilding)
-            .environmentObject(BuildingData())
-    }
+#Preview {
+    let buildingData = BuildingData()
+    return BuildingDetail(building: buildingData.Buildings.first!)
+        .environmentObject(buildingData)
 }
 
