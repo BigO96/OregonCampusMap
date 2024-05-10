@@ -22,6 +22,7 @@ struct IdView: View {
                 Text("Duck ID")
                     .font(.largeTitle)
                     .padding(.top)
+                    .foregroundColor(.white)
                 
                 Spacer()
                 
@@ -44,6 +45,7 @@ struct IdView: View {
                         Image(systemName: "camera.viewfinder")
                             .font(.largeTitle)
                             .foregroundColor(.blue)
+                            .padding()
                         Text("Here you can store your digital duck ID to get into the Student Recreation Center.")
                             .font(.headline)
                             .foregroundColor(.secondary)
@@ -63,7 +65,10 @@ struct IdView: View {
                                 .padding()
                                 .background(RoundedRectangle(cornerRadius: 10).foregroundColor(.blue))
                         }
+                        .padding()
                     }
+                    .background(Color.white.opacity(0.5))
+                    .cornerRadius(25)
                     .padding()
                     .transition(.opacity.combined(with: .scale))
                 }

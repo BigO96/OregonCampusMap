@@ -82,7 +82,7 @@ struct BuildingDetail: View {
             Divider()
             InsideView
             Divider()
-            OpenHours
+//            OpenHours
         }
     }
 }
@@ -159,51 +159,65 @@ extension BuildingDetail {
 
 extension BuildingDetail {
     private var InsideView: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack{
-                ForEach(building.imageNames, id: \.self) { name in
-                    Button(action: {
-                        self.selectedImage = IdentifiableImage(id: name)
-                    }) {
-                        Image(name)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: getRect().width - 30, height: 250)
-                            .cornerRadius(15)        
-                            .gesture(
-                                MagnificationGesture()
-                                    .onChanged { value in
-                                        if value > 1.5 { // Adjust the value based on how much zoom triggers the action
-                                            self.selectedImage = IdentifiableImage(id: name)
-                                        }
-                                    }
-                            )
-                    }
-                    .sheet(item: $selectedImage) { identifiableImage in
-                        VStack {
-                            Image(systemName: "hand.tap")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                .padding()
-                            
-                            Spacer()
-                            
-                            Image(identifiableImage.id)
+        Group {
+            if building.imageNames.first != "nil" {
+                TabView {
+                    ForEach(building.imageNames.filter { $0 != "nil" }, id: \.self) { name in
+                        Button(action: {
+                            self.selectedImage = IdentifiableImage(id: name)
+                        }) {
+                            Image(name)
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: getRect().width - 30, height: 250)
                                 .cornerRadius(15)
-                                .addPinchZoom()
-                            
-                            Spacer()
+                                .gesture(
+                                    MagnificationGesture()
+                                        .onChanged { value in
+                                            if value > 1.5 {
+                                                self.selectedImage = IdentifiableImage(id: name)
+                                            }
+                                        }
+                                )
+                        }
+                        .sheet(item: $selectedImage) { identifiableImage in
+                            FullImageView(identifiableImage: identifiableImage)
                         }
                     }
-
                 }
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                .frame(height: 250)
+                .padding(.top)
             }
-            .padding()
         }
+    }
+}
+
+private struct FullImageView: View {
+    var identifiableImage: IdentifiableImage
+
+    var body: some View {
+        VStack {
+            Text(identifiableImage.id)
+                .font(.title)
+                .padding()
+                .foregroundColor(.white)
+
+            Spacer()
+
+            Image(identifiableImage.id)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: getRect().width - 30, height: 250)
+                .cornerRadius(15)
+                .shadow(radius: 10)
+                .padding()
+
+            Spacer()
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Gradient(colors: gradientColors))
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -236,5 +250,6 @@ extension BuildingDetail {
     let buildingData = BuildingData()
     return BuildingDetail(building: buildingData.Buildings.first!)
         .environmentObject(buildingData)
+    
 }
 

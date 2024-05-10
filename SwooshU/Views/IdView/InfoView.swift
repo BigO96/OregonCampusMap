@@ -11,19 +11,57 @@ struct InfoView: View {
     var body: some View {
         NavigationView {
             List {
-                Section(header: Text("About the App")) {
-                    Text("Oregon Campus is your one-stop solution for navigating campus life. From keeping track of events to managing your ID, this app makes campus life effortless.")
-                }
                 
                 Section(header: Text("About the Developer")) {
                     Text("Developed by Oscar Epp")
                 }
                 
+                Section(header: Text("Links")) {
+                    HStack{
+                        Button(action: {
+                            if let url = URL(string: "https://github.com/BigO96") {
+                                UIApplication.shared.open(url)
+                            }
+                        }) {
+                            Image(systemName: "network")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 40, height: 40)
+                                .foregroundColor(.black)
+
+                        }
+                        Button(action: {
+                            if let url = URL(string: "https://github.com/BigO96") {
+                                UIApplication.shared.open(url)
+                            }
+                        }) {
+                            Image("github")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 40, height: 40)
+                        }
+                        .padding(.leading)
+                        
+                        Button(action: {
+                            if let url = URL(string: "https://github.com/BigO96") {
+                                UIApplication.shared.open(url)
+                            }
+                        }) {
+                            Image("linkedin")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 40, height: 40)
+                        }
+                        .padding(.leading)
+
+                    }
+                }
+                
                 Section(header: Text("Feedback")) {
                     Link("Provide Feedback", destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSd3FQAuGbBYThDTOgaMv0kFFPh_2y9Xh7w9pEqfCBpyW5LJFg/viewform?usp=sf_link")!)
-                    Text("Your feedback & questions are valuable to us. It helps us understand your needs and improve the app.")
+                    Text("Your feedback & questions are valuable. Help us understand your needs and improve the app.")
                 }
-                Section(){
+                Section(header: Text("Copyright")){
                     Text("Copyright © 2024 Oscar Epp. All rights reserved.")
                 }
             }

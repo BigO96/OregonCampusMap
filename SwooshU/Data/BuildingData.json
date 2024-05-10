@@ -32,14 +32,11 @@
         },
         "description": "Many buildings on the main campus were designed by Ellis F. Lawrence, who joined the university in 1914 as campus planner, but by 1915 he had founded the School of Architecture and had become chief architect of the university. At its inception in 1914, Ellis F. Lawrence envisioned that the School of Architecture and Allied Arts (now the College of Design) would incorporate architectural education with the arts as opposed to engineering, and became the first school to do so.",
         "imageNames": [
-            "IMAGE",
-            "IMAGE2",
-            "LawrenceLVL2",
-            "LawrenceLVL3",
-            "LawrenceLVL4",
-            "LawrenceLVL5",
-            "LawrenceLVL6",
-            "LawrenceLVL7"
+            "LALVL1",
+            "LALVL2",
+            "LALVL3",
+            "LALVL4",
+            "LALVL5"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary",
@@ -61,12 +58,12 @@
         },
         "description": "Knight Library is the main facility of the University of Oregon's library system. The library design is emblematic of the architecture of the university's older buildings. As of 2008 it has a collection of more than 3 million volumes. The building was opened in 1937 to replace the original library building (the 'Old Libe,' Fenton Hall, completed in 1907), which the University's collections had outgrown. Above the main entry doors (also on the north facade), is a passage from the Bible (John 8:32), which proclaims over the northeast doors 'Ye shall know the truth', and over the northwest doors 'and the truth shall make you free.'",
         "imageNames": [
-            "KnightLibraryLVL0",
-            "KnightLibraryLVL1",
-            "KnightLibraryLVL2",
-            "KnightLibraryLVL3",
-            "KnightLibraryLVL4",
-            "KnightLibraryLVL5"
+            "LIBLVL1",
+            "LIBLVL2",
+            "LIBLVL3",
+            "LIBLVL4",
+            "LIBLVL5",
+            "LIBLVL6"
         ],
         "hoursComponentKeys": [
             "KnightLibrary",
@@ -90,11 +87,11 @@
         },
         "description": "Home to the Charles H. Lundquist College of Business, the complex consists of four buildings; the new main building (called Lillis Hall), completed in 2003, and three older buildings, Anstett Hall, Peterson Hall, and the Chiles Business Center. The 2003 construction of the Lillis Business Complex resulted in the linking of all three existing buildings with the new Lillis 'backbone.' In addition, Lillis Hall contains numerous faculty offices, classrooms, a lecture hall, and an auditorium. ESPN chose UO Memorial Quad for the site of the October 15, 2011 GameDay Broadcast, with the Lillis as a backdrop. A a giant 'O' graphic was installed over the building's main entrance and has remained ever since.",
         "imageNames": [
-            "LilisLVL1",
-            "LilisLVL2",
-            "LilisLVL3",
-            "LilisLVL4",
-            "LilisLVL5"
+            "LILLVL1",
+            "LILLVL2",
+            "LILLVL3",
+            "LILLVL4",
+            "LILLVL5"
         ],
         "hoursComponentKeys": [
             "Lillis",
@@ -116,11 +113,11 @@
         },
         "description": "Originally constructed to house the new Law Center, the building was renovated in 1999 and renamed Grayson Hall, then in 2002 it was renamed McKenzie Hall and houses information services, computing labs, the Department of History, and the Department of Cinema Studies.",
         "imageNames": [
-            "McKenzieLVL1",
-            "McKenzieLVL2",
-            "McKenzieLVL3",
-            "McKenzieLVL4",
-            "McKenzieLVL5"
+            "MCKLVL1",
+            "MCKLVL2",
+            "MCKLVL3",
+            "MCKLVL4",
+            "MCKLVL5"
         ],
         "hoursComponentKeys": [
             "McKenzieHall"
@@ -139,7 +136,10 @@
         },
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "imageNames": [
-            "LawrenceLVL1"
+            "CONLVL1",
+            "CONLVL2",
+            "CONLVL3",
+            "CONLVL4"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -181,7 +181,10 @@
         },
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "imageNames": [
-            "LawrenceLVL1"
+            "GERLVL1",
+            "GERLVL2",
+            "GERLVL3",
+            "GERLVL4"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -200,7 +203,12 @@
         },
         "description": "The Erb Memorial Union (EMU) is the center for student activities and involvement. It brings together opportunities for all students to experience community, meet up with friends, attend a lecture series, enjoy a cup of coffee, or just hang out and study.",
         "imageNames": [
-            "LawrenceLVL1"
+            "EMULVL1",
+            "EMULVL2",
+            "EMULVL3",
+            "EMULVL4",
+            "EMULVL5",
+            "EMULVL6"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -219,10 +227,10 @@
         },
         "description": "The John E. Jaqua Academic Center for Student Athletes is a 40,000 square foot, state-of-the-art building for the NCAA-mandated academic services for student athletes. The first floor of the building is open to the public with a cafe.",
         "imageNames": [
-            "LawrenceLVL1"
+            "JQALVL1"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "JAQLVL1"
         ],
         "distance": 150,
         "pitch": 80,
@@ -238,10 +246,10 @@
         },
         "description": "Unthank Hall has common spaces dedicated to the academic life of UO students.There is also a community kitchen, the PNW Public Market—with nine unique dining venues—and the Duck’s House restaurant.",
         "imageNames": [
-            "LawrenceLVL1"
+            "UNTHLVL1"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "UNTHLVL1"
         ],
         "distance": 300,
         "pitch": 80,
@@ -280,10 +288,10 @@
         },
         "description": "Barnhart Hall is famous for Barnhart Brunch on Saturday and Sunday mornings. An easy bike ride or walk to classes, for rainy days the EMX bus line is half a block away and stops at several places on campus.",
         "imageNames": [
-            "barnhart"
+            "nil"
         ],
         "hoursComponentKeys": [
-            "BarnhartHall"
+            "nil"
         ],
         "distance": 200,
         "pitch": 80,
@@ -299,10 +307,9 @@
         },
         "description": "Willie and Donald Tykeson Hall is one of the homes of college and career advising at the University of Oregon.",
         "imageNames": [
-            "MillerLVL1",
-            "MillerLVL2",
-            "MillerLVL3",
-            "MillerLVL4"
+            "MTCLVL1",
+            "MTCLVL2",
+            "MTCLVL3"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -321,10 +328,11 @@
         },
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "imageNames": [
-            "MillerLVL1",
-            "MillerLVL2",
-            "MillerLVL3",
-            "MillerLVL4"
+            "VILLVL1",
+            "VILLVL2",
+            "VILLVL3",
+            "VILLVL4",
+            "VILLVL5"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -343,10 +351,10 @@
         },
         "description": "The newly remodeled Hayward Field includes a nine-floor tower with individual floors honoring the Ducks' eight Olympic gold medalists, of which Otis Davis became the first by winning the 400 meters in Rome on Sept. 6, 1960.",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "nil"
         ],
         "distance": 500,
         "pitch": 80,
@@ -362,10 +370,10 @@
         },
         "description": "Opened 57 years ago in 1967, the stadium has undergone several expansions. The official seating capacity is presently 54,000; however, the actual attendance regularly exceeds that figure. Prior to 1967, the Ducks' on-campus stadium was Hayward Field, which they shared with the track and field team. The stadium is located just north of the Willamette River, next to Alton Baker Park. Students typically walk to the stadium from the University of Oregon campus over the Autzen Footbridge, which passes over the Willamette, then through Alton Baker Park.\n\nSince 1990, Don Essig, the stadium's PA announcer since 1968, has declared that 'It never rains at Autzen Stadium' before each home game as the crowd chants along in unison. He often prefaces it with the local weather forecast, which quite often includes some chance of showers, but reminds fans that 'we know the real forecast...' or 'let's tell our friends from (visiting team name) the real forecast...' If rain is actually falling before the game, Essig will often dismiss it as 'a light drizzle', or 'liquid sunshine' but not actual rain by Oregon standards.",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "nil"
         ],
         "distance": 500,
         "pitch": 80,
@@ -381,10 +389,10 @@
         },
         "description": "The newly remodeled Hayward Field includes a nine-floor tower with individual floors honoring the Ducks' eight Olympic gold medalists, of which Otis Davis became the first by winning the 400 meters in Rome on Sept. 6, 1960.",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "nil"
         ],
         "distance": 500,
         "pitch": 80,
@@ -400,10 +408,10 @@
         },
         "description": "The facility is utilized by both the women's soccer and women's lacrosse programs.",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "nil"
         ],
         "distance": 500,
         "pitch": 80,
@@ -419,10 +427,10 @@
         },
         "description": "Matthew Knight Arena is a monument to all Oregon fans and their common love for Oregon, and the exciting energy that happens when all join together to cheer for the Ducks.",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "nil"
         ],
         "distance": 500,
         "pitch": 80,
@@ -438,10 +446,10 @@
         },
         "description": "Jane Sanders Stadium officially opened on March 24, 2016, further elevating Oregon softball as one of the premiere programs in the nation.",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "nil"
         ],
         "distance": 400,
         "pitch": 80,
@@ -457,10 +465,14 @@
         },
         "description": "Historic McArthur Court is the former home of the Oregon Ducks men's and women's basketball teams, replaced in 2011 by Matthew Knight Arena. Until it was replaced in 2011, it was the second-oldest on-campus arena still in use, after Fordham University's Rose Hill Gym. McArthur Court saw its first game on January 14, 1927, a 38–10 Oregon victory over Willamette University.",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "MACLVL1",
+            "MACLVL2",
+            "MACLVL3",
+            "MACLVL4",
+            "MACLVL5"
         ],
         "distance": 300,
         "pitch": 80,
@@ -476,10 +488,10 @@
         },
         "description": "Global Scholars Hall has multi-gendered floors and houses a learning commons and a live-in faculty member. The main level of this building features classroom spaces, a demonstration kitchen, music practice rooms, study areas, and a dining area.",
         "imageNames": [
-            "MillerLVL1"
+            "GSHLVL1"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "GSHLVL1"
         ],
         "distance": 300,
         "pitch": 80,
@@ -495,10 +507,10 @@
         },
         "description": "Kalapuya Ilihi is named in honor of the Kalapuya, the indigenous people of the Willamette Valley. The building is adjacent to the Many Nations Longhouse and features art by Native American artists from the region.",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "nil"
         ],
         "distance": 300,
         "pitch": 80,
@@ -514,10 +526,10 @@
         },
         "description": "Hamilton is single-gendered by floor. The community lounges and music practice rooms are favorite hangout spots for students who live in Hamilton.",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "nil"
         ],
         "distance": 300,
         "pitch": 80,
@@ -533,10 +545,10 @@
         },
         "description": "Carson has multi-gendered floors with single-gendered wings, great study nooks, and large community lounge spaces for events.",
         "imageNames": [
-            "MillerLVL1"
+            "CARLVL1"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "CARLVL1"
         ],
         "distance": 500,
         "pitch": 80,
@@ -552,10 +564,10 @@
         },
         "description": "Earl residents enjoy a prime location to stay fit and play outdoor sports. Earl has multi-gendered floors and open study and TV lounges. It is also home to the LGBTQIA+ Scholars Academic Residential Community",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "nil"
         ],
         "distance": 500,
         "pitch": 80,
@@ -571,10 +583,10 @@
         },
         "description": "Formerly known as Hamilton Walton.",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "nil"
         ],
         "distance": 500,
         "pitch": 80,
@@ -590,7 +602,17 @@
         },
         "description": "Formerly known as Hamilton Walton ",
         "imageNames": [
-            "MillerLVL1"
+            "PLCLVL1",
+            "PLCLVL2",
+            "PLCLVL3",
+            "PLCLVL4",
+            "PLCLVL5",
+            "PLCLVL6",
+            "PLCLVL7",
+            "PLCLVL8",
+            "PLCLVL9",
+            "PLCLVL10",
+            "PLCLVL11"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -609,10 +631,24 @@
         },
         "description": "The Phil and Penny Knight Campus for Accelerating Scientific Impact is a campus designed to accelerate the cycle of moving discoveries to impacts for the greater good.",
         "imageNames": [
-            "MillerLVL1"
+            "KnightCampusLVL1",
+            "KnightCampusLVL2",
+            "KnightCampusLVL3",
+            "KnightCampusLVL4",
+            "KnightCampusLVL5",
+            "KnightCampusLVL6",
+            "KnightCampusLVL7",
+            "KnightCampusLVL8"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "KnightCampusLVL1",
+            "KnightCampusLVL2",
+            "KnightCampusLVL3",
+            "KnightCampusLVL4",
+            "KnightCampusLVL5",
+            "KnightCampusLVL6",
+            "KnightCampusLVL7",
+            "KnightCampusLVL8"
         ],
         "distance": 500,
         "pitch": 80,
@@ -628,10 +664,10 @@
         },
         "description": "The Phil and Penny Knight Campus for Accelerating Scientific Impact is a campus designed to accelerate the cycle of moving discoveries to impacts for the greater good.",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "nil"
         ],
         "distance": 500,
         "pitch": 80,
@@ -647,7 +683,10 @@
         },
         "description": "The Jordan Schnitzer Museum of Art features engaging exhibitions, significant collections of historic and contemporary art, and exciting educational programs.",
         "imageNames": [
-            "MillerLVL1"
+            "JSMALVL1",
+            "JSMALVL2",
+            "JSMALVL3",
+            "JSMALVL4"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -666,7 +705,10 @@
         },
         "description": "Chapman Hall is the academic home of the Clark Honors College.",
         "imageNames": [
-            "MillerLVL1"
+            "CHALVL1",
+            "CHALVL2",
+            "CHALVL3",
+            "CHALVL4"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -685,7 +727,10 @@
         },
         "description": "Chapman Hall is the academic home of the Clark Honors College.",
         "imageNames": [
-            "MillerLVL1"
+            "JOHLVL1",
+            "JOHLVL2",
+            "JOHLVL3",
+            "JOHLVL4"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -704,7 +749,7 @@
         },
         "description": "The Museum of Natural and Cultural History enhances knowledge of Earth's environments and cultures, inspiring stewardship of our collective past, present, and future.",
         "imageNames": [
-            "MillerLVL1"
+            "MNCHLVL1"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -723,7 +768,8 @@
         },
         "description": "The Technology Service Desk, located in the Computing Center provides, UO students and employees with free assistance on a range of technology topics, including email, the wireless network, accounts and a variety of software and devices. It is open Monday through Friday, 8 a.m. to 5 p.m., year-round.",
         "imageNames": [
-            "MillerLVL1"
+            "CCLVL1",
+            "CCLVL2"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -742,7 +788,9 @@
         },
         "description": "The Chiles Center, opened in 1985, includes additional case rooms and houses the college's business technology center and computer labs. A new $1 million endowment established in 2008 enabled a major upgrade to the computer labs in Chiles and will help ensure continual enhancements in perpetuity as technology advances.",
         "imageNames": [
-            "MillerLVL1"
+            "CHILVL1",
+            "CHILVL2",
+            "CHILVL3",
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -761,7 +809,7 @@
         },
         "description": " In 2007, Peterson Hall, home to the Oregon MBA, was completely gutted—only the building façade remained. Three years later, thanks to Hope Anstett's gift commemorating her husband Joseph, the school was able to undertake similarly extensive renovations of the facility formerly known as Gilbert Hall.",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -780,7 +828,9 @@
         },
         "description": "Formerly known as Gilbert Hall, renamed Anstett Hall, the building re-opened in March 2011. Its first floor houses classrooms and offices, while its second and third floors are the new location of the Anstett Family Accounting Suite.",
         "imageNames": [
-            "MillerLVL1"
+            "ANSLVL1",
+            "ANSLVL2",
+            "ANSLVL3"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -799,7 +849,7 @@
         },
         "description": "The Duck Store is your official store for University of Oregon Ducks apparel. Enjoy one stop shopping for Ducks t-shirts, textbooks, technology and more!",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -818,7 +868,10 @@
         },
         "description": "The Philosophy Department is located in room 211 on the second floor of Susan Campbell Hall. The Religious Studies Department is located in Susan Campbell Hall on the third floor.",
         "imageNames": [
-            "MillerLVL1"
+            "SCLVL1",
+            "SCLVL2",
+            "SCLVL3",
+            "SCLVL4"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -837,7 +890,10 @@
         },
         "description": "The School of Planning, Public Policy and Management is housed in Hendricks Hall, situated in the heart of campus. The school's space consists of faculty and staff offices, graduate employee offices, conference rooms, a student lounge and a computer lab. A comfortable open-hearth fireplace on the first floor serves as a gathering and presentation space, and a place for study and relaxation.",
         "imageNames": [
-            "MillerLVL1"
+            "HENLVL1",
+            "HENLVL2",
+            "HENLVL3",
+            "HENLVL4"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -856,7 +912,10 @@
         },
         "description": "Small event space on campus.",
         "imageNames": [
-            "MillerLVL1"
+            "ALDRLVL1",
+            "ALDRLVL2",
+            "ALDRLVL3",
+            "ALDRLVL4"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -875,7 +934,9 @@
         },
         "description": "The former University High School structures, now known as the Lorry I. Lokey Education Building, have been upgraded to reflect high technology and sustainability.",
         "imageNames": [
-            "MillerLVL1"
+            "EDLVL1",
+            "EDLVL2",
+            "EDLVL3"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -894,7 +955,10 @@
         },
         "description": "Our HEDCO Education Building features design elements—the hipped roof, vertical windows, red brick exterior, and covered walkways—that echo the original brick education facilities built in 1921.",
         "imageNames": [
-            "MillerLVL1"
+            "HEDLVL1",
+            "HEDLVL2",
+            "HEDLVL3",
+            "HEDLVL4"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -913,7 +977,11 @@
         },
         "description": "The UO Clinical Services Building houses the OHSU Child Development and Rehabilitation Center, Eugene.",
         "imageNames": [
-            "MillerLVL1"
+            "CLSLVL1",
+            "CLSLVL2",
+            "CLSLVL3",
+            "CLSLVL4",
+            "CLSLVL5"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -932,7 +1000,7 @@
         },
         "description": "The Frohnmayer Music Building features studios and private rehearsal rooms and a central courtyard for students to socialize or meet between classes.",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -951,7 +1019,8 @@
         },
         "description": "For the first time in its history, Oregon Bach Festival has a building to call its own, thanks to generous lead capital gifts from Andrew & Phyllis Berwick and Donald & Willie Tykeson. The 10,000 square foot building is located on the University of Oregon campus next to the School of Music and Dance (SOMD) on 18th Avenue.",
         "imageNames": [
-            "MillerLVL1"
+            "BERWLVL1",
+            "BERWLVL2"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -970,7 +1039,7 @@
         },
         "description": "The Outdoor Program provides low-priced gear and bike rentals to help facilitate your land, water, and snow adventures.",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -989,7 +1058,7 @@
         },
         "description": "Opened in September 2000, the Student Tennis Center at the University of Oregon was a tremendous step forward in solidifying the presence of Duck Tennis as a major component of the University’s athletic culture",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1008,7 +1077,8 @@
         },
         "description": "Esslinger Hall is conencted to the rec and McArthur court. It mostly has classes fouced on human physiology.",
         "imageNames": [
-            "MillerLVL1"
+            "ESLLVL1",
+            "ESLLVL2"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1027,7 +1097,11 @@
         },
         "description": "Originally designed in 1928 as a dormitory, the University of Oregon’s Straub Hall was repurposed in the 1970s as a classroom facility for the Psychology department. Requiring a modernization to suit the needs of faculty and students, the university worked with Glumac’s engineering staff to help usher this building into the 21st century, while maintaining its Colonial Revival aesthetic.",
         "imageNames": [
-            "MillerLVL1"
+            "STBLVL1",
+            "STBLVL2",
+            "STBLVL3",
+            "STBLVL4",
+            "STBLVL5"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1046,7 +1120,9 @@
         },
         "description": "The Gerlinger Annex houses some classrooms, but is mostly used for the basketball courts.",
         "imageNames": [
-            "MillerLVL1"
+            "GRXLVL1",
+            "GRXLVL2",
+            "GRXLVL3"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1065,7 +1141,9 @@
         },
         "description": "Collier House is easily identified by its 19th century architecture. Built 135 years ago as a private residence by physics professor George Haskell Collier, the historic landmark has undergone many changes over the decades.",
         "imageNames": [
-            "MillerLVL1"
+            "CHLVL1",
+            "CHLVL2",
+            "CHLVL3"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1084,7 +1162,10 @@
         },
         "description": "Friendly Hall overlooks the old campus quad, which dates to the founding of the university in 1876 and which includes some of the oldest and most historically significant buildings on campus, including University Hall (1876), Villard Hall (1886) and Fenton Hall (1906). The building was named for Samson Friendly, a Eugene merchant, Eugene city mayor (1893–95) and a member of the Union University Association, which established the university.",
         "imageNames": [
-            "MillerLVL1"
+            "FRLVL1",
+            "FRLVL2",
+            "FRLVL3",
+            "FRLVL4"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1103,7 +1184,11 @@
         },
         "description": "Named for renowned journalist Eric W. Allen, who founded the SOJC in 1916, today it’s home to state-of-the-art studios and collaboration spaces where students create compelling content using the latest media technologies.",
         "imageNames": [
-            "MillerLVL1"
+            "ALLLVL1",
+            "ALLLVL2",
+            "ALLLVL3",
+            "ALLLVL4",
+            "ALLLVL5"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1122,7 +1207,12 @@
         },
         "description": "Opened in 1952, Pacific Hall supported cutting edge research in the natural sciences and provided a top-notch facility for the science of the time. As more recent buildings and labs have been designed to facilitate interdisciplinary approaches, Pacific Hall has been repurposed for other fields.",
         "imageNames": [
-            "MillerLVL1"
+            "PACLVL1",
+            "PACLVL2",
+            "PACLVL3",
+            "PACLVL4",
+            "PACLVL5",
+            "PACLVL6"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1141,7 +1231,10 @@
         },
         "description": "Until 2015, Columbia 150 was the largest lecture hall on the University of Oregon Campus. The 500-capacity room was built in 1960 as an extension of the science building now known as Pacific Hall.",
         "imageNames": [
-            "MillerLVL1"
+            "COLLVL1",
+            "COLLVL2",
+            "COLLVL3",
+            "COLLVL4"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1160,7 +1253,8 @@
         },
         "description": "The Living Learning Center (LLC) has multi-gendered floors, classroom spaces, smart board study rooms, and a performance hall. The lounges and outdoor lawn are favorite hangout spots for students who live in LLC and neighboring communities.",
         "imageNames": [
-            "MillerLVL1"
+            "LLCLVL1",
+            "LLCLVL2"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1179,7 +1273,10 @@
         },
         "description": "In 1965 the University of Oregon established a Center for Volcanology as a part of the Department of Geology to provide opportunities for research and graduate instruction in the broad field of volcanic geology and igneous processes.",
         "imageNames": [
-            "MillerLVL1"
+            "VOLLVL1",
+            "VOLLVL2",
+            "VOLLVL3",
+            "VOLLVL4"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1198,7 +1295,8 @@
         },
         "description": "Cascade Hall is an extension of the Science buildings on campus. The cascade courtyard is very relaxing courtyard offering a peaceful and intimate setting slightly removed from the hustle and bustle on campus.",
         "imageNames": [
-            "MillerLVL1"
+            "CASLVL1",
+            "CASLVL2"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1217,7 +1315,8 @@
         },
         "description": "The Allan Price Science Commons and Research Library (or 'Price Science Commons') supports the natural and physical sciences.",
         "imageNames": [
-            "MillerLVL1"
+            "PSCLVL1",
+            "PSCLVL2"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1236,7 +1335,14 @@
         },
         "description": "In 1960 construction was underway on the new East Wing to the Science Building. The building was constructed to house laboratories and offices. Later named Onyx Bridge, so named because it was designed to straddle Onyx Street (although the street was closed during construction and never reopened), the unique building was a result of a new type of architectural design - an external structural support system.",
         "imageNames": [
-            "MillerLVL1"
+            "ONYLVL1",
+            "ONYLVL2",
+            "ONYLVL3",
+            "ONYLVL4",
+            "ONYLVL5",
+            "ONYLVL6",
+            "ONYLVL7",
+            "ONYLVL8"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1255,7 +1361,11 @@
         },
         "description": "Willamette Hall is a building on the University of Oregon campus in Eugene, Oregon. Opened in 1990, it is home to the university's Physics Department. The four-story building contains numerous faculty offices, a 224-seat lecture hall, classrooms, and laboratories. The atrium is named after Paul Olum, former university president and mathematician.",
         "imageNames": [
-            "MillerLVL1"
+            "WILLVL1",
+            "WILLVL2",
+            "WILLVL3",
+            "WILLVL4",
+            "WILLVL5"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1274,10 +1384,15 @@
         },
         "description": "The University of Oregon completed its final touches on the Klamath Hall renovation project in October. The project began November 2016 to redesign the hall’s third floor, which houses several science laboratories. The original building design, completed in 1966, did not meet current lab standards.",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
-            "LawrenceLibrary"
+            "KLALVL1",
+            "KLALVL2",
+            "KLALVL3",
+            "KLALVL4",
+            "KLALVL5",
+            "KLALVL6"
         ],
         "distance": 500,
         "pitch": 80,
@@ -1293,7 +1408,11 @@
         },
         "description": "Housing some classrooms, Oregon Hall is mostly used as an office space for facutly",
         "imageNames": [
-            "MillerLVL1"
+            "ORLVL1",
+            "ORLVL2",
+            "ORLVL3",
+            "ORLVL4",
+            "ORLVL5"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1312,7 +1431,11 @@
         },
         "description": "Huestis Hall is UO’s teaching and research hub for neuroscience, biology, and psychology. The building has labs and classrooms designed to help students with research and, with up to  3,000 students using the building each year, faculty and staff say an update on the 48-year-old building is much needed. The Hall is currently under contruction",
         "imageNames": [
-            "MillerLVL1"
+            "HUELVL1",
+            "HUELVL2",
+            "HUELVL3",
+            "HUELVL4",
+            "HUELVL5"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1331,7 +1454,11 @@
         },
         "description": "George Streisinger was many things: refugee; anti-war protestor; amateur magician; and, of course, the first person to successfully clone a vertebrate. But while many University of Oregon students may not know his story, many know the building that bears his name: Streisinger Hall, part of the Lorry I. Lokey Science Complex.",
         "imageNames": [
-            "MillerLVL1"
+            "SGRLVL1",
+            "SGRLVL2",
+            "SGRLVL3",
+            "SGRLVL4",
+            "SGRLVL5"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1350,7 +1477,13 @@
         },
         "description": "The Lewis Integrative Science Building is home to strategic research clusters centered around interdisciplinary and integrative research missions; its purpose is to create new synergies across diverse academic disciplines by literally uniting the sciences.",
         "imageNames": [
-            "MillerLVL1"
+            "LISBLVL1",
+            "LISBLVL2",
+            "LISBLVL3",
+            "LISBLVL4",
+            "LISBLVL5",
+            "LISBLVL6",
+            "LISBLVL7"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1369,7 +1502,8 @@
         },
         "description": "Come here in the fall to see thousands of Vaux's Swifts (birds) migrate from the smoke stack",
         "imageNames": [
-            "MillerLVL1"
+            "AGHLVL1",
+            "AGHLVL2"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1388,7 +1522,11 @@
         },
         "description": "Building highlights include comfortable offices for student journals and organizations, a mock courtroom, a 200-seat auditorium, a branch of the University of Oregon Duck Store and—in keeping with law school tradition—a basketball court.",
         "imageNames": [
-            "MillerLVL1"
+            "KNILVL1",
+            "KNILVL2",
+            "KNILVL3",
+            "KNILVL4",
+            "KNILVL5"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1407,7 +1545,9 @@
         },
         "description": "The Rec Center features sustainable, accessible, and diverse facilities designed to enhance your fitness, no matter how you choose to work out.",
         "imageNames": [
-            "MillerLVL1"
+            "RECLVL1",
+            "RECLVL2",
+            "RECLVL3"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
@@ -1426,7 +1566,7 @@
         },
         "description": "Justice Bean Hall has newly renovated community spaces and room finishes, and it houses several Academic Residential Communities.",
         "imageNames": [
-            "MillerLVL1"
+            "nil"
         ],
         "hoursComponentKeys": [
             "LawrenceLibrary"
