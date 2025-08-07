@@ -22,7 +22,7 @@ looking for, along with an indoor map to find the right classroom as well as a s
 
 ## DuckID
 
-The DuckID section allows students to upload an image of their duckID to easly access campus building using a
+The DuckID section allows students to upload an image of their duckID to easily access campus building using a
 barcode. Often times you might forget your ID when going to the student recenter for example, this ensures
 you have easy access on your phone.
 
