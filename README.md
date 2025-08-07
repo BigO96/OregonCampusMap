@@ -12,6 +12,8 @@ The Oregon Athletics page features a schedule overview of each Mens & Womens Spo
 
 The infomation comes from a GoDucks iCal subscription. The App using, custom code written by me, fetches the data
 and features it on the app. The data is updated and accurate without maintenance
+
+
   
 ## Campus Map
 
@@ -23,3 +25,11 @@ looking for, along with an indoor map to find the right classroom as well as a s
 The DuckID section allows students to upload an image of their duckID to easly access campus building using a
 barcode. Often times you might forget your ID when going to the student recenter for example, this ensures
 you have easy access on your phone.
+
+##
+<p align="center">
+  <img width="200" alt="" src="DemoPic1.png">
+  <img width="200" alt="" src="DemoPic2.png">
+  <img width="200" alt="" src="DemoPic4.png">
+  <img width="200" alt="" src="DemoPic5.png">
+</p>
