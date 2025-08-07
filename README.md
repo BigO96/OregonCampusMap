@@ -6,9 +6,9 @@ This app, *designed by Oscar Epp*, is a educational app for students in the Euge
 
 #### There are three main features of the App:
 
-## Oregon Atheletics
+## Oregon Athletics
 
-The Oregon Atheletics page features a schedule overview of each Mens & Womens Sports
+The Oregon Athletics page features a schedule overview of each Mens & Womens Sports
 
 The infomation comes from a GoDucks iCal subscription. The App using, custom code written by me, fetches the data
 and features it on the app. The data is updated and accurate without maintenance
